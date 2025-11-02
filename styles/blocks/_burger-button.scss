@@ -2,13 +2,41 @@
 
 .burger-button {
   @include square(46px);
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--color-grey-15);
   border-radius: var(--border-radius-6);
+  padding: 15px 10.25px;
+  z-index: 2;
+
+  &.is-active {
+    .burger-button__line {
+      &:first-child {
+        rotate: 45deg;
+        transform-origin: 0;
+        translate: 0.25em -0.15em;
+      }
+      &:nth-child(2) {
+        rotate: -45deg;
+      }
+      &:last-child {
+        width: 0;
+      }
+    }
+  }
 
   &__line {
     background-color: var(--color-green-80);
     border-radius: var(--border-radius-6);
     height: 2px;
     width: 100%;
+    transition-duration: var(--transition-duration);
+
+    &:last-child {
+      width: 55%;
+      align-self: end;
+    }
   }
 }

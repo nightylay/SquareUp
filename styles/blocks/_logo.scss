@@ -2,6 +2,7 @@
 
 .logo {
   flex-shrink: 0;
+  z-index: 2;
 
   @include laptop {
     max-width: 118px;

@@ -16,12 +16,48 @@
   }
 
   &__overlay {
+    transition-duration: var(--transition-duration);
+
     @include mobile-above {
       display: contents;
     }
 
     @include mobile {
-      display: none;
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      z-index: 1;
+      background-color: var(--color-grey-10);
+    }
+
+    &:not(.is-visible) {
+      @include mobile {
+        opacity: 0;
+        visibility: hidden;
+        translate: 100%;
+      }
+    }
+  }
+
+  &__menu {
+    overflow-y: auto;
+
+    &-list {
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &-link {
+      @include mobile {
+        padding: 10px 28px;
+        font-size: 32px;
+      }
     }
   }
 }
