@@ -1,0 +1,22 @@
+{
+  "name": "squareup",
+  "version": "1.0.0",
+  "description": "landing page squareup",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --watch ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightylay/SquareUp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nightylay/SquareUp/issues"
+  },
+  "homepage": "https://github.com/nightylay/SquareUp#readme",
+  "devDependencies": {
+    "sass": "^1.93.3"
+  }
+}

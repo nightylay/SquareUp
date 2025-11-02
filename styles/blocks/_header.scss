@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+.header {
+  border-bottom: 1px solid var(--color-grey-15);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 20px;
+    column-gap: 40px;
+  }
+
+  &__overlay {
+    @include mobile-above {
+      display: contents;
+    }
+  }
+}

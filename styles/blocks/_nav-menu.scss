@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.nav-menu {
+  &__list {
+    display: flex;
+    column-gap: 2px;
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 28px;
+
+    @include hover {
+      color: var(--color-green-50);
+    }
+    &.is-active {
+      pointer-events: none;
+      font-weight: 600;
+      color: var(--color-white);
+      background-color: var(--color-grey-15);
+      border-radius: var(--border-radius-8);
+    }
+  }
+}
