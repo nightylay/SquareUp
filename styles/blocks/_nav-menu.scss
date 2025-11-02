@@ -5,6 +5,7 @@
     display: flex;
     column-gap: 2px;
   }
+
   &__link {
     display: inline-flex;
     align-items: center;
@@ -13,12 +14,21 @@
     @include hover {
       color: var(--color-green-50);
     }
+
     &.is-active {
       pointer-events: none;
       font-weight: 600;
       color: var(--color-white);
       background-color: var(--color-grey-15);
       border-radius: var(--border-radius-8);
+    }
+
+    @include laptop {
+      padding: 12px 22px;
+    }
+
+    @include tablet {
+      padding: 12px 16px;
     }
   }
 }

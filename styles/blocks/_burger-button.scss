@@ -1,0 +1,14 @@
+@use '../helpers' as *;
+
+.burger-button {
+  @include square(46px);
+  background-color: var(--color-grey-15);
+  border-radius: var(--border-radius-6);
+
+  &__line {
+    background-color: var(--color-green-80);
+    border-radius: var(--border-radius-6);
+    height: 2px;
+    width: 100%;
+  }
+}

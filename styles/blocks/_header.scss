@@ -9,11 +9,19 @@
     justify-content: space-between;
     padding-block: 20px;
     column-gap: 40px;
+
+    @include tablet {
+      column-gap: 20px;
+    }
   }
 
   &__overlay {
     @include mobile-above {
       display: contents;
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 }

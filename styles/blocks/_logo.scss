@@ -1,0 +1,9 @@
+@use '../helpers' as *;
+
+.logo {
+  flex-shrink: 0;
+
+  @include laptop {
+    max-width: 118px;
+  }
+}

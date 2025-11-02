@@ -216,6 +216,7 @@ svg * {
   --font-family-base: "Barlow", sans-serif;
   --button-height: 60px;
   --button-padding-inline: 28px;
+  --border-radius-6: 6px;
   --border-radius-8: 8px;
   --border-radius-12: 12px;
   --container-width: 1596px;
@@ -241,13 +242,13 @@ svg * {
   overflow: hidden !important;
 }
 
-@media (width <= 1023.98px) {
+@media (width <= 767.98px) {
   .hidden-mobile {
     display: none !important;
   }
 }
 
-@media (width > 1023.98px) {
+@media (width > 767.98px) {
   .visible-mobile {
     display: none !important;
   }
@@ -277,6 +278,10 @@ a {
 }
 a[class] {
   text-decoration: none;
+}
+
+button {
+  border: none;
 }
 
 h1,
@@ -336,24 +341,51 @@ h5,
   border-radius: 8px;
   font-weight: 500;
   padding-block: 16px;
+  white-space: nowrap;
 }
 .button--accent {
   background-color: var(--color-green-50);
+  border: 1px solid var(--color-green-50);
   color: var(--color-grey-15);
-  min-width: 135px;
+  padding: 16px 24px;
 }
 @media (hover: hover) {
   .button--accent:hover {
-    background-color: transparent;
-    border: 1px solid var(--color-green-50);
+    background-color: var(--color-grey-10);
     color: var(--color-green-50);
   }
 }
 @media (hover: none) {
   .button--accent:active {
-    background-color: transparent;
-    border: 1px solid var(--color-green-50);
+    background-color: var(--color-grey-10);
     color: var(--color-green-50);
+  }
+}
+@media (width <= 1440.98px) {
+  .button--accent {
+    padding: 12px 18px;
+  }
+}
+
+.burger-button {
+  width: 46px;
+  height: 46px;
+  background-color: var(--color-grey-15);
+  border-radius: var(--border-radius-6);
+}
+.burger-button__line {
+  background-color: var(--color-green-80);
+  border-radius: var(--border-radius-6);
+  height: 2px;
+  width: 100%;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+@media (width <= 1440.98px) {
+  .logo {
+    max-width: 118px;
   }
 }
 
@@ -367,9 +399,19 @@ h5,
   padding-block: 20px;
   column-gap: 40px;
 }
+@media (width <= 1023.98px) {
+  .header__inner {
+    column-gap: 20px;
+  }
+}
 @media (width > 767.98px) {
   .header__overlay {
     display: contents;
+  }
+}
+@media (width <= 767.98px) {
+  .header__overlay {
+    display: none;
   }
 }
 
@@ -398,6 +440,16 @@ h5,
   color: var(--color-white);
   background-color: var(--color-grey-15);
   border-radius: var(--border-radius-8);
+}
+@media (width <= 1440.98px) {
+  .nav-menu__link {
+    padding: 12px 22px;
+  }
+}
+@media (width <= 1023.98px) {
+  .nav-menu__link {
+    padding: 12px 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
