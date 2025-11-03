@@ -60,4 +60,11 @@
       }
     }
   }
+
+  &__contact-link {
+    @include mobile {
+      padding: 16px 36px;
+      font-size: 22px;
+    }
+  }
 }

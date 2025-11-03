@@ -1,32 +1,24 @@
 @use '../helpers' as *;
 
 .button {
-  display: inline-flex;
-  justify-content: center;
   background-color: var(--color-grey-15);
   border-radius: 8px;
   font-weight: 500;
-  padding-block: 16px;
+  padding: 16px 24px;
   white-space: nowrap;
+
+  @include laptop {
+    padding: 14px 20px;
+  }
 
   &--accent {
     background-color: var(--color-green-50);
     border: 1px solid var(--color-green-50);
     color: var(--color-grey-15);
-    padding: 16px 24px;
 
     @include hover {
       background-color: var(--color-grey-10);
       color: var(--color-green-50);
-    }
-
-    @include laptop {
-      padding: 12px 18px;
-    }
-
-    @include mobile {
-      padding: 16px 36px;
-      font-size: 22px;
     }
   }
 }

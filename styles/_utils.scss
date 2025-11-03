@@ -21,3 +21,8 @@
     display: none !important;
   }
 }
+
+.glass-bg {
+  backdrop-filter: blur(12px);
+  background: rgba(36, 36, 36, 0.2);
+}
