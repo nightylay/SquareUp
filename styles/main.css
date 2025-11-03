@@ -343,7 +343,6 @@ h5,
 }
 
 .button {
-  background-color: var(--color-grey-15);
   border-radius: 8px;
   font-weight: 500;
   padding: 16px 24px;
@@ -622,6 +621,16 @@ h5,
 .hero__actions {
   display: flex;
   column-gap: 13px;
+}
+@media (hover: hover) {
+  .hero__works-link:hover {
+    background: rgba(17, 17, 17, 0.2);
+  }
+}
+@media (hover: none) {
+  .hero__works-link:active {
+    background: rgba(17, 17, 17, 0.2);
+  }
 }
 .hero__works-link {
   border: 1px solid var(--color-grey-20);
