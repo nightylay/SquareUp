@@ -1,0 +1,12 @@
+.companies {
+  &__count {
+    margin-top: -80%;
+    display: inline-block;
+    border: 1px solid var(--color-grey-15);
+    padding: 20px 34px;
+    border-radius: 100px;
+    font-weight: 500;
+    color: var(--color-white-alternate);
+    background-color: var(--color-grey-10);
+  }
+}
