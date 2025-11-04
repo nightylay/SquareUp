@@ -12,6 +12,11 @@
         cover no-repeat;
     }
 
+    &--clients {
+      background: url('../../assets/images/backgrounds/bg-3.webp') center /
+        cover no-repeat;
+    }
+
     &-inner {
       display: flex;
       flex-direction: column;
