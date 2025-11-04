@@ -377,6 +377,11 @@ h6, .h6 {
 .grid--12 {
   --gridColumns: 12;
 }
+@media (width <= 767.98px) {
+  .grid--2 {
+    --gridColumns: 1;
+  }
+}
 @media (width <= 1023.98px) {
   .grid--3 {
     --gridColumns: 1;
@@ -413,6 +418,12 @@ h6, .h6 {
   }
 }
 
+.section__header--services {
+  background: url("../../assets/images/backgrounds/bg-1.webp") center/cover no-repeat;
+}
+.section__header--choose {
+  background: url("../../assets/images/backgrounds/bg-2.webp") center/cover no-repeat;
+}
 .section__header-inner {
   display: flex;
   flex-direction: column;
@@ -524,10 +535,10 @@ h6, .h6 {
     height: 70px;
   }
 }
-@media (width <= 767.98px) {
+@media (width <= 480.98px) {
   .service-card__image {
-    width: 50px;
-    height: 50px;
+    width: 58px;
+    height: 58px;
   }
 }
 @media (width <= 1023.98px) {
@@ -571,6 +582,56 @@ h6, .h6 {
   .service-card__link:active {
     background-color: var(--color-grey-20);
   }
+}
+
+.choose-card {
+  min-height: 378px;
+  padding: 80px;
+  height: 100%;
+  border: 1px solid var(--color-grey-15);
+}
+@media (width <= 1440.98px) {
+  .choose-card {
+    padding: 60px;
+    min-height: 292px;
+  }
+}
+@media (width <= 1023.98px) {
+  .choose-card {
+    padding: 30px;
+    min-height: 267px;
+  }
+}
+.choose-card__header {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.choose-card__header:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (width <= 1440.98px) {
+  .choose-card__header {
+    column-gap: 14px;
+  }
+  .choose-card__header:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media (width <= 1440.98px) {
+  .choose-card__image {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (width <= 480.98px) {
+  .choose-card__image {
+    width: 58px;
+    height: 58px;
+  }
+}
+.choose-card__description {
+  font-size: clamp(14px, 1.2531328321vw, 20px);
 }
 
 .header {
@@ -866,10 +927,6 @@ h6, .h6 {
   .companies__logo-image {
     width: 80%;
   }
-}
-
-.services__header {
-  background: url("../../assets/images/backgrounds/bg-1.webp") center/cover no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

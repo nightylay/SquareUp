@@ -2,6 +2,16 @@
 
 .section {
   &__header {
+    &--services {
+      background: url('../../assets/images/backgrounds/bg-1.webp') center /
+        cover no-repeat;
+    }
+
+    &--choose {
+      background: url('../../assets/images/backgrounds/bg-2.webp') center /
+        cover no-repeat;
+    }
+
     &-inner {
       display: flex;
       flex-direction: column;

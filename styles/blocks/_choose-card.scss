@@ -1,0 +1,49 @@
+@use '../helpers' as *;
+
+.choose-card {
+  min-height: 378px;
+  padding: 80px;
+  height: 100%;
+  border: 1px solid var(--color-grey-15);
+
+  @include laptop {
+    padding: 60px;
+    min-height: 292px;
+  }
+
+  @include tablet {
+    padding: 30px;
+    min-height: 267px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @include laptop {
+      column-gap: 14px;
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__image {
+    @include laptop {
+      @include square(70px);
+    }
+
+    @include mobile-s {
+      @include square(58px);
+    }
+  }
+
+  &__description {
+    @include fluid-text(20, 14);
+  }
+}

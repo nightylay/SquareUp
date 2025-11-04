@@ -43,8 +43,8 @@
       @include square(70px);
     }
 
-    @include mobile {
-      @include square(50px);
+    @include mobile-s {
+      @include square(58px);
     }
 
     @include tablet {
