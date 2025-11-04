@@ -377,7 +377,7 @@ h6, .h6 {
 .grid--12 {
   --gridColumns: 12;
 }
-@media (width <= 1023.98px) {
+@media (width <= 767.98px) {
   .grid--2 {
     --gridColumns: 1;
   }
@@ -529,7 +529,7 @@ h6, .h6 {
 }
 @media (width <= 1023.98px) {
   .service-card {
-    min-height: 31 0px;
+    min-height: 310px;
     padding: 30px;
   }
 }
