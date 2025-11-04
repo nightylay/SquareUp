@@ -27,15 +27,11 @@
     padding-top: 80px;
   }
 
-  &__main {
-    max-width: 865px;
-    margin-inline: auto;
-  }
-
-  &__body {
+  &__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-inline: 7px;
   }
 
   &__title {

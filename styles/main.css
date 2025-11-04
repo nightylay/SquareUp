@@ -566,14 +566,11 @@ h5,
     padding-top: 80px;
   }
 }
-.hero__main {
-  max-width: 865px;
-  margin-inline: auto;
-}
-.hero__body {
+.hero__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-inline: 7px;
 }
 .hero__title {
   text-align: center;
