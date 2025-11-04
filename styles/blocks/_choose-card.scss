@@ -1,19 +1,18 @@
 @use '../helpers' as *;
 
 .choose-card {
-  min-height: 378px;
   padding: 80px;
+  min-height: 380px;
   height: 100%;
   border: 1px solid var(--color-grey-15);
 
   @include laptop {
     padding: 60px;
-    min-height: 292px;
+    min-height: 230px;
   }
 
   @include tablet {
     padding: 30px;
-    min-height: 267px;
   }
 
   &__header {
