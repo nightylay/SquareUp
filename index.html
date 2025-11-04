@@ -1,252 +1,393 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="assets/images/logo.svg" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="./scripts/main.js" type="module"></script>
+    <title>SquareUp</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <link rel="stylesheet" href="assets/images/logo.svg" />
-  <link rel="stylesheet" href="styles/main.css" />
-  <script src="./scripts/main.js" type="module"></script>
-  <title>Document</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__inner container">
-      <a href="#" class="header__logo logo">
-        <img class="logo__image" src="./assets/images/logo.svg" alt="" width="178" height="60" />
-      </a>
-      <div class="header__overlay" data-js-header-overlay>
-        <nav class="header__menu nav-menu">
-          <ul class="header__menu-list nav-menu__list">
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link is-active">Home</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">Services</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">Work</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">Process</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">About</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">Careers</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="#" class="header__contact-link button button--accent">Contact Us</a>
-      </div>
-      <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
-        title="Open menu" data-js-burger-button>
-        <span class="burger-button__line"></span>
-        <span class="burger-button__line"></span>
-        <span class="burger-button__line"></span>
-      </button>
-    </div>
-  </header>
-  <main class="content">
-    <div class="container">
-      <div class="content-main">
-        <section class="hero" aria-labelledby="hero-title">
-          <div class="hero__inner">
-            <h1 class="hero__title" id="hero-title">A Digital Product Studio<br>
-              that will Work</h1>
-            <div class="hero__info glass-bg">
-              For <span class="hero__info-accent">Startups</span> , <span class="hero__info-accent">Enterprise
-                leaders</span> , <span class="hero__info-accent"> Media & Publishers</span> and <span
-                class="hero__info-accent">
-                Social Good</span>
-            </div>
-            <div class="hero__actions">
-              <a class="hero__works-link button glass-bg" href="#">Our Works</a>
-              <a href="#" class="hero__contact-link button button--accent">Contact Us</a>
-            </div>
-          </div>
-        </section>
-        <section class="companies" aria-labelledby="companies-title">
-          <h2 class="visually-hidden" id="companies-title">Trusted companies</h2>
-          <div class="companies__inner">
-            <div class="companies__count">
-              Trusted By 250+ Companies
-            </div>
-            <ul class="companies__logo-list">
-
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/zapier.svg" alt="zapier" width="100"
-                  height="50" loading="lazy">
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#" class="header__logo logo">
+          <img
+            class="logo__image"
+            src="./assets/images/logo.svg"
+            alt=""
+            width="178"
+            height="60"
+          />
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu nav-menu">
+            <ul class="header__menu-list nav-menu__list">
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link is-active"
+                  >Home</a
+                >
               </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/spotify.svg" alt="spotify" width="146"
-                  height="50" loading="lazy">
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link"
+                  >Services</a
+                >
               </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/zoom.svg" alt="zoom" width="102"
-                  height="50" loading="lazy">
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link">Work</a>
               </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/slack.svg" alt="slack" width="126"
-                  height="50" loading="lazy">
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link">Process</a>
               </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/amazon.svg" alt="amazon" width="114"
-                  height="50" loading="lazy">
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link">About</a>
               </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/adobe.svg" alt="adobe" width="138"
-                  height="50" loading="lazy">
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link">Careers</a>
               </li>
             </ul>
-          </div>
-        </section>
-        <section class="section services" aria-labelledby="services-title">
-          <header class="section__header section__header--services">
-            <div class="section__header-inner">
-              <h2 class="section__header-title services__header-title" id="services-title">Our Services</h2>
-              <div class="section__header-description services__header-description">
-                <p>Transform your brand with our innovative digital solutions that captivate and engage your audience.
-                </p>
+          </nav>
+          <a href="#" class="header__contact-link button button--accent"
+            >Contact Us</a
+          >
+        </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <div class="container">
+        <div class="content-main">
+          <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__inner">
+              <h1 class="hero__title" id="hero-title">
+                A Digital Product Studio<br />
+                that will Work
+              </h1>
+              <div class="hero__info glass-bg">
+                For <span class="hero__info-accent">Startups</span> ,
+                <span class="hero__info-accent">Enterprise leaders</span> ,
+                <span class="hero__info-accent"> Media & Publishers</span> and
+                <span class="hero__info-accent"> Social Good</span>
+              </div>
+              <div class="hero__actions">
+                <a class="hero__works-link button glass-bg" href="#"
+                  >Our Works</a
+                >
+                <a href="#" class="hero__contact-link button button--accent"
+                  >Contact Us</a
+                >
               </div>
             </div>
-          </header>
-          <div class="section__body">
-            <ul class="services__list grid grid--3">
-              <li class="services__item">
-                <article class="service-card">
-                  <div class="service-card__header">
-                    <img class="service-card__image" src="./assets/icons/services/services-1.svg" alt="" width="88"
-                      height="88" loading="lazy">
-                    <h3 class="service-card__title">Design</h3>
-                  </div>
-                  <div class="service-card__description">
-                    <p>At Squareup, our design team is passionate about creating stunning, user-centric designs that
-                      captivate your audience
-                      and elevate your brand. We believe that great design is not just about aesthetics; it's about
-                      creating seamless and
-                      intuitive user experiences.</p>
-                  </div>
-                  <a class="service-card__link button" href="#">Learn More</a>
-                </article>
-              </li>
-              <li class="services__item">
-                <article class="service-card">
-                  <div class="service-card__header">
-                    <img class="service-card__image" src="./assets/icons/services/services-2.svg" alt="" width="88"
-                      height="88" loading="lazy">
-                    <h3 class="service-card__title">Engineering</h3>
-                  </div>
-                  <div class="service-card__description">
-                    <p>Our engineering team combines technical expertise with a passion for innovation to build robust
-                      and scalable digital
-                      solutions. We leverage the latest technologies and best practices to deliver high-performance
-                      applications tailored to
-                      your specific needs.</p>
-                  </div>
-                  <a class="service-card__link button" href="#">Learn More</a>
-                </article>
-              </li>
-              <li class="services__item">
-                <article class="service-card">
-                  <div class="service-card__header">
-                    <img class="service-card__image" src="./assets/icons/services/services-3.svg" alt="" width="88"
-                      height="88" loading="lazy">
-                    <h3 class="service-card__title">Project Management</h3>
-                  </div>
-                  <div class="service-card__description">
-                    <p>Our experienced project management team ensures that your projects are delivered on time, within
-                      budget, and according
-                      to your specifications. We follow industry-standard methodologies and employ effective
-                      communication and collaboration
-                      tools to keep you informed throughout the development process.</p>
-                  </div>
-                  <a class="service-card__link button" href="#">Learn More</a>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="section choose" aria-labelledby="choose-title">
-          <header class="section__header section__header--choose">
-            <div class="section__header-inner">
-              <h2 class="section__header-title choose__header-title" id="choose-title">Why Choose SquareUp?</h2>
-              <div class="section__header-description choose__header-description">
-                <p>Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to
-                  delivering
-                  exceptional results.
-                </p>
-              </div>
+          </section>
+          <section class="companies" aria-labelledby="companies-title">
+            <h2 class="visually-hidden" id="companies-title">
+              Trusted companies
+            </h2>
+            <div class="companies__inner">
+              <div class="companies__count">Trusted By 250+ Companies</div>
+              <ul class="companies__logo-list">
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/zapier.svg"
+                    alt="zapier"
+                    width="100"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/spotify.svg"
+                    alt="spotify"
+                    width="146"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/zoom.svg"
+                    alt="zoom"
+                    width="102"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/slack.svg"
+                    alt="slack"
+                    width="126"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/amazon.svg"
+                    alt="amazon"
+                    width="114"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/adobe.svg"
+                    alt="adobe"
+                    width="138"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
             </div>
-          </header>
-          <div class="section__body">
-            <ul class="choose__list grid grid--2">
-              <li class="choose__item">
-                <article class="choose-card">
-                  <div class="choose-card__header">
-                    <img class="choose-card__image" src="./assets/icons/choose/choose-1.svg" alt="" width="88"
-                      height="88" loading="lazy">
-                    <h5 class="choose-card__title">Expertise</h5>
-                  </div>
-                  <div class="choose-card__description">
-                    <p>Our team consists of highly skilled professionals who have a deep understanding of the digital
-                      landscape. We stay
-                      updated with the latest industry trends and best practices to deliver cutting-edge solutions.</p>
-                  </div>
-                </article>
-              </li>
-              <li class="choose__item">
-                <article class="choose-card">
-                  <div class="choose-card__header">
-                    <img class="choose-card__image" src="./assets/icons/choose/choose-2.svg" alt="" width="88"
-                      height="88" loading="lazy">
-                    <h5 class="choose-card__title">Client-Centric Approach</h5>
-                  </div>
-                  <div class="choose-card__description">
-                    <p>We prioritize our clients and their unique needs. We listen to your ideas, challenges, and goals,
-                      and tailor our
-                      services to meet your specific requirements. Your success is our success.</p>
-                  </div>
-                </article>
-              </li>
-              <li class="choose__item">
-                <article class="choose-card">
-                  <div class="choose-card__header">
-                    <img class="choose-card__image" src="./assets/icons/choose/choose-3.svg" alt="" width="88"
-                      height="88" loading="lazy">
-                    <h5 class="choose-card__title">Results-Driven Solutions</h5>
-                  </div>
-                  <div class="choose-card__description">
-                    <p>Our primary focus is on delivering results. We combine creativity and technical expertise to
-                      create digital products
-                      that drive business growth, enhance user experiences, and provide a competitive advantage.</p>
-                  </div>
-                </article>
-              </li>
-              <li class="choose__item">
-                <article class="choose-card">
-                  <div class="choose-card__header">
-                    <img class="choose-card__image" src="./assets/icons/choose/choose-4.svg" alt="" width="88"
-                      height="88" loading="lazy">
-                    <h5 class="choose-card__title">Collaborative Partnership</h5>
-                  </div>
-                  <div class="choose-card__description">
-                    <p>We value long-term relationships with our clients. We see ourselves as your digital partner,
-                      providing ongoing support,
-                      maintenance, and updates to ensure your digital products continue to thrive.</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </section>
+          </section>
+          <section class="section services" aria-labelledby="services-title">
+            <header class="section__header section__header--services">
+              <div class="section__header-inner">
+                <h2
+                  class="section__header-title services__header-title"
+                  id="services-title"
+                >
+                  Our Services
+                </h2>
+                <div
+                  class="section__header-description services__header-description"
+                >
+                  <p>
+                    Transform your brand with our innovative digital solutions
+                    that captivate and engage your audience.
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="section__body">
+              <ul class="services__list grid grid--3">
+                <li class="services__item">
+                  <article class="service-card">
+                    <div class="service-card__header">
+                      <img
+                        class="service-card__image"
+                        src="./assets/icons/services/services-1.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h3 class="service-card__title">Design</h3>
+                    </div>
+                    <div class="service-card__description">
+                      <p>
+                        At Squareup, our design team is passionate about
+                        creating stunning, user-centric designs that captivate
+                        your audience and elevate your brand. We believe that
+                        great design is not just about aesthetics; it's about
+                        creating seamless and intuitive user experiences.
+                      </p>
+                    </div>
+                    <a class="service-card__link button" href="#">Learn More</a>
+                  </article>
+                </li>
+                <li class="services__item">
+                  <article class="service-card">
+                    <div class="service-card__header">
+                      <img
+                        class="service-card__image"
+                        src="./assets/icons/services/services-2.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h3 class="service-card__title">Engineering</h3>
+                    </div>
+                    <div class="service-card__description">
+                      <p>
+                        Our engineering team combines technical expertise with a
+                        passion for innovation to build robust and scalable
+                        digital solutions. We leverage the latest technologies
+                        and best practices to deliver high-performance
+                        applications tailored to your specific needs.
+                      </p>
+                    </div>
+                    <a class="service-card__link button" href="#">Learn More</a>
+                  </article>
+                </li>
+                <li class="services__item">
+                  <article class="service-card">
+                    <div class="service-card__header">
+                      <img
+                        class="service-card__image"
+                        src="./assets/icons/services/services-3.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h3 class="service-card__title">Project Management</h3>
+                    </div>
+                    <div class="service-card__description">
+                      <p>
+                        Our experienced project management team ensures that
+                        your projects are delivered on time, within budget, and
+                        according to your specifications. We follow
+                        industry-standard methodologies and employ effective
+                        communication and collaboration tools to keep you
+                        informed throughout the development process.
+                      </p>
+                    </div>
+                    <a class="service-card__link button" href="#">Learn More</a>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="section choose" aria-labelledby="choose-title">
+            <header class="section__header section__header--choose">
+              <div class="section__header-inner">
+                <h2
+                  class="section__header-title choose__header-title"
+                  id="choose-title"
+                >
+                  Why Choose SquareUp?
+                </h2>
+                <div
+                  class="section__header-description choose__header-description"
+                >
+                  <p>
+                    Experience excellence in digital craftsmanship with our team
+                    of skilled professionals dedicated to delivering exceptional
+                    results.
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="section__body">
+              <ul class="choose__list grid grid--2">
+                <li class="choose__item">
+                  <article class="choose-card">
+                    <div class="choose-card__header">
+                      <img
+                        class="choose-card__image"
+                        src="./assets/icons/choose/choose-1.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h5 class="choose-card__title">Expertise</h5>
+                    </div>
+                    <div class="choose-card__description">
+                      <p>
+                        Our team consists of highly skilled professionals who
+                        have a deep understanding of the digital landscape. We
+                        stay updated with the latest industry trends and best
+                        practices to deliver cutting-edge solutions.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="choose__item">
+                  <article class="choose-card">
+                    <div class="choose-card__header">
+                      <img
+                        class="choose-card__image"
+                        src="./assets/icons/choose/choose-2.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h5 class="choose-card__title">
+                        Client-Centric Approach
+                      </h5>
+                    </div>
+                    <div class="choose-card__description">
+                      <p>
+                        We prioritize our clients and their unique needs. We
+                        listen to your ideas, challenges, and goals, and tailor
+                        our services to meet your specific requirements. Your
+                        success is our success.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="choose__item">
+                  <article class="choose-card">
+                    <div class="choose-card__header">
+                      <img
+                        class="choose-card__image"
+                        src="./assets/icons/choose/choose-3.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h5 class="choose-card__title">
+                        Results-Driven Solutions
+                      </h5>
+                    </div>
+                    <div class="choose-card__description">
+                      <p>
+                        Our primary focus is on delivering results. We combine
+                        creativity and technical expertise to create digital
+                        products that drive business growth, enhance user
+                        experiences, and provide a competitive advantage.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="choose__item">
+                  <article class="choose-card">
+                    <div class="choose-card__header">
+                      <img
+                        class="choose-card__image"
+                        src="./assets/icons/choose/choose-4.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h5 class="choose-card__title">
+                        Collaborative Partnership
+                      </h5>
+                    </div>
+                    <div class="choose-card__description">
+                      <p>
+                        We value long-term relationships with our clients. We
+                        see ourselves as your digital partner, providing ongoing
+                        support, maintenance, and updates to ensure your digital
+                        products continue to thrive.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
-  </main>
-
-</body>
-
+    </main>
+  </body>
 </html>
