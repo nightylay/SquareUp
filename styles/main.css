@@ -496,11 +496,12 @@ h5,
 @media (width <= 1440.98px) {
   .service-card {
     padding: 40px;
+    min-height: 510px;
   }
 }
 @media (width <= 1023.98px) {
   .service-card {
-    min-height: 350px;
+    min-height: 344px;
     padding: 30px;
   }
 }
@@ -539,15 +540,25 @@ h5,
     margin-bottom: 0;
   }
 }
-.service-card__title:not(:last-child) {
+.service-card__title {
   margin-bottom: 20px;
+}
+@media (width <= 1440.98px) {
+  .service-card__title {
+    margin-bottom: 14px;
+  }
+}
+@media (width <= 1023.98px) {
+  .service-card__title {
+    margin-bottom: 0;
+  }
 }
 .service-card__description {
   font-size: clamp(14px, 1.0025062657vw, 16px);
   flex: 1 1 auto;
 }
 .service-card__description:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .service-card__link {
   display: flex;

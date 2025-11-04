@@ -10,10 +10,11 @@
 
   @include laptop {
     padding: 40px;
+    min-height: 510px;
   }
 
   @include tablet {
-    min-height: 350px;
+    min-height: 344px;
     padding: 30px;
   }
 
@@ -54,8 +55,14 @@
   }
 
   &__title {
-    &:not(:last-child) {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
+
+    @include laptop {
+      margin-bottom: 14px;
+    }
+
+    @include tablet {
+      margin-bottom: 0;
     }
   }
 
@@ -64,7 +71,7 @@
 
     flex: 1 1 auto;
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
   }
 
