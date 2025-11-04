@@ -377,7 +377,7 @@ h6, .h6 {
 .grid--12 {
   --gridColumns: 12;
 }
-@media (width <= 767.98px) {
+@media (width <= 1023.98px) {
   .grid--2 {
     --gridColumns: 1;
   }
