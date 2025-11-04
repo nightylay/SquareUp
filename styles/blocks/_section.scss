@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.section {
+  &__header {
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 336px;
+      padding: 120px 50px;
+
+      @include laptop {
+        height: 280px;
+        padding: 100px 50px;
+      }
+
+      @include tablet {
+        height: 188px;
+        padding: 50px 50px;
+      }
+    }
+
+    &-title,
+    &-description {
+      text-align: center;
+    }
+  }
+}

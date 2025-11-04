@@ -1,0 +1,81 @@
+@use '../helpers' as *;
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  min-height: 577px;
+  height: 100%;
+  border: 1px solid var(--color-grey-15);
+
+  @include laptop {
+    padding: 40px;
+  }
+
+  @include tablet {
+    min-height: 350px;
+    padding: 30px;
+  }
+
+  &__header {
+    @include tablet-above {
+      display: contents;
+    }
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__image {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @include laptop {
+      @include square(70px);
+    }
+
+    @include mobile {
+      @include square(50px);
+    }
+
+    @include tablet {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    @include fluid-text(16, 14);
+
+    flex: 1 1 auto;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    @include flex-center();
+
+    background-color: var(--color-grey-15);
+    margin-top: auto;
+
+    @include hover {
+      background-color: var(--color-grey-20);
+    }
+  }
+}
