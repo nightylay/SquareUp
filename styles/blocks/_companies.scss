@@ -1,12 +1,75 @@
+@use '../helpers' as *;
+
 .companies {
+  position: relative;
+  border-top: 1px solid var(--color-grey-15);
+  border-bottom: 1px solid var(--color-grey-15);
+
   &__count {
-    margin-top: -80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: inline-block;
     border: 1px solid var(--color-grey-15);
-    padding: 20px 34px;
+    padding: 1.1em 1.8em;
     border-radius: 100px;
     font-weight: 500;
     color: var(--color-white-alternate);
     background-color: var(--color-grey-10);
+    white-space: nowrap;
+  }
+
+  &__logo {
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 20px;
+      padding-block: 40px;
+
+      @include tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        column-gap: 0;
+        padding: 0;
+
+        & > *:nth-child(-n + 3) {
+          min-height: 120px;
+          padding-top: 20px;
+        }
+      }
+    }
+
+    &-item {
+      @include flex-center();
+
+      width: 250px;
+      min-height: 90px;
+
+      @include tablet {
+        width: 100%;
+        border: 1px solid var(--color-grey-15);
+        min-height: 100px;
+      }
+    }
+
+    &-image {
+      flex-shrink: 0;
+
+      @include laptop-s {
+        width: 70%;
+      }
+
+      @include tablet {
+        width: 50%;
+      }
+
+      @include mobile {
+        width: 70%;
+      }
+      @include mobile-s {
+        width: 80%;
+      }
+    }
   }
 }
