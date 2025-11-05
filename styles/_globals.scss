@@ -37,13 +37,15 @@ button {
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h5, .h5 {
+h5, .h5, 
+h6, .h6{
   font-weight: 600;
   color: var(--color-white);
 }
 
 h4, .h4,
-h5, .h5 {
+h5, .h5,
+h6, .h6 {
   font-weight: 500;
 }
 
@@ -71,7 +73,8 @@ h5, .h5 {
 
 h6, .h6 {
   @include fluid-text(22, 16);
-  color: var(--color-green-70);
+
+  color: var(--color-white);
 }
 
 :focus-visible {

@@ -1,0 +1,54 @@
+@use '../helpers' as *;
+
+.questions {
+  &__inner {
+    padding: 60px 0px;
+  }
+
+  &__list {
+    counter-reset: custom-counter;
+    list-style: none;
+  }
+
+  &__item {
+    counter-increment: custom-counter;
+  }
+
+  &__accordion {
+    border: 1px solid var(--color-grey-15);
+    padding: 34px 50px;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+
+      &::before {
+        @include flex-center();
+        @include fluid-text(28, 20);
+        @include square(80px);
+
+        content: counter(custom-counter, decimal-leading-zero);
+        font-weight: 600;
+        background: linear-gradient(
+          180deg,
+          #242424 0%,
+          rgba(36, 36, 36, 0) 100%
+        );
+        padding: 20px;
+        border-radius: var(--border-radius-12);
+      }
+    }
+
+    &-indicator {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
