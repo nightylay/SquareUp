@@ -450,19 +450,16 @@ h6, .h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 336px;
   padding: 120px 50px;
 }
 @media (width <= 1440.98px) {
   .section__header-inner {
-    height: 280px;
     padding: 100px 50px;
   }
 }
 @media (width <= 1023.98px) {
   .section__header-inner {
-    height: 188px;
-    padding: 50px 50px;
+    padding: 50px 16px;
   }
 }
 .section__header-title, .section__header-description {
