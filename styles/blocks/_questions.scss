@@ -3,6 +3,9 @@
 .questions {
   &__inner {
     padding: 60px 0px;
+    position: relative;
+    border-top: 1px solid var(--color-grey-15);
+    border-bottom: 1px solid var(--color-grey-15);
   }
 
   &__list {
@@ -16,7 +19,30 @@
 
   &__accordion {
     border: 1px solid var(--color-grey-15);
+    cursor: pointer;
     padding: 34px 50px;
+    max-width: 798px;
+
+    @include laptop {
+      padding: 30px 40px;
+    }
+
+    @include mobile {
+      padding: 30px 24px;
+    }
+
+    &[open] {
+      .questions__accordion-title {
+        color: var(--color-green-70);
+      }
+      .questions__accordion-indicator {
+        color: var(--color-green-70);
+        &-image {
+          rotate: 45deg;
+          transition-duration: 0.4s;
+        }
+      }
+    }
 
     &-header {
       display: flex;
@@ -44,6 +70,11 @@
         padding: 20px;
         border-radius: var(--border-radius-12);
       }
+    }
+
+    &-body {
+      max-width: 588px;
+      margin-left: auto;
     }
 
     &-indicator {
