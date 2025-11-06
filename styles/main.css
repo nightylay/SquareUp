@@ -1041,33 +1041,46 @@ h6, .h6 {
 }
 
 .questions__inner {
-  padding: 60px 0px;
-  position: relative;
   border-top: 1px solid var(--color-grey-15);
   border-bottom: 1px solid var(--color-grey-15);
+  padding-block: 80px;
+}
+.questions__inner:has(.questions__accordion[open]) .questions__list {
+  min-height: 1000px;
 }
 .questions__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 560px;
   counter-reset: custom-counter;
   list-style: none;
 }
 .questions__item {
   counter-increment: custom-counter;
+  width: 50%;
+}
+.questions__item:has(.questions__accordion[open]) .questions__counter::before {
+  color: var(--color-green-70);
+}
+.questions__card {
+  min-height: 140px;
+  display: flex;
+  column-gap: 30px;
+  border: 1px solid var(--color-grey-15);
+  padding: 34px 50px;
+}
+.questions__counter::before {
+  font-size: clamp(20px, 1.7543859649vw, 28px);
+  width: 80px;
+  height: 80px;
+  content: counter(custom-counter, decimal-leading-zero);
+  background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+  padding: 20px;
+  border-radius: var(--border-radius-12);
 }
 .questions__accordion {
-  border: 1px solid var(--color-grey-15);
-  cursor: pointer;
-  padding: 34px 50px;
-  max-width: 798px;
-}
-@media (width <= 1440.98px) {
-  .questions__accordion {
-    padding: 30px 40px;
-  }
-}
-@media (width <= 767.98px) {
-  .questions__accordion {
-    padding: 30px 24px;
-  }
+  width: 100%;
 }
 .questions__accordion[open] .questions__accordion-title {
   color: var(--color-green-70);
@@ -1077,38 +1090,22 @@ h6, .h6 {
 }
 .questions__accordion[open] .questions__accordion-indicator-image {
   rotate: 45deg;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
 }
 .questions__accordion-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.questions__accordion-title {
-  display: flex;
-  align-items: center;
   column-gap: 30px;
-}
-.questions__accordion-title::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: clamp(20px, 1.7543859649vw, 28px);
-  width: 80px;
-  height: 80px;
-  content: counter(custom-counter, decimal-leading-zero);
-  font-weight: 600;
-  background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
-  padding: 20px;
-  border-radius: var(--border-radius-12);
+  cursor: pointer;
 }
 .questions__accordion-body {
-  max-width: 588px;
-  margin-left: auto;
+  padding-top: 20px;
 }
 .questions__accordion-indicator {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

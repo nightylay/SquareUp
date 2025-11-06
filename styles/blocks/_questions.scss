@@ -2,44 +2,72 @@
 
 .questions {
   &__inner {
-    padding: 60px 0px;
-    position: relative;
     border-top: 1px solid var(--color-grey-15);
     border-bottom: 1px solid var(--color-grey-15);
+    padding-block: 80px;
+
+    &:has(.questions__accordion[open]) {
+      .questions__list {
+        min-height: 1000px;
+      }
+    }
   }
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 560px;
     counter-reset: custom-counter;
     list-style: none;
   }
 
   &__item {
     counter-increment: custom-counter;
+    width: 50%;
+
+    &:has(.questions__accordion[open]) {
+      .questions__counter::before {
+        color: var(--color-green-70);
+      }
+    }
+  }
+
+  &__card {
+    min-height: 140px;
+    display: flex;
+    column-gap: 30px;
+    border: 1px solid var(--color-grey-15);
+    padding: 34px 50px;
+  }
+
+  &__counter {
+    &::before {
+      @include fluid-text(28, 20);
+      @include square(80px);
+
+      content: counter(custom-counter, decimal-leading-zero);
+      background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+      padding: 20px;
+      border-radius: var(--border-radius-12);
+    }
   }
 
   &__accordion {
-    border: 1px solid var(--color-grey-15);
-    cursor: pointer;
-    padding: 34px 50px;
-    max-width: 798px;
-
-    @include laptop {
-      padding: 30px 40px;
-    }
-
-    @include mobile {
-      padding: 30px 24px;
-    }
+    width: 100%;
 
     &[open] {
-      .questions__accordion-title {
-        color: var(--color-green-70);
-      }
-      .questions__accordion-indicator {
-        color: var(--color-green-70);
-        &-image {
-          rotate: 45deg;
-          transition-duration: 0.4s;
+      .questions__accordion {
+        &-title {
+          color: var(--color-green-70);
+        }
+
+        &-indicator {
+          color: var(--color-green-70);
+          &-image {
+            rotate: 45deg;
+            transition-duration: 0.3s;
+          }
         }
       }
     }
@@ -47,39 +75,18 @@
     &-header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-    }
-
-    &-title {
-      display: flex;
-      align-items: center;
       column-gap: 30px;
-
-      &::before {
-        @include flex-center();
-        @include fluid-text(28, 20);
-        @include square(80px);
-
-        content: counter(custom-counter, decimal-leading-zero);
-        font-weight: 600;
-        background: linear-gradient(
-          180deg,
-          #242424 0%,
-          rgba(36, 36, 36, 0) 100%
-        );
-        padding: 20px;
-        border-radius: var(--border-radius-12);
-      }
+      cursor: pointer;
     }
 
     &-body {
-      max-width: 588px;
-      margin-left: auto;
+      padding-top: 20px;
     }
 
     &-indicator {
-      display: flex;
-      align-items: center;
+      @include flex-center;
+
+      margin-left: auto;
     }
   }
 }
