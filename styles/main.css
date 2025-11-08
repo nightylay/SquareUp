@@ -439,18 +439,6 @@ h6, .h6 {
   }
 }
 
-.section__header--services {
-  background: url("../../assets/images/backgrounds/bg-1.webp") center/cover no-repeat;
-}
-.section__header--choose {
-  background: url("../../assets/images/backgrounds/bg-2.webp") center/cover no-repeat;
-}
-.section__header--clients {
-  background: url("../../assets/images/backgrounds/bg-3.webp") center/cover no-repeat;
-}
-.section__header--questions {
-  background: url("../../assets/images/backgrounds/bg-4.webp") center/cover no-repeat;
-}
 .section__header-inner {
   display: flex;
   flex-direction: column;
@@ -1040,6 +1028,21 @@ h6, .h6 {
   }
 }
 
+.services__header {
+  background: url("../../assets/images/backgrounds/bg-1.webp") center/cover no-repeat;
+}
+
+.choose__header {
+  background: url("../../assets/images/backgrounds/bg-2.webp") center/cover no-repeat;
+}
+
+.clients__header {
+  background: url("../../assets/images/backgrounds/bg-3.webp") center/cover no-repeat;
+}
+
+.questions__header {
+  background: url("../../assets/images/backgrounds/bg-4.webp") center/cover no-repeat;
+}
 .questions__inner {
   position: relative;
   border-top: 1px solid var(--color-grey-15);
