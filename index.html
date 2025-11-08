@@ -1,757 +1,988 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" href="assets/images/logo-2.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="./scripts/main.js" type="module"></script>
+    <title>SquareUp</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <link rel="icon" href="assets/images/logo-2.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="styles/main.css" />
-  <script src="./scripts/main.js" type="module"></script>
-  <title>SquareUp</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__inner container">
-      <a href="#" class="header__logo logo">
-        <img class="logo__image" src="./assets/images/logo.svg" alt="" width="178" height="60" />
-      </a>
-      <div class="header__overlay" data-js-header-overlay>
-        <nav class="header__menu nav-menu">
-          <ul class="header__menu-list nav-menu__list">
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link is-active">Home</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">Services</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">Work</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">Process</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">About</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="#" class="header__menu-link nav-menu__link">Careers</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="#" class="header__contact-link button button--accent">Contact Us</a>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#" class="header__logo logo">
+          <img
+            class="logo__image"
+            src="./assets/images/logo.svg"
+            alt=""
+            width="178"
+            height="60"
+          />
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu nav-menu">
+            <ul class="header__menu-list nav-menu__list">
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link is-active"
+                  >Home</a
+                >
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link"
+                  >Services</a
+                >
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link">Work</a>
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link">Process</a>
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link">About</a>
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a href="#" class="header__menu-link nav-menu__link">Careers</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="header__contact-link button button--accent"
+            >Contact Us</a
+          >
+        </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
       </div>
-      <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
-        title="Open menu" data-js-burger-button>
-        <span class="burger-button__line"></span>
-        <span class="burger-button__line"></span>
-        <span class="burger-button__line"></span>
-      </button>
-    </div>
-  </header>
-  <main class="content">
-    <div class="container">
-      <div class="content-main">
-        <section class="hero" aria-labelledby="hero-title">
-          <div class="hero__inner">
-            <h1 class="hero__title" id="hero-title">
-              A Digital Product Studio<br />
-              that will Work
-            </h1>
-            <div class="hero__info glass-bg">
-              For <span class="hero__info-accent">Startups</span> ,
-              <span class="hero__info-accent">Enterprise leaders</span> ,
-              <span class="hero__info-accent"> Media & Publishers</span> and
-              <span class="hero__info-accent"> Social Good</span>
-            </div>
-            <div class="hero__actions">
-              <a class="hero__works-link button glass-bg" href="#">Our Works</a>
-              <a href="#" class="hero__contact-link button button--accent">Contact Us</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="companies" aria-labelledby="companies-title">
-          <h2 class="visually-hidden" id="companies-title">
-            Trusted companies
-          </h2>
-          <div class="companies__inner">
-            <div class="companies__count">Trusted By 250+ Companies</div>
-            <ul class="companies__logo-list">
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/zapier.svg" alt="zapier" width="100"
-                  height="50" loading="lazy" />
-              </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/spotify.svg" alt="spotify" width="146"
-                  height="50" loading="lazy" />
-              </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/zoom.svg" alt="zoom" width="102"
-                  height="50" loading="lazy" />
-              </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/slack.svg" alt="slack" width="126"
-                  height="50" loading="lazy" />
-              </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/amazon.svg" alt="amazon" width="114"
-                  height="50" loading="lazy" />
-              </li>
-              <li class="companies__logo-item">
-                <img class="companies__logo-image" src="./assets/images/companies/adobe.svg" alt="adobe" width="138"
-                  height="50" loading="lazy" />
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section services" aria-labelledby="services-title">
-          <header class="section__header section__header--services">
-            <div class="section__header-inner">
-              <h2 class="section__header-title services__header-title" id="services-title">
-                Our Services
-              </h2>
-              <div class="section__header-description services__header-description">
-                <p>
-                  Transform your brand with our innovative digital solutions
-                  that captivate and engage your audience.
-                </p>
+    </header>
+    <main class="content">
+      <div class="container">
+        <div class="content-main">
+          <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__inner">
+              <h1 class="hero__title" id="hero-title">
+                A Digital Product Studio<br />
+                that will Work
+              </h1>
+              <div class="hero__info glass-bg">
+                For <span class="hero__info-accent">Startups</span> ,
+                <span class="hero__info-accent">Enterprise leaders</span> ,
+                <span class="hero__info-accent"> Media & Publishers</span> and
+                <span class="hero__info-accent"> Social Good</span>
+              </div>
+              <div class="hero__actions">
+                <a class="hero__works-link button glass-bg" href="#"
+                  >Our Works</a
+                >
+                <a href="#" class="hero__contact-link button button--accent"
+                  >Contact Us</a
+                >
               </div>
             </div>
-          </header>
-          <div class="section__body">
-            <ul class="services__list grid grid--3">
-              <li class="services__item">
-                <article class="service-card">
-                  <div class="service-card__header">
-                    <img class="service-card__image" src="./assets/icons/services/services-1.svg" alt="" width="88"
-                      height="88" loading="lazy" />
-                    <h3 class="service-card__title">Design</h3>
-                  </div>
-                  <div class="service-card__description">
-                    <p>
-                      At Squareup, our design team is passionate about
-                      creating stunning, user-centric designs that captivate
-                      your audience and elevate your brand. We believe that
-                      great design is not just about aesthetics; it's about
-                      creating seamless and intuitive user experiences.
-                    </p>
-                  </div>
-                  <a class="service-card__link button button--grey" href="#">Learn More</a>
-                </article>
-              </li>
-              <li class="services__item">
-                <article class="service-card">
-                  <div class="service-card__header">
-                    <img class="service-card__image" src="./assets/icons/services/services-2.svg" alt="" width="88"
-                      height="88" loading="lazy" />
-                    <h3 class="service-card__title">Engineering</h3>
-                  </div>
-                  <div class="service-card__description">
-                    <p>
-                      Our engineering team combines technical expertise with a
-                      passion for innovation to build robust and scalable
-                      digital solutions. We leverage the latest technologies
-                      and best practices to deliver high-performance
-                      applications tailored to your specific needs.
-                    </p>
-                  </div>
-                  <a class="service-card__link button button--grey" href="#">Learn More</a>
-                </article>
-              </li>
-              <li class="services__item">
-                <article class="service-card">
-                  <div class="service-card__header">
-                    <img class="service-card__image" src="./assets/icons/services/services-3.svg" alt="" width="88"
-                      height="88" loading="lazy" />
-                    <h3 class="service-card__title">Project Management</h3>
-                  </div>
-                  <div class="service-card__description">
-                    <p>
-                      Our experienced project management team ensures that
-                      your projects are delivered on time, within budget, and
-                      according to your specifications. We follow
-                      industry-standard methodologies and employ effective
-                      communication and collaboration tools to keep you
-                      informed throughout the development process.
-                    </p>
-                  </div>
-                  <a class="service-card__link button button--grey" href="#">Learn More</a>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </section>
+          </section>
 
-        <section class="section choose" aria-labelledby="choose-title">
-          <header class="section__header section__header--choose">
-            <div class="section__header-inner">
-              <h2 class="section__header-title choose__header-title" id="choose-title">
-                Why Choose SquareUp?
-              </h2>
-              <div class="section__header-description choose__header-description">
-                <p>
-                  Experience excellence in digital craftsmanship with our team
-                  of skilled professionals dedicated to delivering exceptional
-                  results.
-                </p>
+          <section class="companies" aria-labelledby="companies-title">
+            <h2 class="visually-hidden" id="companies-title">
+              Trusted companies
+            </h2>
+            <div class="companies__inner">
+              <div class="companies__count">Trusted By 250+ Companies</div>
+              <ul class="companies__logo-list">
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/zapier.svg"
+                    alt="zapier"
+                    width="100"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/spotify.svg"
+                    alt="spotify"
+                    width="146"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/zoom.svg"
+                    alt="zoom"
+                    width="102"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/slack.svg"
+                    alt="slack"
+                    width="126"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/amazon.svg"
+                    alt="amazon"
+                    width="114"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+                <li class="companies__logo-item">
+                  <img
+                    class="companies__logo-image"
+                    src="./assets/images/companies/adobe.svg"
+                    alt="adobe"
+                    width="138"
+                    height="50"
+                    loading="lazy"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section services" aria-labelledby="services-title">
+            <header class="section__header section__header--services">
+              <div class="section__header-inner">
+                <h2
+                  class="section__header-title services__header-title"
+                  id="services-title"
+                >
+                  Our Services
+                </h2>
+                <div
+                  class="section__header-description services__header-description"
+                >
+                  <p>
+                    Transform your brand with our innovative digital solutions
+                    that captivate and engage your audience.
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="section__body">
+              <ul class="services__list grid grid--3">
+                <li class="services__item">
+                  <article class="service-card">
+                    <div class="service-card__header">
+                      <img
+                        class="service-card__image"
+                        src="./assets/icons/services/services-1.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h3 class="service-card__title">Design</h3>
+                    </div>
+                    <div class="service-card__description">
+                      <p>
+                        At Squareup, our design team is passionate about
+                        creating stunning, user-centric designs that captivate
+                        your audience and elevate your brand. We believe that
+                        great design is not just about aesthetics; it's about
+                        creating seamless and intuitive user experiences.
+                      </p>
+                    </div>
+                    <a class="service-card__link button button--grey" href="#"
+                      >Learn More</a
+                    >
+                  </article>
+                </li>
+                <li class="services__item">
+                  <article class="service-card">
+                    <div class="service-card__header">
+                      <img
+                        class="service-card__image"
+                        src="./assets/icons/services/services-2.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h3 class="service-card__title">Engineering</h3>
+                    </div>
+                    <div class="service-card__description">
+                      <p>
+                        Our engineering team combines technical expertise with a
+                        passion for innovation to build robust and scalable
+                        digital solutions. We leverage the latest technologies
+                        and best practices to deliver high-performance
+                        applications tailored to your specific needs.
+                      </p>
+                    </div>
+                    <a class="service-card__link button button--grey" href="#"
+                      >Learn More</a
+                    >
+                  </article>
+                </li>
+                <li class="services__item">
+                  <article class="service-card">
+                    <div class="service-card__header">
+                      <img
+                        class="service-card__image"
+                        src="./assets/icons/services/services-3.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h3 class="service-card__title">Project Management</h3>
+                    </div>
+                    <div class="service-card__description">
+                      <p>
+                        Our experienced project management team ensures that
+                        your projects are delivered on time, within budget, and
+                        according to your specifications. We follow
+                        industry-standard methodologies and employ effective
+                        communication and collaboration tools to keep you
+                        informed throughout the development process.
+                      </p>
+                    </div>
+                    <a class="service-card__link button button--grey" href="#"
+                      >Learn More</a
+                    >
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section choose" aria-labelledby="choose-title">
+            <header class="section__header section__header--choose">
+              <div class="section__header-inner">
+                <h2
+                  class="section__header-title choose__header-title"
+                  id="choose-title"
+                >
+                  Why Choose SquareUp?
+                </h2>
+                <div
+                  class="section__header-description choose__header-description"
+                >
+                  <p>
+                    Experience excellence in digital craftsmanship with our team
+                    of skilled professionals dedicated to delivering exceptional
+                    results.
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="section__body">
+              <ul class="choose__list grid grid--2">
+                <li class="choose__item">
+                  <article class="choose-card">
+                    <div class="choose-card__header">
+                      <img
+                        class="choose-card__image"
+                        src="./assets/icons/choose/choose-1.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h5 class="choose-card__title">Expertise</h5>
+                    </div>
+                    <div class="choose-card__description">
+                      <p>
+                        Our team consists of highly skilled professionals who
+                        have a deep understanding of the digital landscape. We
+                        stay updated with the latest industry trends and best
+                        practices to deliver cutting-edge solutions.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="choose__item">
+                  <article class="choose-card">
+                    <div class="choose-card__header">
+                      <img
+                        class="choose-card__image"
+                        src="./assets/icons/choose/choose-2.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h5 class="choose-card__title">
+                        Client-Centric Approach
+                      </h5>
+                    </div>
+                    <div class="choose-card__description">
+                      <p>
+                        We prioritize our clients and their unique needs. We
+                        listen to your ideas, challenges, and goals, and tailor
+                        our services to meet your specific requirements. Your
+                        success is our success.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="choose__item">
+                  <article class="choose-card">
+                    <div class="choose-card__header">
+                      <img
+                        class="choose-card__image"
+                        src="./assets/icons/choose/choose-3.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h5 class="choose-card__title">
+                        Results-Driven Solutions
+                      </h5>
+                    </div>
+                    <div class="choose-card__description">
+                      <p>
+                        Our primary focus is on delivering results. We combine
+                        creativity and technical expertise to create digital
+                        products that drive business growth, enhance user
+                        experiences, and provide a competitive advantage.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="choose__item">
+                  <article class="choose-card">
+                    <div class="choose-card__header">
+                      <img
+                        class="choose-card__image"
+                        src="./assets/icons/choose/choose-4.svg"
+                        alt=""
+                        width="88"
+                        height="88"
+                        loading="lazy"
+                      />
+                      <h5 class="choose-card__title">
+                        Collaborative Partnership
+                      </h5>
+                    </div>
+                    <div class="choose-card__description">
+                      <p>
+                        We value long-term relationships with our clients. We
+                        see ourselves as your digital partner, providing ongoing
+                        support, maintenance, and updates to ensure your digital
+                        products continue to thrive.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section clients" aria-labelledby="clients-title">
+            <header class="section__header section__header--clients">
+              <div class="section__header-inner">
+                <h2
+                  class="section__header-title clients-title"
+                  id="clients-title"
+                >
+                  What our Clients say About us
+                </h2>
+                <div
+                  class="section__header-description clients__header-description"
+                >
+                  <p>
+                    At SquareUp, we take pride in delivering exceptional digital
+                    products and services that drive success for our clients.
+                    Here's what some of our satisfied clients have to say about
+                    their experience working with us
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="section__body">
+              <ul class="clients__list grid grid--2">
+                <li class="clients__item">
+                  <blockquote class="client-card">
+                    <h4 class="client-card__title">
+                      SquareUp has been Instrumental in Transforming our Online
+                      Presence.
+                    </h4>
+                    <div class="client-card__body">
+                      <p>
+                        Their team's expertise in web development and design
+                        resulted in a visually stunning and user-friendly
+                        e-commerce platform. Our online sales have skyrocketed,
+                        and we couldn't be happier.
+                      </p>
+                    </div>
+
+                    <footer class="client-card__footer">
+                      <img
+                        class="client-card__footer-image"
+                        src="./assets/images/clients/client-1.webp"
+                        alt="John Smith"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="client-card__footer-body">
+                        <cite class="client-card__footer-name">John Smith</cite>
+                        <div class="client-card__footer-company">
+                          CEO of Chic Boutique
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="client-card__footer-link button button--grey"
+                        >Open Website</a
+                      >
+                    </footer>
+                  </blockquote>
+                </li>
+                <li class="clients__item">
+                  <blockquote class="client-card">
+                    <h4 class="client-card__title">
+                      Working with SquareUp was a breeze.
+                    </h4>
+                    <div class="client-card__body">
+                      <p>
+                        They understood our vision for a mobile app that
+                        streamlined our food delivery service. The app they
+                        delivered exceeded our expectations, and our customers
+                        love the seamless ordering experience. SquareUp is a
+                        trusted partner we highly recommend.
+                      </p>
+                    </div>
+
+                    <footer class="client-card__footer">
+                      <img
+                        class="client-card__footer-image"
+                        src="./assets/images/clients/client-2.webp"
+                        alt="Sarah Johnson"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="client-card__footer-body">
+                        <cite class="client-card__footer-name"
+                          >Sarah Johnson</cite
+                        >
+                        <div class="client-card__footer-company">
+                          Founder of HungryBites.
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="client-card__footer-link button button--grey"
+                        >Open Website</a
+                      >
+                    </footer>
+                  </blockquote>
+                </li>
+                <li class="clients__item">
+                  <blockquote class="client-card">
+                    <h4 class="client-card__title">
+                      SquareUp developed a comprehensive booking and reservation
+                      system for our event management company
+                    </h4>
+                    <div class="client-card__body">
+                      <p>
+                        Their attention to detail and commitment to delivering a
+                        user-friendly platform was evident throughout the
+                        project. The system has streamlined our operations and
+                        enhanced our clients' event experiences.
+                      </p>
+                    </div>
+
+                    <footer class="client-card__footer">
+                      <img
+                        class="client-card__footer-image"
+                        src="./assets/images/clients/client-3.webp"
+                        alt="Mark Thompson"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="client-card__footer-body">
+                        <cite class="client-card__footer-name"
+                          >Mark Thompson</cite
+                        >
+                        <div class="client-card__footer-company">
+                          CEO of EventMasters
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="client-card__footer-link button button--grey"
+                        >Open Website</a
+                      >
+                    </footer>
+                  </blockquote>
+                </li>
+                <li class="clients__item">
+                  <blockquote class="client-card">
+                    <h4 class="client-card__title">
+                      ProTech Solutions turned to SquareUp to automate our
+                      workflow
+                    </h4>
+                    <div class="client-card__body">
+                      <p>
+                        They delivered an exceptional custom software solution.
+                        The system has significantly increased our productivity
+                        and reduced manual errors. SquareUp's expertise and
+                        professionalism have made them a trusted technology
+                        partner.
+                      </p>
+                    </div>
+
+                    <footer class="client-card__footer">
+                      <img
+                        class="client-card__footer-image"
+                        src="./assets/images/clients/client-4.webp"
+                        alt="Laura Adams"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="client-card__footer-body">
+                        <cite class="client-card__footer-name"
+                          >Laura Adams</cite
+                        >
+                        <div class="client-card__footer-company">
+                          COO of ProTech Solutions.
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="client-card__footer-link button button--grey"
+                        >Open Website</a
+                      >
+                    </footer>
+                  </blockquote>
+                </li>
+                <li class="clients__item">
+                  <blockquote class="client-card">
+                    <h4 class="client-card__title">
+                      SquareUp designed and developed a captivating web portal
+                      for showcasing our real estate listings.
+                    </h4>
+                    <div class="client-card__body">
+                      <p>
+                        The platform is visually appealing and easy to navigate,
+                        allowing potential buyers to find their dream homes
+                        effortlessly. SquareUp's expertise in the real estate
+                        industry is unmatched.
+                      </p>
+                    </div>
+
+                    <footer class="client-card__footer">
+                      <img
+                        class="client-card__footer-image"
+                        src="./assets/images/clients/client-5.webp"
+                        alt="Michael Anderson"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="client-card__footer-body">
+                        <cite class="client-card__footer-name"
+                          >Michael Anderson</cite
+                        >
+                        <div class="client-card__footer-company">
+                          Founder of Dream Homes Realty.
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="client-card__footer-link button button--grey"
+                        >Open Website</a
+                      >
+                    </footer>
+                  </blockquote>
+                </li>
+                <li class="clients__item">
+                  <blockquote class="client-card">
+                    <h4 class="client-card__title">
+                      FitLife Tracker wanted a mobile app that tracked fitness
+                      activities and provided personalized workout plans.
+                    </h4>
+                    <div class="client-card__body">
+                      <p>
+                        SquareUp's team developed an intuitive and feature-rich
+                        app that has helped our users stay motivated and achieve
+                        their fitness goals. We highly recommend SquareUp for
+                        any health and fitness app development needs.
+                      </p>
+                    </div>
+
+                    <footer class="client-card__footer">
+                      <img
+                        class="client-card__footer-image"
+                        src="./assets/images/clients/client-6.webp"
+                        alt="Emily Turner"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="client-card__footer-body">
+                        <cite class="client-card__footer-name"
+                          >Emily Turner</cite
+                        >
+                        <div class="client-card__footer-company">
+                          CEO of FitLife Tracker
+                        </div>
+                      </div>
+                      <a
+                        href="#"
+                        class="client-card__footer-link button button--grey"
+                        >Open Website</a
+                      >
+                    </footer>
+                  </blockquote>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section questions" aria-labelledby="questions-title">
+            <header class="section__header section__header--questions">
+              <div class="section__header-inner">
+                <h2
+                  class="section__header-title questions-title"
+                  id="questions-title"
+                >
+                  Frequently Asked Questions
+                </h2>
+                <div
+                  class="section__header-description questions__header-description"
+                >
+                  <p>
+                    Still you have any questions? Contact our Team via
+                    hello@squareup.com
+                  </p>
+                </div>
+              </div>
+            </header>
+            <div class="section__body">
+              <div class="questions__inner">
+                <ol class="questions__list">
+                  <li class="questions__item">
+                    <div class="questions__card">
+                      <div class="questions__counter"></div>
+                      <details class="questions__accordion">
+                        <summary class="questions__accordion-header">
+                          <h6 class="questions__accordion-title">
+                            What services does SquareUp provide?
+                          </h6>
+                          <span class="questions__accordion-indicator">
+                            <svg
+                              class="questions__accordion-indicator-image"
+                              width="21"
+                              height="21"
+                              viewBox="0 0 21 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="questions__accordion-body">
+                          <p>
+                            SquareUp offers a range of services including
+                            design, engineering, and project management. We
+                            specialize in user experience design, web
+                            development, mobile app development, custom software
+                            development, branding and identity, and more.
+                          </p>
+                        </div>
+                      </details>
+                    </div>
+                  </li>
+                  <li class="questions__item">
+                    <div class="questions__card">
+                      <div class="questions__counter"></div>
+                      <details class="questions__accordion">
+                        <summary class="questions__accordion-header">
+                          <h6 class="questions__accordion-title">
+                            What industries does SquareUp work with?
+                          </h6>
+                          <span class="questions__accordion-indicator">
+                            <svg
+                              class="questions__accordion-indicator-image"
+                              width="21"
+                              height="21"
+                              viewBox="0 0 21 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="questions__accordion-body">
+                          <p>
+                            SquareUp offers a range of services including
+                            design, engineering, and project management. We
+                            specialize in user experience design, web
+                            development, mobile app development, custom software
+                            development, branding and identity, and more.
+                          </p>
+                        </div>
+                      </details>
+                    </div>
+                  </li>
+                  <li class="questions__item">
+                    <div class="questions__card">
+                      <div class="questions__counter"></div>
+                      <details class="questions__accordion">
+                        <summary class="questions__accordion-header">
+                          <h6 class="questions__accordion-title">
+                            How can SquareUp help my business?
+                          </h6>
+                          <span class="questions__accordion-indicator">
+                            <svg
+                              class="questions__accordion-indicator-image"
+                              width="21"
+                              height="21"
+                              viewBox="0 0 21 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="questions__accordion-body">
+                          <p>
+                            SquareUp offers a range of services including
+                            design, engineering, and project management. We
+                            specialize in user experience design, web
+                            development, mobile app development, custom software
+                            development, branding and identity, and more.
+                          </p>
+                        </div>
+                      </details>
+                    </div>
+                  </li>
+                  <li class="questions__item">
+                    <div class="questions__card">
+                      <div class="questions__counter"></div>
+                      <details class="questions__accordion">
+                        <summary class="questions__accordion-header">
+                          <h6 class="questions__accordion-title">
+                            How long does it take to complete a project with
+                            SquareUp?
+                          </h6>
+                          <span class="questions__accordion-indicator">
+                            <svg
+                              class="questions__accordion-indicator-image"
+                              width="21"
+                              height="21"
+                              viewBox="0 0 21 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="questions__accordion-body">
+                          <p>
+                            SquareUp offers a range of services including
+                            design, engineering, and project management. We
+                            specialize in user experience design, web
+                            development, mobile app development, custom software
+                            development, branding and identity, and more.
+                          </p>
+                        </div>
+                      </details>
+                    </div>
+                  </li>
+                  <li class="questions__item">
+                    <div class="questions__card">
+                      <div class="questions__counter"></div>
+                      <details class="questions__accordion">
+                        <summary class="questions__accordion-header">
+                          <h6 class="questions__accordion-title">
+                            Do you offer ongoing support and maintenance after
+                            the project is completed?
+                          </h6>
+                          <span class="questions__accordion-indicator">
+                            <svg
+                              class="questions__accordion-indicator-image"
+                              width="21"
+                              height="21"
+                              viewBox="0 0 21 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="questions__accordion-body">
+                          <p>
+                            SquareUp offers a range of services including
+                            design, engineering, and project management. We
+                            specialize in user experience design, web
+                            development, mobile app development, custom software
+                            development, branding and identity, and more.
+                          </p>
+                        </div>
+                      </details>
+                    </div>
+                  </li>
+                  <li class="questions__item">
+                    <div class="questions__card">
+                      <div class="questions__counter"></div>
+                      <details class="questions__accordion">
+                        <summary class="questions__accordion-header">
+                          <h6 class="questions__accordion-title">
+                            Can you work with existing design or development
+                            frameworks?
+                          </h6>
+                          <span class="questions__accordion-indicator">
+                            <svg
+                              class="questions__accordion-indicator-image"
+                              width="21"
+                              height="21"
+                              viewBox="0 0 21 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="questions__accordion-body">
+                          <p>
+                            SquareUp offers a range of services including
+                            design, engineering, and project management. We
+                            specialize in user experience design, web
+                            development, mobile app development, custom software
+                            development, branding and identity, and more.
+                          </p>
+                        </div>
+                      </details>
+                    </div>
+                  </li>
+                  <li class="questions__item">
+                    <div class="questions__card">
+                      <div class="questions__counter"></div>
+                      <details class="questions__accordion">
+                        <summary class="questions__accordion-header">
+                          <h6 class="questions__accordion-title">
+                            How involved will I be in the project development
+                            process?
+                          </h6>
+                          <span class="questions__accordion-indicator">
+                            <svg
+                              class="questions__accordion-indicator-image"
+                              width="21"
+                              height="21"
+                              viewBox="0 0 21 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="questions__accordion-body">
+                          <p>
+                            SquareUp offers a range of services including
+                            design, engineering, and project management. We
+                            specialize in user experience design, web
+                            development, mobile app development, custom software
+                            development, branding and identity, and more.
+                          </p>
+                        </div>
+                      </details>
+                    </div>
+                  </li>
+                  <li class="questions__item">
+                    <div class="questions__card">
+                      <div class="questions__counter"></div>
+                      <details class="questions__accordion">
+                        <summary class="questions__accordion-header">
+                          <h6 class="questions__accordion-title">
+                            Can you help with website or app maintenance and
+                            updates?
+                          </h6>
+                          <span class="questions__accordion-indicator">
+                            <svg
+                              class="questions__accordion-indicator-image"
+                              width="21"
+                              height="21"
+                              viewBox="0 0 21 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </span>
+                        </summary>
+                        <div class="questions__accordion-body">
+                          <p>
+                            SquareUp offers a range of services including
+                            design, engineering, and project management. We
+                            specialize in user experience design, web
+                            development, mobile app development, custom software
+                            development, branding and identity, and more.
+                          </p>
+                        </div>
+                      </details>
+                    </div>
+                  </li>
+                </ol>
               </div>
             </div>
-          </header>
-          <div class="section__body">
-            <ul class="choose__list grid grid--2">
-              <li class="choose__item">
-                <article class="choose-card">
-                  <div class="choose-card__header">
-                    <img class="choose-card__image" src="./assets/icons/choose/choose-1.svg" alt="" width="88"
-                      height="88" loading="lazy" />
-                    <h5 class="choose-card__title">Expertise</h5>
-                  </div>
-                  <div class="choose-card__description">
-                    <p>
-                      Our team consists of highly skilled professionals who
-                      have a deep understanding of the digital landscape. We
-                      stay updated with the latest industry trends and best
-                      practices to deliver cutting-edge solutions.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="choose__item">
-                <article class="choose-card">
-                  <div class="choose-card__header">
-                    <img class="choose-card__image" src="./assets/icons/choose/choose-2.svg" alt="" width="88"
-                      height="88" loading="lazy" />
-                    <h5 class="choose-card__title">
-                      Client-Centric Approach
-                    </h5>
-                  </div>
-                  <div class="choose-card__description">
-                    <p>
-                      We prioritize our clients and their unique needs. We
-                      listen to your ideas, challenges, and goals, and tailor
-                      our services to meet your specific requirements. Your
-                      success is our success.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="choose__item">
-                <article class="choose-card">
-                  <div class="choose-card__header">
-                    <img class="choose-card__image" src="./assets/icons/choose/choose-3.svg" alt="" width="88"
-                      height="88" loading="lazy" />
-                    <h5 class="choose-card__title">
-                      Results-Driven Solutions
-                    </h5>
-                  </div>
-                  <div class="choose-card__description">
-                    <p>
-                      Our primary focus is on delivering results. We combine
-                      creativity and technical expertise to create digital
-                      products that drive business growth, enhance user
-                      experiences, and provide a competitive advantage.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="choose__item">
-                <article class="choose-card">
-                  <div class="choose-card__header">
-                    <img class="choose-card__image" src="./assets/icons/choose/choose-4.svg" alt="" width="88"
-                      height="88" loading="lazy" />
-                    <h5 class="choose-card__title">
-                      Collaborative Partnership
-                    </h5>
-                  </div>
-                  <div class="choose-card__description">
-                    <p>
-                      We value long-term relationships with our clients. We
-                      see ourselves as your digital partner, providing ongoing
-                      support, maintenance, and updates to ensure your digital
-                      products continue to thrive.
-                    </p>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section clients" aria-labelledby="clients-title">
-          <header class="section__header section__header--clients">
-            <div class="section__header-inner">
-              <h2 class="section__header-title clients-title" id="clients-title">
-                What our Clients say About us
-              </h2>
-              <div class="section__header-description clients__header-description">
-                <p>
-                  At SquareUp, we take pride in delivering exceptional digital
-                  products and services that drive success for our clients.
-                  Here's what some of our satisfied clients have to say about
-                  their experience working with us
-                </p>
-              </div>
-            </div>
-          </header>
-          <div class="section__body">
-            <ul class="clients__list grid grid--2">
-              <li class="clients__item">
-                <blockquote class="client-card">
-                  <h4 class="client-card__title">
-                    SquareUp has been Instrumental in Transforming our Online
-                    Presence.
-                  </h4>
-                  <div class="client-card__body">
-                    <p>
-                      Their team's expertise in web development and design
-                      resulted in a visually stunning and user-friendly
-                      e-commerce platform. Our online sales have skyrocketed,
-                      and we couldn't be happier.
-                    </p>
-                  </div>
-
-                  <footer class="client-card__footer">
-                    <img class="client-card__footer-image" src="./assets/images/clients/client-1.webp" alt="John Smith"
-                      width="60" height="60" loading="lazy" />
-                    <div class="client-card__footer-body">
-                      <cite class="client-card__footer-name">John Smith</cite>
-                      <div class="client-card__footer-company">
-                        CEO of Chic Boutique
-                      </div>
-                    </div>
-                    <a href="#" class="client-card__footer-link button button--grey">Open Website</a>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="clients__item">
-                <blockquote class="client-card">
-                  <h4 class="client-card__title">
-                    Working with SquareUp was a breeze.
-                  </h4>
-                  <div class="client-card__body">
-                    <p>
-                      They understood our vision for a mobile app that
-                      streamlined our food delivery service. The app they
-                      delivered exceeded our expectations, and our customers
-                      love the seamless ordering experience. SquareUp is a
-                      trusted partner we highly recommend.
-                    </p>
-                  </div>
-
-                  <footer class="client-card__footer">
-                    <img class="client-card__footer-image" src="./assets/images/clients/client-2.webp"
-                      alt="Sarah Johnson" width="60" height="60" loading="lazy" />
-                    <div class="client-card__footer-body">
-                      <cite class="client-card__footer-name">Sarah Johnson</cite>
-                      <div class="client-card__footer-company">
-                        Founder of HungryBites.
-                      </div>
-                    </div>
-                    <a href="#" class="client-card__footer-link button button--grey">Open Website</a>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="clients__item">
-                <blockquote class="client-card">
-                  <h4 class="client-card__title">
-                    SquareUp developed a comprehensive booking and reservation
-                    system for our event management company
-                  </h4>
-                  <div class="client-card__body">
-                    <p>
-                      Their attention to detail and commitment to delivering a
-                      user-friendly platform was evident throughout the
-                      project. The system has streamlined our operations and
-                      enhanced our clients' event experiences.
-                    </p>
-                  </div>
-
-                  <footer class="client-card__footer">
-                    <img class="client-card__footer-image" src="./assets/images/clients/client-3.webp"
-                      alt="Mark Thompson" width="60" height="60" loading="lazy" />
-                    <div class="client-card__footer-body">
-                      <cite class="client-card__footer-name">Mark Thompson</cite>
-                      <div class="client-card__footer-company">
-                        CEO of EventMasters
-                      </div>
-                    </div>
-                    <a href="#" class="client-card__footer-link button button--grey">Open Website</a>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="clients__item">
-                <blockquote class="client-card">
-                  <h4 class="client-card__title">
-                    ProTech Solutions turned to SquareUp to automate our
-                    workflow
-                  </h4>
-                  <div class="client-card__body">
-                    <p>
-                      They delivered an exceptional custom software solution.
-                      The system has significantly increased our productivity
-                      and reduced manual errors. SquareUp's expertise and
-                      professionalism have made them a trusted technology
-                      partner.
-                    </p>
-                  </div>
-
-                  <footer class="client-card__footer">
-                    <img class="client-card__footer-image" src="./assets/images/clients/client-4.webp" alt="Laura Adams"
-                      width="60" height="60" loading="lazy" />
-                    <div class="client-card__footer-body">
-                      <cite class="client-card__footer-name">Laura Adams</cite>
-                      <div class="client-card__footer-company">
-                        COO of ProTech Solutions.
-                      </div>
-                    </div>
-                    <a href="#" class="client-card__footer-link button button--grey">Open Website</a>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="clients__item">
-                <blockquote class="client-card">
-                  <h4 class="client-card__title">
-                    SquareUp designed and developed a captivating web portal
-                    for showcasing our real estate listings.
-                  </h4>
-                  <div class="client-card__body">
-                    <p>
-                      The platform is visually appealing and easy to navigate,
-                      allowing potential buyers to find their dream homes
-                      effortlessly. SquareUp's expertise in the real estate
-                      industry is unmatched.
-                    </p>
-                  </div>
-
-                  <footer class="client-card__footer">
-                    <img class="client-card__footer-image" src="./assets/images/clients/client-5.webp"
-                      alt="Michael Anderson" width="60" height="60" loading="lazy" />
-                    <div class="client-card__footer-body">
-                      <cite class="client-card__footer-name">Michael Anderson</cite>
-                      <div class="client-card__footer-company">
-                        Founder of Dream Homes Realty.
-                      </div>
-                    </div>
-                    <a href="#" class="client-card__footer-link button button--grey">Open Website</a>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="clients__item">
-                <blockquote class="client-card">
-                  <h4 class="client-card__title">
-                    FitLife Tracker wanted a mobile app that tracked fitness
-                    activities and provided personalized workout plans.
-                  </h4>
-                  <div class="client-card__body">
-                    <p>
-                      SquareUp's team developed an intuitive and feature-rich
-                      app that has helped our users stay motivated and achieve
-                      their fitness goals. We highly recommend SquareUp for
-                      any health and fitness app development needs.
-                    </p>
-                  </div>
-
-                  <footer class="client-card__footer">
-                    <img class="client-card__footer-image" src="./assets/images/clients/client-6.webp"
-                      alt="Emily Turner" width="60" height="60" loading="lazy" />
-                    <div class="client-card__footer-body">
-                      <cite class="client-card__footer-name">Emily Turner</cite>
-                      <div class="client-card__footer-company">
-                        CEO of FitLife Tracker
-                      </div>
-                    </div>
-                    <a href="#" class="client-card__footer-link button button--grey">Open Website</a>
-                  </footer>
-                </blockquote>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section questions" aria-labelledby="questions-title">
-          <header class="section__header section__header--questions">
-            <div class="section__header-inner">
-              <h2 class="section__header-title questions-title" id="questions-title">
-                Frequently Asked Questions
-              </h2>
-              <div class="section__header-description questions__header-description">
-                <p>
-                  Still you have any questions? Contact our Team via
-                  hello@squareup.com
-                </p>
-              </div>
-            </div>
-          </header>
-          <div class="section__body">
-            <div class="questions__inner">
-              <ol class="questions__list">
-                <li class="questions__item">
-                  <div class="questions__card">
-                    <div class="questions__counter"></div>
-                    <details class="questions__accordion">
-                      <summary class="questions__accordion-header">
-                        <h6 class="questions__accordion-title">
-                          What services does SquareUp provide?
-                        </h6>
-                        <span class="questions__accordion-indicator">
-                          <svg class="questions__accordion-indicator-image" width="21" height="21" viewBox="0 0 21 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
-                              fill="white" />
-                          </svg>
-                        </span>
-                      </summary>
-                      <div class="questions__accordion-body">
-                        <p>
-                          SquareUp offers a range of services including design,
-                          engineering, and project management. We specialize in
-                          user experience design, web development, mobile app
-                          development, custom software development, branding and
-                          identity, and more.
-                        </p>
-                      </div>
-
-
-                    </details>
-                  </div>
-
-                </li>
-                <li class="questions__item">
-                  <div class="questions__card">
-                    <div class="questions__counter"></div>
-                    <details class="questions__accordion">
-                      <summary class="questions__accordion-header">
-                        <h6 class="questions__accordion-title">
-                          How can SquareUp help my business?
-                        </h6>
-                        <span class="questions__accordion-indicator">
-                          <svg class="questions__accordion-indicator-image" width="21" height="21" viewBox="0 0 21 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
-                              fill="white" />
-                          </svg>
-                        </span>
-                      </summary>
-                      <div class="questions__accordion-body">
-                        <p>
-                          SquareUp offers a range of services including design,
-                          engineering, and project management. We specialize in
-                          user experience design, web development, mobile app
-                          development, custom software development, branding and
-                          identity, and more.
-                        </p>
-                      </div>
-
-
-                    </details>
-                  </div>
-
-                </li>
-                <li class="questions__item">
-                  <div class="questions__card">
-                    <div class="questions__counter"></div>
-                    <details class="questions__accordion">
-                      <summary class="questions__accordion-header">
-                        <h6 class="questions__accordion-title">
-                          What industries does SquareUp work with?
-                        </h6>
-                        <span class="questions__accordion-indicator">
-                          <svg class="questions__accordion-indicator-image" width="21" height="21" viewBox="0 0 21 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
-                              fill="white" />
-                          </svg>
-                        </span>
-                      </summary>
-                      <div class="questions__accordion-body">
-                        <p>
-                          SquareUp offers a range of services including design,
-                          engineering, and project management. We specialize in
-                          user experience design, web development, mobile app
-                          development, custom software development, branding and
-                          identity, and more.
-                        </p>
-                      </div>
-
-
-                    </details>
-                  </div>
-
-                </li>
-                <li class="questions__item">
-                  <div class="questions__card">
-                    <div class="questions__counter"></div>
-                    <details class="questions__accordion">
-                      <summary class="questions__accordion-header">
-                        <h6 class="questions__accordion-title">
-                          What services does SquareUp provide?
-                        </h6>
-                        <span class="questions__accordion-indicator">
-                          <svg class="questions__accordion-indicator-image" width="21" height="21" viewBox="0 0 21 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
-                              fill="white" />
-                          </svg>
-                        </span>
-                      </summary>
-                      <div class="questions__accordion-body">
-                        <p>
-                          SquareUp offers a range of services including design,
-                          engineering, and project management. We specialize in
-                          user experience design, web development, mobile app
-                          development, custom software development, branding and
-                          identity, and more.
-                        </p>
-                      </div>
-
-
-                    </details>
-                  </div>
-
-                </li>
-                <li class="questions__item">
-                  <div class="questions__card">
-                    <div class="questions__counter"></div>
-                    <details class="questions__accordion">
-                      <summary class="questions__accordion-header">
-                        <h6 class="questions__accordion-title">
-                          Do you offer ongoing support and maintenance after the project is completed?
-                        </h6>
-                        <span class="questions__accordion-indicator">
-                          <svg class="questions__accordion-indicator-image" width="21" height="21" viewBox="0 0 21 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
-                              fill="white" />
-                          </svg>
-                        </span>
-                      </summary>
-                      <div class="questions__accordion-body">
-                        <p>
-                          SquareUp offers a range of services including design,
-                          engineering, and project management. We specialize in
-                          user experience design, web development, mobile app
-                          development, custom software development, branding and
-                          identity, and more.
-                        </p>
-                      </div>
-
-
-                    </details>
-                  </div>
-
-                </li>
-                <li class="questions__item">
-                  <div class="questions__card">
-                    <div class="questions__counter"></div>
-                    <details class="questions__accordion">
-                      <summary class="questions__accordion-header">
-                        <h6 class="questions__accordion-title">
-                          Can you work with existing design or development frameworks?
-                        </h6>
-                        <span class="questions__accordion-indicator">
-                          <svg class="questions__accordion-indicator-image" width="21" height="21" viewBox="0 0 21 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
-                              fill="white" />
-                          </svg>
-                        </span>
-                      </summary>
-                      <div class="questions__accordion-body">
-                        <p>
-                          SquareUp offers a range of services including design,
-                          engineering, and project management. We specialize in
-                          user experience design, web development, mobile app
-                          development, custom software development, branding and
-                          identity, and more.
-                        </p>
-                      </div>
-
-
-                    </details>
-                  </div>
-
-                </li>
-                <li class="questions__item">
-                  <div class="questions__card">
-                    <div class="questions__counter"></div>
-                    <details class="questions__accordion">
-                      <summary class="questions__accordion-header">
-                        <h6 class="questions__accordion-title">
-                          How involved will I be in the project development process?
-                        </h6>
-                        <span class="questions__accordion-indicator">
-                          <svg class="questions__accordion-indicator-image" width="21" height="21" viewBox="0 0 21 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
-                              fill="white" />
-                          </svg>
-                        </span>
-                      </summary>
-                      <div class="questions__accordion-body">
-                        <p>
-                          SquareUp offers a range of services including design,
-                          engineering, and project management. We specialize in
-                          user experience design, web development, mobile app
-                          development, custom software development, branding and
-                          identity, and more.
-                        </p>
-                      </div>
-
-
-                    </details>
-                  </div>
-
-                </li>
-                <li class="questions__item">
-                  <div class="questions__card">
-                    <div class="questions__counter"></div>
-                    <details class="questions__accordion">
-                      <summary class="questions__accordion-header">
-                        <h6 class="questions__accordion-title">
-                          Can you help with website or app maintenance and updates?
-                        </h6>
-                        <span class="questions__accordion-indicator">
-                          <svg class="questions__accordion-indicator-image" width="21" height="21" viewBox="0 0 21 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M11.475 1.275C11.475 0.570837 10.9042 0 10.2 0C9.49584 0 8.925 0.570837 8.925 1.275V8.925H1.275C0.570837 8.925 0 9.49584 0 10.2C0 10.9042 0.570837 11.475 1.275 11.475L8.925 11.475V19.125C8.925 19.8292 9.49584 20.4 10.2 20.4C10.9042 20.4 11.475 19.8292 11.475 19.125V11.475L19.125 11.475C19.8292 11.475 20.4 10.9042 20.4 10.2C20.4 9.49584 19.8292 8.925 19.125 8.925H11.475V1.275Z"
-                              fill="white" />
-                          </svg>
-                        </span>
-                      </summary>
-                      <div class="questions__accordion-body">
-                        <p>
-                          SquareUp offers a range of services including design,
-                          engineering, and project management. We specialize in
-                          user experience design, web development, mobile app
-                          development, custom software development, branding and
-                          identity, and more.
-                        </p>
-                      </div>
-
-
-                    </details>
-                  </div>
-
-                </li>
-
-              </ol>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
