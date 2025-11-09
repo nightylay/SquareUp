@@ -1,0 +1,33 @@
+@use '../helpers' as *;
+
+.checkboxes {
+  padding: 40px;
+
+  @include laptop {
+    padding: 30px;
+  }
+
+  &__label {
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+
+    @include laptop {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__list {
+    row-gap: 24px;
+    column-gap: 20px;
+
+    @include mobile {
+      &:not(:last-child) {
+        row-gap: 20px;
+        column-gap: 0px;
+      }
+    }
+  }
+}

@@ -62,6 +62,8 @@
   }
 
   &__contact-link {
+    padding: 16px 24px;
+
     @include mobile {
       padding: 16px 36px;
       font-size: 22px;

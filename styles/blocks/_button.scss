@@ -3,7 +3,7 @@
 .button {
   border-radius: 8px;
   font-weight: 500;
-  padding: 16px 24px;
+  padding: 18px 28px;
   white-space: nowrap;
   color: var(--color-white);
 
@@ -17,7 +17,7 @@
     color: var(--color-grey-15);
 
     @include hover {
-      background-color: var(--color-grey-10);
+      background-color: transparent;
       color: var(--color-green-50);
     }
   }

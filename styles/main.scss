@@ -12,6 +12,10 @@
 @use 'blocks/service-card';
 @use 'blocks/choose-card';
 @use 'blocks/client-card';
+@use 'blocks/fields';
+@use 'blocks/field';
+@use 'blocks/checkboxes';
+@use 'blocks/checkbox';
 @use 'blocks/header';
 @use 'blocks/nav-menu';
 @use 'blocks/content';
@@ -21,3 +25,5 @@
 @use 'blocks/choose';
 @use 'blocks/clients';
 @use 'blocks/questions';
+@use 'blocks/contact-us';
+@use 'blocks/range';

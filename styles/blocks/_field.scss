@@ -1,0 +1,42 @@
+@use '../helpers' as *;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 24px 40px;
+
+  @include laptop {
+    padding: 20px 30px;
+  }
+
+  @include mobile {
+    padding: 18px 24px;
+  }
+
+  &:has(.field__input:focus) {
+    .field__label {
+      color: var(--color-green-70);
+    }
+  }
+
+  &__input {
+    background: transparent;
+    border: none;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--color-grey-20);
+    color: var(--color-white);
+    caret-color: var(--color-green-70);
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid var(--color-green-70);
+    }
+
+    /* Альтернативный вариант */
+    &:-webkit-autofill {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: var(--color-white);
+    }
+  }
+}

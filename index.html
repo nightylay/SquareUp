@@ -980,7 +980,198 @@
             </div>
           </section>
 
+          <section
+            class="section contact-us"
+            aria-labelledby="contact-us-title"
+          >
+            <header class="section__header contact-us__header">
+              <div class="section__header-inner contact-us__header-inner">
+                <img
+                  class="section__header-logo"
+                  src="./assets/images/logo-2.svg"
+                  alt=""
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                />
+                <div class="contact-us__header-body">
+                  <h2
+                    class="section__header-title contact-us-title"
+                    id="contact-us-title"
+                  >
+                    Thank you for your Interest in SquareUp.
+                  </h2>
+                  <div
+                    class="section__header-description contact-us__header-description"
+                  >
+                    <p>
+                      We would love to hear from you and discuss how we can help
+                      bring your digital ideas to life. Here are the different
+                      ways you can get in touch with us.
+                    </p>
+                  </div>
+                </div>
 
+                <a
+                  href="#"
+                  class="contact-us__header-link button button--accent"
+                  >Start Project</a
+                >
+              </div>
+            </header>
+            <div class="section__body contact-us__body">
+              <form action="#" class="contact-us__form">
+                <div class="contact-us__form-body">
+                  <div
+                    class="contact-us__item contact-us__item--bg-grey contact-us__field-name field"
+                  >
+                    <label
+                      class="field__label contact-us__item-label"
+                      for="name"
+                      >Full Name</label
+                    >
+                    <input
+                      class="field__input"
+                      name="name"
+                      id="name"
+                      type="text"
+                      placeholder="Type here"
+                      required
+                    />
+                  </div>
+                  <div
+                    class="contact-us__item contact-us__item--bg-grey contact-us__field-email field"
+                  >
+                    <label
+                      class="field__label contact-us__item-label"
+                      for="name"
+                      >Email</label
+                    >
+                    <input
+                      class="field__input"
+                      name="email"
+                      id="email"
+                      type="email"
+                      placeholder="Type here"
+                      required
+                    />
+                  </div>
+
+                  <fields
+                    class="contact-us__item contact-us__item--bg-grey contact-us__work-types checkboxes"
+                  >
+                    <legend class="contact-us__item-label checkboxes__label">
+                      Why are you contacting us?
+                    </legend>
+
+                    <ul class="checkboxes__list grid grid--2">
+                      <li class="checkboxes__item">
+                        <div class="contact-us__checkbox checkbox">
+                          <input
+                            class="checkbox__input"
+                            name="web-design"
+                            id="web-design"
+                            value="web-design"
+                            type="checkbox"
+                          />
+                          <label class="ckeckbox__label" for="web-design"
+                            >Web Design</label
+                          >
+                        </div>
+                      </li>
+                      <li class="checkboxes__item">
+                        <div class="contact-us__checkbox checkbox">
+                          <input
+                            class="checkbox__input"
+                            name="mobile-app"
+                            id="mobile-app"
+                            value="mobile-app"
+                            type="checkbox"
+                          />
+                          <label class="ckeckbox__label" for="mobile-app"
+                            >Mobile App Design</label
+                          >
+                        </div>
+                      </li>
+                      <li class="checkboxes__item">
+                        <div class="contact-us__checkbox checkbox">
+                          <input
+                            class="checkbox__input"
+                            name="collaboration"
+                            id="collaboration"
+                            value="collaboration"
+                            type="checkbox"
+                          />
+                          <label class="ckeckbox__label" for="collaboration"
+                            >Collaboration</label
+                          >
+                        </div>
+                      </li>
+                      <li class="checkboxes__item">
+                        <div class="contact-us__checkbox checkbox">
+                          <input
+                            class="checkbox__input"
+                            name="others"
+                            id="others"
+                            value="others"
+                            type="checkbox"
+                          />
+                          <label class="ckeckbox__label" for="others"
+                            >Others</label
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                  </fields>
+
+                  <div
+                    class="contact-us__item contact-us__item--bg-grey contact-us__budget range"
+                  >
+                    <label
+                      class="range__label contact-us__item-label"
+                      for="budget"
+                      >Your Budget</label
+                    >
+                    <p class="range__description">
+                      Slide to indicate your budget range
+                    </p>
+                    <input
+                      class="range__input"
+                      type="range"
+                      id="budget"
+                      name="budget"
+                      min="500"
+                      max="25000"
+                    />
+                  </div>
+
+                  <div
+                    class="contact-us__item contact-us__item--bg-grey contact-us__message field"
+                  >
+                    <label
+                      class="field__label contact-us__item-label"
+                      for="message"
+                      >Your Message</label
+                    >
+                    <textarea
+                      class="field__input field__input--textarea"
+                      name="message"
+                      id="message"
+                      placeholder="Type here"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
+                    class="contact-us__button button button--accent"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
         </div>
       </div>
     </main>

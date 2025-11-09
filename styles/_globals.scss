@@ -34,51 +34,59 @@ button {
   border: none;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h5, .h5, 
-h6, .h6{
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h5,
+.h5,
+h6,
+.h6 {
   font-weight: 600;
   color: var(--color-white);
 }
 
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-weight: 500;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   @include fluid-text(68, 34);
   line-height: 1.3;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   @include fluid-text(48, 28);
 }
 
-h3, .h3 {
+h3,
+.h3 {
   @include fluid-text(30, 20);
 }
 
-h4, .h4 {
+h4,
+.h4 {
   @include fluid-text(28, 18);
   color: var(--color-green-80);
 }
 
-h5, .h5 {
+h5,
+.h5 {
   @include fluid-text(26, 20);
 }
 
-h6, .h6 {
+h6,
+.h6 {
   @include fluid-text(22, 16);
 
   color: var(--color-white);
-}
-
-:focus-visible {
-  outline: 2px dashed var(--color-white);
-  outline-offset: 4px;
-  transition-duration: 0s !important;
 }

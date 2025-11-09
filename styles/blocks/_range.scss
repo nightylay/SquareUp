@@ -1,0 +1,25 @@
+@use '../helpers' as *;
+
+.range {
+  padding: 40px;
+  @include laptop {
+    padding: 30px;
+  }
+
+  @include mobile {
+    padding: 24px 24px 50px;
+  }
+
+  &__label {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  }
