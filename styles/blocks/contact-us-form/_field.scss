@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '../../helpers' as *;
 
 .field {
   display: flex;
@@ -37,6 +37,11 @@
     &:-webkit-autofill {
       -webkit-background-clip: text;
       -webkit-text-fill-color: var(--color-white);
+    }
+
+    &--textarea {
+      resize: none;
+      overflow-y: hidden;
     }
   }
 }

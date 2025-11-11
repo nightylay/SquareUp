@@ -12,10 +12,11 @@
 @use 'blocks/service-card';
 @use 'blocks/choose-card';
 @use 'blocks/client-card';
-@use 'blocks/fields';
-@use 'blocks/field';
-@use 'blocks/checkboxes';
-@use 'blocks/checkbox';
+@use 'blocks/contact-us-form/fields';
+@use 'blocks/contact-us-form/field';
+@use 'blocks/contact-us-form/checkboxes';
+@use 'blocks/contact-us-form/checkbox';
+@use 'blocks/contact-us-form/range';
 @use 'blocks/header';
 @use 'blocks/nav-menu';
 @use 'blocks/content';
@@ -26,4 +27,3 @@
 @use 'blocks/clients';
 @use 'blocks/questions';
 @use 'blocks/contact-us';
-@use 'blocks/range';

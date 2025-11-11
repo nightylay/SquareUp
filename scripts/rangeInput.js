@@ -19,7 +19,7 @@ function handleInputRange1(event) {
     event.target.value = value2
   }
 
-  if (event.target.value === '12000') {
+  if (event.target.value === '120 00') {
     event.target.style.zIndex = '100'
   } else {
     event.target.style.zIndex = '0'

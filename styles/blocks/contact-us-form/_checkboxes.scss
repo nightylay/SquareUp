@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use '../../helpers' as *;
 
 .checkboxes {
   padding: 40px;
@@ -20,6 +20,8 @@
   }
 
   &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 24px;
     column-gap: 20px;
 
@@ -28,6 +30,10 @@
         row-gap: 20px;
         column-gap: 0px;
       }
+    }
+
+    @include mobile-s {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
