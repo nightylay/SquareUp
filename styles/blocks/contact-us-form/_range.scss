@@ -56,6 +56,10 @@
     display: grid;
     max-width: 820px;
     z-index: 10;
+
+    @include laptop {
+      --range-track-top: 14px;
+    }
   }
 
   &__track {
@@ -215,5 +219,9 @@
     user-select: none;
     white-space: nowrap;
     font-weight: 500;
+
+    @include mobile {
+      top: 35px;
+    }
   }
 }

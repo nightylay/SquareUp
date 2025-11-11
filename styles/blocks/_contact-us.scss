@@ -6,6 +6,7 @@
       no-repeat;
 
     &-inner {
+      max-width: 896px;
       row-gap: 50px;
 
       @include laptop {

@@ -2,12 +2,14 @@
 
 .section {
   &__header {
+    padding: 120px 50px;
     &-inner {
       @include flex-center();
 
       flex-direction: column;
+      max-width: 996px;
+      margin-inline: auto;
       row-gap: 14px;
-      padding: 120px 50px;
 
       @include laptop {
         padding: 100px 50px;
