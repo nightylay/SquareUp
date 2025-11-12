@@ -64,6 +64,12 @@
         gap: 20px;
       }
     }
+
+    &-link {
+      @include hover {
+        color: var(--color-green-50);
+      }
+    }
   }
 
   &__extra {
@@ -112,6 +118,9 @@
       font-weight: 400;
       padding-bottom: 16px;
       border-bottom: 1px solid var(--color-grey-15);
+      @include hover {
+        border-bottom-color: var(--color-green-50);
+      }
 
       @include tablet {
         justify-content: center;

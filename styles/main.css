@@ -1727,6 +1727,16 @@ h6,
     gap: 20px;
   }
 }
+@media (hover: hover) {
+  .footer__menu-link:hover {
+    color: var(--color-green-50);
+  }
+}
+@media (hover: none) {
+  .footer__menu-link:active {
+    color: var(--color-green-50);
+  }
+}
 .footer__extra {
   display: flex;
   justify-content: space-between;
@@ -1776,6 +1786,16 @@ h6,
   font-weight: 400;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--color-grey-15);
+}
+@media (hover: hover) {
+  .footer__contacts-link:hover, .footer__contacts-address:hover {
+    border-bottom-color: var(--color-green-50);
+  }
+}
+@media (hover: none) {
+  .footer__contacts-link:active, .footer__contacts-address:active {
+    border-bottom-color: var(--color-green-50);
+  }
 }
 @media (width <= 1023.98px) {
   .footer__contacts-link, .footer__contacts-address {
