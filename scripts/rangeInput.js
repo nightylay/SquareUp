@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#output2').textContent = formatValue(range2.value) + ' $'
 })
 
-function initInputRange() {
+function handleInputRange() {
   range1.addEventListener('input', handleInputRange1)
   range2.addEventListener('input', handleInputRange2)
 }
@@ -57,4 +57,4 @@ function formatValue(value) {
   return parseInt(value).toLocaleString('ru-RU')
 }
 
-export default initInputRange
+export { handleInputRange } 

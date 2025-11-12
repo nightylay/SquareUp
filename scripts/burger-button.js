@@ -9,4 +9,4 @@ function openNavigationMenu() {
   })
 }
 
-export default openNavigationMenu
+export { openNavigationMenu } 
