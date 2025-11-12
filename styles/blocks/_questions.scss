@@ -1,11 +1,6 @@
 @use '../helpers' as *;
 
 .questions {
-  &__header {
-    background: url('../../assets/images/backgrounds/bg-4.webp') center / cover
-      no-repeat;
-  }
-
   &__body {
     position: relative;
     border-top: 1px solid var(--color-grey-15);
