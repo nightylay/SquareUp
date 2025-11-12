@@ -122,5 +122,13 @@
   &__button {
     grid-area: button;
     padding: 18px 44px;
+
+    @include laptop {
+      padding: 14px 44px;
+    }
+
+    @include mobile-s {
+      width: 100%;
+    }
   }
 }

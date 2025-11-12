@@ -1625,6 +1625,16 @@ h6,
   grid-area: button;
   padding: 18px 44px;
 }
+@media (width <= 1440.98px) {
+  .contact-us__button {
+    padding: 14px 44px;
+  }
+}
+@media (width <= 480.98px) {
+  .contact-us__button {
+    width: 100%;
+  }
+}
 
 .soc1als {
   display: flex;
