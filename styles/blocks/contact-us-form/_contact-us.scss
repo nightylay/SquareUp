@@ -30,7 +30,11 @@
     }
 
     &-link {
-      padding: 16px 34px;
+      padding-inline: 34px;
+
+      @include laptop {
+        padding-inline: 24px;
+      }
     }
   }
 
@@ -121,10 +125,10 @@
 
   &__button {
     grid-area: button;
-    padding: 18px 44px;
+    padding-inline: 44px;
 
     @include laptop {
-      padding: 14px 44px;
+      padding-inline: 36px;
     }
 
     @include mobile-s {
