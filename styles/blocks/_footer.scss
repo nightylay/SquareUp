@@ -4,6 +4,14 @@
   padding-block: 50px;
   border-top: 1px solid var(--color-grey-15);
 
+  @include laptop {
+    padding-block: 40px;
+  }
+
+  @include mobile {
+    padding-block: 30px;
+  }
+
   &__navigation {
     display: flex;
     align-items: center;
@@ -12,23 +20,49 @@
 
     @include laptop {
       column-gap: 68px;
+      padding-bottom: 40px;
     }
 
     @include laptop-s {
       flex-direction: column;
-      row-gap: 35px;
+      justify-content: center;
+      row-gap: 30px;
+    }
+
+    @include mobile-s {
+      padding-bottom: 0px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__logo {
+    &-image {
+      @include laptop-s {
+        max-width: 148px;
+      }
     }
   }
 
   &__menu {
     margin-left: auto;
+
     @include laptop-s {
       margin-left: 0;
+      padding-top: 30px;
+      border-top: 1px solid var(--color-grey-15);
     }
 
     &-list {
-      display: inline-flex;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       column-gap: 30px;
+
+      @include laptop {
+        gap: 20px;
+      }
     }
   }
 
@@ -38,6 +72,20 @@
     align-items: center;
     border-top: 1px solid var(--color-grey-15);
     padding-top: 50px;
+
+    @include laptop {
+      padding-top: 40px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    @include mobile-s {
+      padding-top: 0;
+      border-top: none;
+    }
   }
 
   &__contacts {
@@ -45,15 +93,34 @@
     align-items: center;
     column-gap: 30px;
 
+    @include laptop {
+      column-gap: 22px;
+    }
+
+    @include tablet {
+      width: 100%;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
     &-link,
     &-address {
-      display: flex;
+      display: inline-flex;
       align-items: center;
       column-gap: 11px;
       font-size: 18px;
       font-weight: 400;
       padding-bottom: 16px;
       border-bottom: 1px solid var(--color-grey-15);
+
+      @include tablet {
+        justify-content: center;
+        padding-bottom: 20px;
+      }
+
+      @include mobile-s {
+        width: 100%;
+      }
 
       &-icon {
         color: var(--color-green-50);
