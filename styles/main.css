@@ -1555,20 +1555,23 @@ h6,
 }
 @media (width <= 767.98px) {
   .contact-us__header-body {
-    row-gap: 6 px;
+    row-gap: 6px;
   }
 }
 .contact-us__header-link {
   padding: 16px 34px;
 }
 .contact-us__body {
+  border-top: 1px solid var(--color-grey-15);
+}
+.contact-us__wrapper {
   max-width: 1060px;
   margin-inline: auto;
   border-left: 1px solid var(--color-grey-15);
   border-right: 1px solid var(--color-grey-15);
 }
 @media (width <= 1200.98px) {
-  .contact-us__body {
+  .contact-us__wrapper {
     border-left: none;
     border-right: none;
   }

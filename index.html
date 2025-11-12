@@ -750,90 +750,93 @@
             </div>
           </header>
           <div class="section__body contact-us__body">
-            <form action="#" class="contact-us__form">
-              <div class="contact-us__form-body">
-                <div class="contact-us__item contact-us__item--bg-grey contact-us__field-name field">
-                  <label class="field__label contact-us__item-label" for="name">Full Name</label>
-                  <input class="field__input" name="name" id="name" type="text" placeholder="Type here" required />
-                </div>
-                <div class="contact-us__item contact-us__item--bg-grey contact-us__field-email field">
-                  <label class="field__label contact-us__item-label" for="name">Email</label>
-                  <input class="field__input" name="email" id="email" type="email" placeholder="Type here" required />
-                </div>
+            <div class="contact-us__wrapper">
+              <form action="#" class="contact-us__form">
+                <div class="contact-us__form-body">
+                  <div class="contact-us__item contact-us__item--bg-grey contact-us__field-name field">
+                    <label class="field__label contact-us__item-label" for="name">Full Name</label>
+                    <input class="field__input" name="name" id="name" type="text" placeholder="Type here" required />
+                  </div>
+                  <div class="contact-us__item contact-us__item--bg-grey contact-us__field-email field">
+                    <label class="field__label contact-us__item-label" for="name">Email</label>
+                    <input class="field__input" name="email" id="email" type="email" placeholder="Type here" required />
+                  </div>
 
-                <fields class="contact-us__item contact-us__item--bg-grey contact-us__work-types checkboxes">
-                  <legend class="contact-us__item-label checkboxes__label">
-                    Why are you contacting us?
-                  </legend>
+                  <fields class="contact-us__item contact-us__item--bg-grey contact-us__work-types checkboxes">
+                    <legend class="contact-us__item-label checkboxes__label">
+                      Why are you contacting us?
+                    </legend>
 
-                  <ul class="checkboxes__list">
-                    <li class="checkboxes__item">
-                      <div class="contact-us__checkbox checkbox">
-                        <input class="checkbox__input" name="web-design" id="web-design" value="web-design"
-                          type="checkbox" />
-                        <label class="ckeckbox__label" for="web-design">Web Design</label>
-                      </div>
-                    </li>
-                    <li class="checkboxes__item">
-                      <div class="contact-us__checkbox checkbox">
-                        <input class="checkbox__input" name="mobile-app" id="mobile-app" value="mobile-app"
-                          type="checkbox" />
-                        <label class="ckeckbox__label" for="mobile-app">Mobile App Design</label>
-                      </div>
-                    </li>
-                    <li class="checkboxes__item">
-                      <div class="contact-us__checkbox checkbox">
-                        <input class="checkbox__input" name="collaboration" id="collaboration" value="collaboration"
-                          type="checkbox" />
-                        <label class="ckeckbox__label" for="collaboration">Collaboration</label>
-                      </div>
-                    </li>
-                    <li class="checkboxes__item">
-                      <div class="contact-us__checkbox checkbox">
-                        <input class="checkbox__input" name="others" id="others" value="others" type="checkbox" />
-                        <label class="ckeckbox__label" for="others">Others</label>
-                      </div>
-                    </li>
-                  </ul>
-                </fields>
+                    <ul class="checkboxes__list">
+                      <li class="checkboxes__item">
+                        <div class="contact-us__checkbox checkbox">
+                          <input class="checkbox__input" name="web-design" id="web-design" value="web-design"
+                            type="checkbox" />
+                          <label class="ckeckbox__label" for="web-design">Web Design</label>
+                        </div>
+                      </li>
+                      <li class="checkboxes__item">
+                        <div class="contact-us__checkbox checkbox">
+                          <input class="checkbox__input" name="mobile-app" id="mobile-app" value="mobile-app"
+                            type="checkbox" />
+                          <label class="ckeckbox__label" for="mobile-app">Mobile App Design</label>
+                        </div>
+                      </li>
+                      <li class="checkboxes__item">
+                        <div class="contact-us__checkbox checkbox">
+                          <input class="checkbox__input" name="collaboration" id="collaboration" value="collaboration"
+                            type="checkbox" />
+                          <label class="ckeckbox__label" for="collaboration">Collaboration</label>
+                        </div>
+                      </li>
+                      <li class="checkboxes__item">
+                        <div class="contact-us__checkbox checkbox">
+                          <input class="checkbox__input" name="others" id="others" value="others" type="checkbox" />
+                          <label class="ckeckbox__label" for="others">Others</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </fields>
 
-                <div class="contact-us__item contact-us__item--bg-grey contact-us__budget range">
-                  <label class="range__label contact-us__item-label" for="budget">Your Budget</label>
-                  <p class="range__description">
-                    Slide to indicate your budget range
-                  </p>
+                  <div class="contact-us__item contact-us__item--bg-grey contact-us__budget range">
+                    <label class="range__label contact-us__item-label" for="budget">Your Budget</label>
+                    <p class="range__description">
+                      Slide to indicate your budget range
+                    </p>
 
-                  <div class="range__container" style="--value-1: 1000; --value-2: 5000">
-                    <div class="range__track"></div>
-                    <div class="range__progress"></div>
-                    <div class="range__thumbs">
-                      <input class="range__input" id="tailmetr1" type="range" min="500" max="12000" value="1000"
-                        step="100" aria-valuemin="500" aria-valuemax="12000" aria-orientation="horizontal" />
-                      <output class="range__output" id="output1" for="tailmetr1" style="--value: var(--value-1)">
-                        1 000 $
-                      </output>
-                      <input class="range__input" id="tailmetr2" type="range" min="500" max="12000" value="5000"
-                        step="100" aria-valuemin="500" aria-valuemax="12000" aria-orientation="horizontal" />
-                      <output class="range__output" id="output2" for="tailmetr2" style="--value: var(--value-2)">
-                        5 000 $
-                      </output>
+                    <div class="range__container" style="--value-1: 1000; --value-2: 5000">
+                      <div class="range__track"></div>
+                      <div class="range__progress"></div>
+                      <div class="range__thumbs">
+                        <input class="range__input" id="tailmetr1" type="range" min="500" max="12000" value="1000"
+                          step="100" aria-valuemin="500" aria-valuemax="12000" aria-orientation="horizontal" />
+                        <output class="range__output" id="output1" for="tailmetr1" style="--value: var(--value-1)">
+                          1 000 $
+                        </output>
+                        <input class="range__input" id="tailmetr2" type="range" min="500" max="12000" value="5000"
+                          step="100" aria-valuemin="500" aria-valuemax="12000" aria-orientation="horizontal" />
+                        <output class="range__output" id="output2" for="tailmetr2" style="--value: var(--value-2)">
+                          5 000 $
+                        </output>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="contact-us__item contact-us__item--bg-grey contact-us__message field">
-                  <label class="field__label contact-us__item-label" for="message">Your Message</label>
-                  <textarea class="field__input field__input--textarea" name="message" id="message"
-                    placeholder="Type here"
-                    onInput="this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px'" rows="1"
-                    required></textarea>
-                </div>
+                  <div class="contact-us__item contact-us__item--bg-grey contact-us__message field">
+                    <label class="field__label contact-us__item-label" for="message">Your Message</label>
+                    <textarea class="field__input field__input--textarea" name="message" id="message"
+                      placeholder="Type here"
+                      onInput="this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px'" rows="1"
+                      required></textarea>
+                  </div>
 
-                <button class="contact-us__button button button--accent" type="submit">
-                  Submit
-                </button>
-              </div>
-            </form>
+                  <button class="contact-us__button button button--accent" type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+
           </div>
         </section>
       </div>
@@ -896,11 +899,11 @@
             </li>
             <li class="soc1als__item">
               <a href="#" class="soc1als__link">
-<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path
-    d="M7.55016 19.5007C16.6045 19.5007 21.5583 11.9974 21.5583 5.49259C21.5583 5.28166 21.5536 5.06603 21.5442 4.85509C22.5079 4.15819 23.3395 3.29499 24 2.30603C23.1025 2.70533 22.1496 2.96611 21.1739 3.07947C22.2013 2.46364 22.9705 1.4962 23.3391 0.356499C22.3726 0.92929 21.3156 1.33334 20.2134 1.55134C19.4708 0.762293 18.489 0.239849 17.4197 0.0647834C16.3504 -0.110282 15.2532 0.0717828 14.2977 0.582829C13.3423 1.09387 12.5818 1.90544 12.1338 2.89204C11.6859 3.87865 11.5754 4.98535 11.8195 6.04103C9.86249 5.94282 7.94794 5.43444 6.19998 4.54883C4.45203 3.66323 2.90969 2.42017 1.67297 0.900249C1.0444 1.98398 0.852057 3.26638 1.13503 4.48682C1.418 5.70727 2.15506 6.77418 3.19641 7.47072C2.41463 7.4459 1.64998 7.23541 0.965625 6.85666V6.91759C0.964925 8.05488 1.3581 9.15732 2.07831 10.0375C2.79852 10.9177 3.80132 11.5213 4.91625 11.7457C4.19206 11.9439 3.43198 11.9727 2.69484 11.8301C3.00945 12.8082 3.62157 13.6636 4.44577 14.2771C5.26997 14.8905 6.26512 15.2313 7.29234 15.252C5.54842 16.6218 3.39417 17.3649 1.17656 17.3613C0.783287 17.3607 0.390399 17.3366 0 17.2892C2.25286 18.7345 4.87353 19.5021 7.55016 19.5007Z"
-    fill="#9EFF00" />
-</svg>
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.55016 19.5007C16.6045 19.5007 21.5583 11.9974 21.5583 5.49259C21.5583 5.28166 21.5536 5.06603 21.5442 4.85509C22.5079 4.15819 23.3395 3.29499 24 2.30603C23.1025 2.70533 22.1496 2.96611 21.1739 3.07947C22.2013 2.46364 22.9705 1.4962 23.3391 0.356499C22.3726 0.92929 21.3156 1.33334 20.2134 1.55134C19.4708 0.762293 18.489 0.239849 17.4197 0.0647834C16.3504 -0.110282 15.2532 0.0717828 14.2977 0.582829C13.3423 1.09387 12.5818 1.90544 12.1338 2.89204C11.6859 3.87865 11.5754 4.98535 11.8195 6.04103C9.86249 5.94282 7.94794 5.43444 6.19998 4.54883C4.45203 3.66323 2.90969 2.42017 1.67297 0.900249C1.0444 1.98398 0.852057 3.26638 1.13503 4.48682C1.418 5.70727 2.15506 6.77418 3.19641 7.47072C2.41463 7.4459 1.64998 7.23541 0.965625 6.85666V6.91759C0.964925 8.05488 1.3581 9.15732 2.07831 10.0375C2.79852 10.9177 3.80132 11.5213 4.91625 11.7457C4.19206 11.9439 3.43198 11.9727 2.69484 11.8301C3.00945 12.8082 3.62157 13.6636 4.44577 14.2771C5.26997 14.8905 6.26512 15.2313 7.29234 15.252C5.54842 16.6218 3.39417 17.3649 1.17656 17.3613C0.783287 17.3607 0.390399 17.3366 0 17.2892C2.25286 18.7345 4.87353 19.5021 7.55016 19.5007Z"
+                    fill="#9EFF00" />
+                </svg>
 
               </a>
             </li>

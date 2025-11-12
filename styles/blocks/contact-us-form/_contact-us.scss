@@ -28,7 +28,7 @@
       }
 
       @include mobile {
-        row-gap: 6 px;
+        row-gap: 6px;
       }
     }
 
@@ -38,6 +38,10 @@
   }
 
   &__body {
+    border-top: 1px solid var(--color-grey-15);
+  }
+
+  &__wrapper {
     max-width: 1060px;
     margin-inline: auto;
     border-left: 1px solid var(--color-grey-15);
