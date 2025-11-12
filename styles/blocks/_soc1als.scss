@@ -29,6 +29,35 @@
   }
 
   &__link {
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+    border-radius: var(--border-radius-8);
+    color: var(--color-green-50);
+
+    @include hover {
+      background: linear-gradient(
+        360deg,
+        rgba(158, 255, 0, 1) 0%,
+        rgba(158, 255, 0, 0.32) 100%
+      );
+      color: rgba(46, 46, 46, 1);
+    }
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      inset: -1px;
+      z-index: -1;
+      border-radius: var(--border-radius-8);
+      background: linear-gradient(
+        180deg,
+        rgba(46, 46, 46, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+
     &-icon {
       @include square(52px);
 

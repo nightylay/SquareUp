@@ -1654,6 +1654,33 @@ h6,
   display: flex;
   column-gap: 14px;
 }
+.soc1als__link {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+  border-radius: var(--border-radius-8);
+  color: var(--color-green-50);
+}
+@media (hover: hover) {
+  .soc1als__link:hover {
+    background: linear-gradient(360deg, rgb(158, 255, 0) 0%, rgba(158, 255, 0, 0.32) 100%);
+    color: rgb(46, 46, 46);
+  }
+}
+@media (hover: none) {
+  .soc1als__link:active {
+    background: linear-gradient(360deg, rgb(158, 255, 0) 0%, rgba(158, 255, 0, 0.32) 100%);
+    color: rgb(46, 46, 46);
+  }
+}
+.soc1als__link::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  border-radius: var(--border-radius-8);
+  background: linear-gradient(180deg, rgb(46, 46, 46) 0%, rgba(255, 255, 255, 0) 100%);
+}
 .soc1als__link-icon {
   width: 52px;
   height: 52px;
