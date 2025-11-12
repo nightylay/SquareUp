@@ -26,6 +26,10 @@
   &__list {
     display: flex;
     column-gap: 14px;
+
+    @include laptop {
+      column-gap: 10px;
+    }
   }
 
   &__link {
@@ -59,7 +63,9 @@
     }
 
     &-icon {
-      @include square(52px);
+      @include laptop {
+        @include square(52px);
+      }
 
       flex-shrink: 0;
     }

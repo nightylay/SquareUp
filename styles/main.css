@@ -1654,6 +1654,11 @@ h6,
   display: flex;
   column-gap: 14px;
 }
+@media (width <= 1440.98px) {
+  .soc1als__list {
+    column-gap: 10px;
+  }
+}
 .soc1als__link {
   position: relative;
   padding: 20px;
@@ -1681,9 +1686,13 @@ h6,
   border-radius: var(--border-radius-8);
   background: linear-gradient(180deg, rgb(46, 46, 46) 0%, rgba(255, 255, 255, 0) 100%);
 }
+@media (width <= 1440.98px) {
+  .soc1als__link-icon {
+    width: 52px;
+    height: 52px;
+  }
+}
 .soc1als__link-icon {
-  width: 52px;
-  height: 52px;
   flex-shrink: 0;
 }
 
@@ -1808,7 +1817,7 @@ h6,
 .footer__contacts-link, .footer__contacts-address {
   display: inline-flex;
   align-items: center;
-  column-gap: 11px;
+  column-gap: 10px;
   font-size: 18px;
   font-weight: 400;
   padding-bottom: 16px;
