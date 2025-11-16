@@ -550,6 +550,9 @@ h6,
 .section__banner-title, .section__banner-description {
   text-align: center;
 }
+.section__banner-title {
+  font-size: clamp(24px, 2.380952381vw, 38px);
+}
 .section__banner-link {
   padding-inline: 34px;
 }
