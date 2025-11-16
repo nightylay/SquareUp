@@ -22,7 +22,14 @@
   }
 }
 
-.glass-bg {
-  backdrop-filter: blur(12px);
-  background: rgba(36, 36, 36, 0.2);
+.bg {
+  &-glass {
+    backdrop-filter: blur(12px);
+    background: rgba(36, 36, 36, 0.2);
+  }
+
+  &-dark {
+
+    background: var(--color-grey-15);
+  }
 }

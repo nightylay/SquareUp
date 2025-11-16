@@ -1,0 +1,103 @@
+@use '../helpers' as *;
+
+.services {
+  &__field {
+    &-header {
+      outline: 1px solid var(--color-grey-15);
+      padding: 120px 50px 50px;
+
+      @include laptop {
+        padding: 80px 40px 40px;
+      }
+
+      @include mobile {
+        padding: 40px 16px;
+      }
+
+      &-body {
+        max-width: 1196px;
+      }
+
+      &-title {
+        &:not(:last-child) {
+          margin-bottom: 14px;
+
+          @include laptop {
+            margin-bottom: 10px;
+          }
+
+          @include mobile-s {
+            margin-bottom: 6px;
+          }
+        }
+      }
+
+      &-description {
+        &:not(:last-child) {
+          margin-bottom: 50px;
+
+          @include laptop {
+            margin-bottom: 40px;
+          }
+
+          @include mobile-s {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  &__subfield {
+    &-title {
+      @include fluid-text(28, 20);
+
+      padding: 50px;
+      outline: 1px solid var(--color-grey-15);
+      color: var(--color-grey-60);
+
+      @include laptop {
+        padding: 40px;
+      }
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      row-gap: 30px;
+      padding: 50px;
+      outline: 1px solid var(--color-grey-15);
+
+      @include laptop {
+        row-gap: 24px;
+        padding: 40px;
+      }
+
+      @include mobile {
+        row-gap: 20px;
+        padding: 20px;
+      }
+
+      &-image {
+        @include laptop {
+          @include square(64px);
+        }
+
+        @include mobile {
+          @include square(56px);
+        }
+      }
+
+      &-label {
+        @include fluid-text(20, 16);
+
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
 @use '../helpers' as *;
 
 .section {
-  &__header {
+  &__header,
+  &__banner {
     padding: 120px 50px;
 
     @include laptop {
@@ -12,7 +13,9 @@
     @include tablet {
       padding: 50px 16px;
     }
+  }
 
+  &__header {
     &--services {
       background: url('../../assets/images/backgrounds/bg-1.webp') center /
         cover no-repeat;
@@ -46,6 +49,10 @@
       margin-inline: auto;
       row-gap: 14px;
 
+      @include laptop {
+        row-gap: 10px;
+      }
+
       @include mobile {
         row-gap: 6px;
       }
@@ -54,6 +61,67 @@
     &-title,
     &-description {
       text-align: center;
+    }
+  }
+
+  &__banner {
+    &--bg {
+      background: url('../../assets/images/backgrounds/bg-5.webp') center /
+        cover no-repeat;
+    }
+
+    &-inner {
+      @include flex-center();
+
+      flex-direction: column;
+      max-width: 895px;
+      margin-inline: auto;
+      row-gap: 50px;
+
+      @include laptop {
+        row-gap: 40px;
+      }
+
+      @include mobile {
+        row-gap: 28px;
+      }
+    }
+
+    &-body {
+      row-gap: 14px;
+
+      @include laptop {
+        row-gap: 10px;
+      }
+
+      @include mobile {
+        row-gap: 6px;
+      }
+    }
+
+    &-title,
+    &-description {
+      text-align: center;
+    }
+
+    &-link {
+      padding: 18px 34px;
+
+      @include laptop {
+        padding: 14px 24px;
+      }
+    }
+  }
+
+  &__label {
+    @include fluid-text(22, 16);
+
+    padding: 12px 14px;
+    color: var(--color-white);
+    border-radius: var(--border-radius-8);
+
+    @include laptop {
+      padding: 10px;
     }
   }
 }

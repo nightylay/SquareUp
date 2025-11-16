@@ -259,9 +259,12 @@ svg * {
   }
 }
 
-.glass-bg {
+.bg-glass {
   backdrop-filter: blur(12px);
   background: rgba(36, 36, 36, 0.2);
+}
+.bg-dark {
+  background: var(--color-grey-15);
 }
 
 html.is-lock {
@@ -401,6 +404,11 @@ h6,
     --gridColumns: 1;
   }
 }
+@media (width <= 1023.98px) {
+  .grid--4 {
+    --gridColumns: 2;
+  }
+}
 
 .button {
   border-radius: 8px;
@@ -456,17 +464,17 @@ h6,
   }
 }
 
-.section__header {
+.section__header, .section__banner {
   padding: 120px 50px;
 }
 @media (width <= 1440.98px) {
-  .section__header {
+  .section__header, .section__banner {
     padding: 100px 50px;
     row-gap: 10px;
   }
 }
 @media (width <= 1023.98px) {
-  .section__header {
+  .section__header, .section__banner {
     padding: 50px 16px;
   }
 }
@@ -494,6 +502,11 @@ h6,
   margin-inline: auto;
   row-gap: 14px;
 }
+@media (width <= 1440.98px) {
+  .section__header-inner {
+    row-gap: 10px;
+  }
+}
 @media (width <= 767.98px) {
   .section__header-inner {
     row-gap: 6px;
@@ -501,6 +514,63 @@ h6,
 }
 .section__header-title, .section__header-description {
   text-align: center;
+}
+.section__banner--bg {
+  background: url("../../assets/images/backgrounds/bg-5.webp") center/cover no-repeat;
+}
+.section__banner-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 895px;
+  margin-inline: auto;
+  row-gap: 50px;
+}
+@media (width <= 1440.98px) {
+  .section__banner-inner {
+    row-gap: 40px;
+  }
+}
+@media (width <= 767.98px) {
+  .section__banner-inner {
+    row-gap: 28px;
+  }
+}
+.section__banner-body {
+  row-gap: 14px;
+}
+@media (width <= 1440.98px) {
+  .section__banner-body {
+    row-gap: 10px;
+  }
+}
+@media (width <= 767.98px) {
+  .section__banner-body {
+    row-gap: 6px;
+  }
+}
+.section__banner-title, .section__banner-description {
+  text-align: center;
+}
+.section__banner-link {
+  padding: 18px 34px;
+}
+@media (width <= 1440.98px) {
+  .section__banner-link {
+    padding: 14px 24px;
+  }
+}
+.section__label {
+  font-size: clamp(16px, 1.3784461153vw, 22px);
+  padding: 12px 14px;
+  color: var(--color-white);
+  border-radius: var(--border-radius-8);
+}
+@media (width <= 1440.98px) {
+  .section__label {
+    padding: 10px;
+  }
 }
 
 .burger-button {
@@ -1642,6 +1712,102 @@ h6,
   .contact-us__button {
     width: 100%;
   }
+}
+
+.services__field-header {
+  outline: 1px solid var(--color-grey-15);
+  padding: 120px 50px 50px;
+}
+@media (width <= 1440.98px) {
+  .services__field-header {
+    padding: 80px 40px 40px;
+  }
+}
+@media (width <= 767.98px) {
+  .services__field-header {
+    padding: 40px 16px;
+  }
+}
+.services__field-header-body {
+  max-width: 1196px;
+}
+.services__field-header-title:not(:last-child) {
+  margin-bottom: 14px;
+}
+@media (width <= 1440.98px) {
+  .services__field-header-title:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (width <= 480.98px) {
+  .services__field-header-title:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+.services__field-header-description:not(:last-child) {
+  margin-bottom: 50px;
+}
+@media (width <= 1440.98px) {
+  .services__field-header-description:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media (width <= 480.98px) {
+  .services__field-header-description:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.services__subfield-title {
+  font-size: clamp(20px, 1.7543859649vw, 28px);
+  padding: 50px;
+  outline: 1px solid var(--color-grey-15);
+  color: var(--color-grey-60);
+}
+@media (width <= 1440.98px) {
+  .services__subfield-title {
+    padding: 40px;
+  }
+}
+@media (width <= 767.98px) {
+  .services__subfield-title {
+    text-align: center;
+  }
+}
+.services__subfield-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  row-gap: 30px;
+  padding: 50px;
+  outline: 1px solid var(--color-grey-15);
+}
+@media (width <= 1440.98px) {
+  .services__subfield-card {
+    row-gap: 24px;
+    padding: 40px;
+  }
+}
+@media (width <= 767.98px) {
+  .services__subfield-card {
+    row-gap: 20px;
+    padding: 20px;
+  }
+}
+@media (width <= 1440.98px) {
+  .services__subfield-card-image {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (width <= 767.98px) {
+  .services__subfield-card-image {
+    width: 56px;
+    height: 56px;
+  }
+}
+.services__subfield-card-label {
+  font-size: clamp(16px, 1.2531328321vw, 20px);
+  font-weight: 500;
 }
 
 .soc1als {
