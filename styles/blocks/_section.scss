@@ -26,7 +26,8 @@
         cover no-repeat;
     }
 
-    &--clients {
+    &--clients,
+    &--works {
       background: url('../../assets/images/backgrounds/bg-3.webp') center /
         cover no-repeat;
     }
@@ -59,9 +60,66 @@
     }
   }
 
+  &__top {
+    outline: 1px solid var(--color-grey-15);
+    padding: 120px 50px 50px;
+
+    @include laptop {
+      padding: 80px 40px 40px;
+    }
+
+    @include mobile {
+      padding: 40px 16px;
+    }
+
+    &-body {
+      max-width: 1196px;
+    }
+
+    &-title {
+      &:not(:last-child) {
+        margin-bottom: 14px;
+
+        @include laptop {
+          margin-bottom: 10px;
+        }
+
+        @include mobile-s {
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    &-description {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+
+        @include laptop {
+          margin-bottom: 40px;
+        }
+
+        @include mobile-s {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &-label {
+      @include fluid-text(22, 16);
+
+      padding: 12px 14px;
+      color: var(--color-white);
+      border-radius: var(--border-radius-8);
+
+      @include laptop {
+        padding: 10px;
+      }
+    }
+  }
+
   &__banner {
     &--bg {
-      background: url('../../assets/images/backgrounds/bg-5.webp') center /
+      background: url('../../assets/images/backgrounds/bg-3.webp') center /
         cover no-repeat;
     }
 
@@ -109,18 +167,6 @@
       @include laptop {
         padding-inline: 24px;
       }
-    }
-  }
-
-  &__label {
-    @include fluid-text(22, 16);
-
-    padding: 12px 14px;
-    color: var(--color-white);
-    border-radius: var(--border-radius-8);
-
-    @include laptop {
-      padding: 10px;
     }
   }
 }

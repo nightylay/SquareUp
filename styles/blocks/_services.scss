@@ -1,53 +1,6 @@
 @use '../helpers' as *;
 
 .services {
-  &__field {
-    &-header {
-      outline: 1px solid var(--color-grey-15);
-      padding: 120px 50px 50px;
-
-      @include laptop {
-        padding: 80px 40px 40px;
-      }
-
-      @include mobile {
-        padding: 40px 16px;
-      }
-
-      &-body {
-        max-width: 1196px;
-      }
-
-      &-title {
-        &:not(:last-child) {
-          margin-bottom: 14px;
-
-          @include laptop {
-            margin-bottom: 10px;
-          }
-
-          @include mobile-s {
-            margin-bottom: 6px;
-          }
-        }
-      }
-
-      &-description {
-        &:not(:last-child) {
-          margin-bottom: 50px;
-
-          @include laptop {
-            margin-bottom: 40px;
-          }
-
-          @include mobile-s {
-            margin-bottom: 30px;
-          }
-        }
-      }
-    }
-  }
-
   &__subfield {
     &-title {
       @include fluid-text(28, 20);
