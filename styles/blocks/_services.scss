@@ -1,7 +1,7 @@
 @use '../helpers' as *;
 
 .services {
-  &__subfield {
+  &__field {
     &-title {
       @include fluid-text(28, 20);
 
