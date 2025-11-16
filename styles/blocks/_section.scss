@@ -36,11 +36,6 @@
         cover no-repeat;
     }
 
-    &--contact-us {
-      background: url('../../assets/images/backgrounds/bg-5.webp') center /
-        cover no-repeat;
-    }
-
     &-inner {
       @include flex-center();
 
@@ -105,10 +100,10 @@
     }
 
     &-link {
-      padding: 18px 34px;
+      padding-inline: 34px;
 
       @include laptop {
-        padding: 14px 24px;
+        padding-inline: 24px;
       }
     }
   }
