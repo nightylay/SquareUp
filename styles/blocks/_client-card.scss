@@ -6,7 +6,7 @@
   height: 100%;
   min-height: 532px;
   padding: 100px 80px;
-  border: 1px solid var(--color-grey-15);
+  outline: 1px solid var(--color-grey-15);
 
   @include laptop {
     min-height: 420px;
