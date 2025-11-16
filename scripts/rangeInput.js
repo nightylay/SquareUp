@@ -1,14 +1,20 @@
 const range1 = document.querySelector('#tailmetr1')
 const range2 = document.querySelector('#tailmetr2')
+const output1 = document.querySelector('#output1')
+const output2 = document.querySelector('#output2')
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#output1').textContent = formatValue(range1.value) + ' $'
-  document.querySelector('#output2').textContent = formatValue(range2.value) + ' $'
+  if (range1 && range2 && output1 && output2) {
+    output1.textContent = formatValue(range1.value) + ' $'
+    output2.textContent = formatValue(range2.value) + ' $'
+  }
 })
 
 function handleInputRange() {
-  range1.addEventListener('input', handleInputRange1)
-  range2.addEventListener('input', handleInputRange2)
+  if (range1 && range2) {
+    range1.addEventListener('input', handleInputRange1)
+    range2.addEventListener('input', handleInputRange2)
+  }
 }
 
 function handleInputRange1(event) {
