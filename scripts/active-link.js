@@ -4,14 +4,12 @@ function setBackgroundOnActiveLink() {
   const currentUrl = window.location.href
   const formattedUrl = currentUrl.split('/').at(-1).split('.').at(0)
   headerLinks.forEach((link) => {
-    let formattedTextLink = link.textContent.toLowerCase()
+    let valueDataLink = link.dataset.jsPage
     link.classList.remove('is-active')
-    if (formattedTextLink === formattedUrl) {
-      link.classList.add('is-active')
-    } else if (formattedTextLink === 'home' && formattedUrl === 'index') {
+    if (valueDataLink === formattedUrl) {
       link.classList.add('is-active')
     }
   })
 }
 
-export { setBackgroundOnActiveLink } 
+export { setBackgroundOnActiveLink }  
