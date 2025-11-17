@@ -6,19 +6,21 @@
 
 @use 'blocks/grid';
 @use 'blocks/button';
+@use 'blocks/link-button';
 @use 'blocks/section';
 @use 'blocks/burger-button';
 @use 'blocks/logo';
+@use 'blocks/header';
+@use 'blocks/nav-menu';
 @use 'blocks/service-card';
 @use 'blocks/choose-card';
 @use 'blocks/client-card';
+@use 'blocks/work-card';
 @use 'blocks/contact-us-form/fields';
 @use 'blocks/contact-us-form/field';
 @use 'blocks/contact-us-form/checkboxes';
 @use 'blocks/contact-us-form/checkbox';
 @use 'blocks/contact-us-form/range';
-@use 'blocks/header';
-@use 'blocks/nav-menu';
 @use 'blocks/hero';
 @use 'blocks/companies';
 @use 'blocks/questions';

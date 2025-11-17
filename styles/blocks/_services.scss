@@ -5,7 +5,7 @@
     &__title {
       @include fluid-text(28, 20);
 
-      padding: 50px;
+      padding: var(--padding-50);
       outline: 1px solid var(--color-grey-15);
       color: var(--color-grey-60);
 
@@ -23,7 +23,7 @@
       flex-direction: column;
       height: 100%;
       row-gap: 30px;
-      padding: 50px;
+      padding: var(--padding-50);
       outline: 1px solid var(--color-grey-15);
 
       @include laptop {

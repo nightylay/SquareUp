@@ -23,13 +23,12 @@
 }
 
 .bg {
-  &-glass {
+  &--glass {
     backdrop-filter: blur(12px);
     background: rgba(36, 36, 36, 0.2);
   }
 
-  &-dark {
-
+  &--dark {
     background: var(--color-grey-15);
   }
 }

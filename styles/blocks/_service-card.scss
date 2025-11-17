@@ -3,7 +3,7 @@
 .service-card {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: var(--padding-50);
   min-height: 577px;
   height: 100%;
   outline: 1px solid var(--color-grey-15);

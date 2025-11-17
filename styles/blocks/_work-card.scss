@@ -1,0 +1,90 @@
+@use '../helpers' as *;
+
+.work-card {
+  height: 100%;
+  outline: 1px solid var(--color-grey-15);
+
+  &__header {
+    padding: 30px 50px;
+    border-bottom: 1px solid var(--color-grey-15);
+    color: var(--color-grey-60);
+
+    @include laptop {
+      padding: 24px 40px;
+    }
+
+    @include mobile {
+      padding: 20px 24px;
+    }
+  }
+
+  &__title {
+    color: var(--color-grey-60);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 30px 50px 100px;
+
+    @include laptop {
+      row-gap: 24px;
+      padding: 30px 40px 80px;
+    }
+
+    @include mobile {
+      row-gap: 20px;
+      padding: 20px 24px 40px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: var(--border-radius-12);
+
+    @include laptop {
+      border-radius: var(--border-radius-10);
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    &-label {
+      @include fluid-text(24, 18);
+
+      font-weight: 500;
+      color: var(--color-grey-90);
+    }
+
+    &-url {
+      @include fluid-text(20, 14);
+
+      color: var(--color-grey-60);
+      padding: 10px 14px;
+      border-radius: var(--border-radius-8);
+
+      @include laptop {
+        padding: 8px 12px;
+      }
+
+      @include mobile {
+        padding: 8px 10px;
+      }
+    }
+  }
+
+  &__description {
+    color: var(--color-grey-60);
+  }
+}

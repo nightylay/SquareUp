@@ -1,7 +1,7 @@
 @use '../helpers' as *;
 
 .footer {
-  padding-block: 50px;
+  padding-block: var(--padding-50);
   border-top: 1px solid var(--color-grey-15);
 
   @include laptop {
@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     column-gap: 109px;
-    padding-bottom: 50px;
+    padding-bottom: var(--padding-50);
 
     @include laptop {
       column-gap: 68px;
@@ -77,7 +77,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid var(--color-grey-15);
-    padding-top: 50px;
+    padding-top: var(--padding-50);
 
     @include laptop {
       padding-top: 40px;
