@@ -1,8 +1,8 @@
 @use '../helpers' as *;
 
 .services {
-  &__field {
-    &-title {
+  &-subcategory {
+    &__title {
       @include fluid-text(28, 20);
 
       padding: 50px;
@@ -18,7 +18,7 @@
       }
     }
 
-    &-card {
+    &__card {
       display: flex;
       flex-direction: column;
       height: 100%;

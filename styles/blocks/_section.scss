@@ -114,6 +114,10 @@
       @include laptop {
         padding: 10px;
       }
+
+      @include mobile-s {
+        font-size: 14px;
+      }
     }
   }
 
