@@ -16,6 +16,9 @@
   }
 
   &__header {
+    background: url('../../assets/images/backgrounds/bg-3.webp') center / cover
+      no-repeat;
+
     &--services {
       background: url('../../assets/images/backgrounds/bg-1.webp') center /
         cover no-repeat;
@@ -23,12 +26,6 @@
 
     &--choose {
       background: url('../../assets/images/backgrounds/bg-2.webp') center /
-        cover no-repeat;
-    }
-
-    &--clients,
-    &--works {
-      background: url('../../assets/images/backgrounds/bg-3.webp') center /
         cover no-repeat;
     }
 
