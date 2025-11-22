@@ -604,6 +604,9 @@ h6,
     font-size: 14px;
   }
 }
+.section__description {
+  font-family: var(--font-family-accent);
+}
 .section__banner--bg {
   background: url("../../assets/images/backgrounds/bg-3.webp") center/cover no-repeat;
 }
@@ -1161,8 +1164,8 @@ h6,
   height: 125px;
 }
 .process__card-header::before {
+  font-size: clamp(80px, 9.3984962406vw, 150px);
   content: counter(custom-counter, decimal-leading-zero);
-  font-size: 150px;
   font-weight: 600;
   color: var(--color-green-80);
 }

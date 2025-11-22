@@ -118,6 +118,10 @@
     }
   }
 
+  &__description {
+    font-family: var(--font-family-accent);
+  }
+
   &__banner {
     &--bg {
       background: url('../../assets/images/backgrounds/bg-3.webp') center /
