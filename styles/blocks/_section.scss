@@ -118,7 +118,7 @@
     }
   }
 
-   &__list {
+  &__list {
     counter-reset: custom-counter;
     list-style: none;
   }
@@ -164,11 +164,6 @@
       }
     }
 
-    &-title,
-    &-description {
-      color: var(--color-grey-60);
-    }
-
     &-title {
       width: 100%;
       position: relative;
@@ -177,7 +172,7 @@
       border-bottom: 1px solid var(--color-grey-15);
 
       @include laptop {
-       padding-bottom: 20px; 
+        padding-bottom: 20px;
       }
 
       @include tablet {
@@ -185,10 +180,14 @@
       }
 
       @include mobile {
-       padding-bottom: 14px; 
+        padding-bottom: 14px;
+      }
+
+      &--grey,
+      &-description {
+        color: var(--color-grey-60);
       }
     }
-
   }
 
   &__description {
