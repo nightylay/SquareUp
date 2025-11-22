@@ -103,18 +103,6 @@
 
     &-label {
       @include fluid-text(22, 16);
-
-      padding: 12px 14px;
-      color: var(--color-white);
-      border-radius: var(--border-radius-8);
-
-      @include laptop {
-        padding: 10px;
-      }
-
-      @include mobile-s {
-        font-size: 14px;
-      }
     }
   }
 
@@ -186,6 +174,10 @@
       &--grey,
       &-description {
         color: var(--color-grey-60);
+      }
+
+      &--green {
+        color: var(--color-green-80);
       }
     }
   }

@@ -1,6 +1,8 @@
 @use '../helpers' as *;
 
 .button {
+  @include flex-center(true);
+
   border-radius: 8px;
   font-weight: 500;
   padding: 18px 28px;

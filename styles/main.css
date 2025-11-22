@@ -219,6 +219,7 @@ svg * {
   --color-grey-20: #333333;
   --color-grey-15: #262626;
   --color-grey-10: #191919;
+  --color-grey-alternate: rgba(36, 36, 36, 0.2);
   --color-green-80: #d8ff99;
   --color-green-70: #c5ff66;
   --color-green-50: #9eff00;
@@ -227,6 +228,7 @@ svg * {
   --button-height: 60px;
   --button-padding-inline: 28px;
   --padding-50: 50px;
+  --border-radius-16: 12px;
   --border-radius-12: 12px;
   --border-radius-10: 10px;
   --border-radius-8: 8px;
@@ -270,10 +272,23 @@ svg * {
 
 .bg--glass {
   backdrop-filter: blur(12px);
-  background: rgba(36, 36, 36, 0.2);
+  background: var(--color-grey-alternate);
 }
 .bg--dark {
   background: var(--color-grey-15);
+  padding: 12px 14px;
+  color: var(--color-white);
+  border-radius: var(--border-radius-8);
+}
+@media (width <= 1440.98px) {
+  .bg--dark {
+    padding: 10px;
+  }
+}
+@media (width <= 480.98px) {
+  .bg--dark {
+    font-size: 14px;
+  }
 }
 
 html.is-lock {
@@ -420,6 +435,9 @@ h6,
 }
 
 .button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   font-weight: 500;
   padding: 18px 28px;
@@ -590,19 +608,6 @@ h6,
 }
 .section__top-label {
   font-size: clamp(16px, 1.3784461153vw, 22px);
-  padding: 12px 14px;
-  color: var(--color-white);
-  border-radius: var(--border-radius-8);
-}
-@media (width <= 1440.98px) {
-  .section__top-label {
-    padding: 10px;
-  }
-}
-@media (width <= 480.98px) {
-  .section__top-label {
-    font-size: 14px;
-  }
 }
 .section__list {
   counter-reset: custom-counter;
@@ -648,9 +653,6 @@ h6,
     height: 70px;
   }
 }
-.section__card-title, .section__card-description {
-  color: var(--color-grey-60);
-}
 .section__card-title {
   width: 100%;
   position: relative;
@@ -672,6 +674,12 @@ h6,
   .section__card-title {
     padding-bottom: 14px;
   }
+}
+.section__card-title--grey, .section__card-title-description {
+  color: var(--color-grey-60);
+}
+.section__card-title--green {
+  color: var(--color-green-80);
 }
 .section__description {
   font-family: var(--font-family-accent);
@@ -1966,6 +1974,205 @@ h6,
 .services-subcategory__card-label {
   font-size: clamp(16px, 1.2531328321vw, 20px);
   font-weight: 500;
+}
+
+.about__info {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 100px 150px;
+  border: 1px solid var(--color-grey-15);
+}
+@media (width <= 1440.98px) {
+  .about__info {
+    padding: 80px 100px;
+  }
+}
+@media (width <= 1023.98px) {
+  .about__info {
+    padding: 60px 30px;
+  }
+}
+@media (width <= 767.98px) {
+  .about__info {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 16px;
+  }
+}
+.about__info-title:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (width <= 1440.98px) {
+  .about__info-title:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+.about__info-description {
+  font-size: clamp(14px, 1.2531328321vw, 20px);
+}
+.about__info-image {
+  border-radius: var(--border-radius-16);
+  border: 1px solid var(--color-grey-15);
+}
+@media (width <= 1440.98px) {
+  .about__info-image {
+    width: 40%;
+    height: 40%;
+  }
+}
+@media (width <= 767.98px) {
+  .about__info-image {
+    width: 60%;
+    height: 60%;
+    border-radius: var(--border-radius-12);
+  }
+}
+@media (width <= 480.98px) {
+  .about__info-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+.about__story-title {
+  padding: 100px 50px;
+}
+@media (width <= 1440.98px) {
+  .about__story-title {
+    padding: 80px 50px;
+  }
+}
+@media (width <= 767.98px) {
+  .about__story-title {
+    padding: 40px 24px;
+  }
+}
+
+.welcome__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  padding: 80px;
+}
+@media (width <= 1440.98px) {
+  .welcome__inner {
+    row-gap: 40px;
+  }
+}
+@media (width <= 767.98px) {
+  .welcome__inner {
+    row-gap: 30px;
+    padding: 40px 24px;
+  }
+}
+.welcome__top {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (width <= 1440.98px) {
+  .welcome__top {
+    gap: 30px;
+  }
+}
+@media (width <= 1023.98px) {
+  .welcome__top {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media (width <= 1440.98px) {
+  .welcome__top-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (width <= 767.98px) {
+  .welcome__top-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+.welcome__top-title, .welcome__top-description {
+  color: var(--color-grey-60);
+}
+@media (width <= 1440.98px) {
+  .welcome__top-title, .welcome__top-description {
+    text-align: center;
+  }
+}
+.welcome__top-title {
+  font-size: clamp(20px, 1.8796992481vw, 30px);
+  font-weight: 500;
+}
+.welcome__top-title:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (width <= 1440.98px) {
+  .welcome__top-title:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+@media (width <= 1440.98px) and (width <= 767.98px) {
+  .welcome__top-title:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.welcome__top-description {
+  font-family: var(--font-family-accent);
+}
+.welcome__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  background-color: var(--color-grey-alternate);
+  border: 1px solid var(--color-grey-15);
+  border-radius: var(--border-radius-12);
+  padding: 25px 40px;
+}
+@media (width <= 1440.98px) {
+  .welcome__bottom {
+    padding: 20px 30px;
+    border-radius: var(--border-radius-10);
+  }
+}
+@media (width <= 1023.98px) {
+  .welcome__bottom {
+    flex-direction: column;
+  }
+}
+@media (width <= 767.98px) {
+  .welcome__bottom {
+    padding: 20px;
+  }
+}
+.welcome__bottom-text, .welcome__bottom-puddle-text {
+  font-size: clamp(18px, 1.2531328321vw, 20px);
+}
+.welcome__bottom-text {
+  color: var(--color-grey-60);
+}
+@media (width <= 1023.98px) {
+  .welcome__bottom-text:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+.welcome__bottom-puddle-text {
+  padding: 14px 20px;
+}
+@media (width <= 1023.98px) {
+  .welcome__bottom-puddle-text {
+    text-align: center;
+  }
+  .welcome__bottom-puddle-text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (width <= 480.98px) {
+  .welcome__bottom-button {
+    width: 100%;
+  }
 }
 
 .soc1als {

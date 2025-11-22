@@ -25,10 +25,21 @@
 .bg {
   &--glass {
     backdrop-filter: blur(12px);
-    background: rgba(36, 36, 36, 0.2);
+    background: var(--color-grey-alternate);
   }
 
   &--dark {
     background: var(--color-grey-15);
+    padding: 12px 14px;
+    color: var(--color-white);
+    border-radius: var(--border-radius-8);
+
+    @include laptop {
+      padding: 10px;
+    }
+
+    @include mobile-s {
+      font-size: 14px;
+    }
   }
 }
