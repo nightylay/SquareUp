@@ -204,6 +204,13 @@ svg * {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --color-white: #ffffff;
   --color-white-alternate: #fdfffa;
@@ -216,6 +223,7 @@ svg * {
   --color-green-70: #c5ff66;
   --color-green-50: #9eff00;
   --font-family-base: "Barlow", sans-serif;
+  --font-family-accent: "Inter", sans-serif;
   --button-height: 60px;
   --button-padding-inline: 28px;
   --padding-50: 50px;
@@ -1134,16 +1142,39 @@ h6,
   flex-direction: column;
   row-gap: 50px;
   padding: 100px var(--padding-50);
+  outline: 1px solid var(--color-grey-15);
+}
+@media (width <= 1440.98px) {
+  .process__card {
+    padding: 80px 40px;
+  }
+}
+@media (width <= 767.98px) {
+  .process__card {
+    padding: 40px 24px;
+  }
+}
+.process__card-header {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  height: 125px;
+}
+.process__card-header::before {
+  content: counter(custom-counter, decimal-leading-zero);
+  font-size: 150px;
+  font-weight: 600;
+  color: var(--color-green-80);
+}
+.process__card-title, .process__card-description {
+  color: var(--color-grey-60);
 }
 .process__card-title {
-  color: var(--color-grey-60);
+  width: 100%;
+  position: relative;
+  top: 20%;
   padding-bottom: 26px;
   border-bottom: 1px solid var(--color-grey-15);
-}
-.process__card-title::before {
-  content: counter(custom-counter, decimal-leading-zero);
-  font-size: 5em;
-  color: var(--color-green-80);
 }
 
 .fields {
