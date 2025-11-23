@@ -2057,6 +2057,7 @@ h6,
 @media (width <= 1440.98px) {
   .welcome__inner {
     row-gap: 40px;
+    padding: 60px;
   }
 }
 @media (width <= 767.98px) {
@@ -2134,6 +2135,7 @@ h6,
 @media (width <= 1440.98px) {
   .welcome__bottom {
     padding: 20px 30px;
+    column-gap: 14px;
     border-radius: var(--border-radius-10);
   }
 }
@@ -2147,11 +2149,10 @@ h6,
     padding: 20px;
   }
 }
-.welcome__bottom-text, .welcome__bottom-puddle-text {
-  font-size: clamp(18px, 1.2531328321vw, 20px);
-}
 .welcome__bottom-text {
+  font-size: clamp(18px, 1.2531328321vw, 20px);
   color: var(--color-grey-60);
+  white-space: nowrap;
 }
 @media (width <= 1023.98px) {
   .welcome__bottom-text:not(:last-child) {
@@ -2159,6 +2160,7 @@ h6,
   }
 }
 .welcome__bottom-puddle-text {
+  font-size: clamp(16px, 1.2531328321vw, 20px);
   padding: 14px 20px;
 }
 @media (width <= 1023.98px) {

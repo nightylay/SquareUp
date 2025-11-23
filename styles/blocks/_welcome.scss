@@ -9,6 +9,7 @@
 
     @include laptop {
       row-gap: 40px;
+      padding: 60px;
     }
 
     @include mobile {
@@ -84,6 +85,7 @@
 
     @include laptop {
       padding: 20px 30px;
+      column-gap: 14px;
       border-radius: var(--border-radius-10);
     }
 
@@ -95,13 +97,11 @@
       padding: 20px;
     }
 
-    &-text,
-    &-puddle-text {
-      @include fluid-text(20, 18);
-    }
-
     &-text {
+      @include fluid-text(20, 18);
+
       color: var(--color-grey-60);
+      white-space: nowrap;
 
       @include tablet {
         &:not(:last-child) {
@@ -111,6 +111,8 @@
     }
 
     &-puddle-text {
+      @include fluid-text(20, 16);
+
       padding: 14px 20px;
 
       @include tablet {
