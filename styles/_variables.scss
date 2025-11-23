@@ -1,3 +1,5 @@
+@use './helpers' as *;
+
 :root {
   --color-white: #ffffff;
   --color-white-alternate: #fdfffa;
@@ -8,6 +10,7 @@
   --color-grey-15: #262626;
   --color-grey-10: #191919;
   --color-grey-alternate: rgba(36, 36, 36, 0.2);
+  --color-grey-alternate-2: rgba(17, 17, 17, 0.2);
 
   --color-green-80: #d8ff99;
   --color-green-70: #c5ff66;
@@ -19,9 +22,11 @@
   --button-height: 60px;
   --button-padding-inline: 28px;
 
+  --header-height: 100px;
+
   --padding-50: 50px;
 
-  --border-radius-16: 12px;
+  --border-radius-16: 16px;
   --border-radius-12: 12px;
   --border-radius-10: 10px;
   --border-radius-8: 8px;
@@ -32,4 +37,8 @@
   --container-padding-x: 16px;
 
   --transition-duration: 0.2s;
+
+  @include laptop {
+    --header-height: 85px;
+  }
 }
