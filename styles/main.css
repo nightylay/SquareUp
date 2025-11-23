@@ -647,7 +647,7 @@ h6,
   display: flex;
   align-items: center;
   column-gap: 14px;
-  height: 40%;
+  height: 125px;
 }
 .section__card-header::before {
   font-size: clamp(80px, 9.3984962406vw, 150px);
@@ -655,9 +655,14 @@ h6,
   font-weight: 600;
   color: var(--color-green-80);
 }
+@media (width <= 1440.98px) {
+  .section__card-header {
+    height: 84px;
+  }
+}
 @media (width <= 767.98px) {
   .section__card-header {
-    height: 30%;
+    height: 65px;
   }
 }
 .section__card-title {
@@ -674,7 +679,7 @@ h6,
 }
 @media (width <= 1023.98px) {
   .section__card-title {
-    top: 0;
+    top: 10px;
   }
 }
 @media (width <= 767.98px) {

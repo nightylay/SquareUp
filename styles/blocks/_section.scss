@@ -137,7 +137,7 @@
       display: flex;
       align-items: center;
       column-gap: 14px;
-      height: 40%;
+      height: 125px;
 
       &::before {
         @include fluid-text(150, 80);
@@ -147,8 +147,12 @@
         color: var(--color-green-80);
       }
 
+      @include laptop {
+        height: 84px;
+      }
+
       @include mobile {
-        height: 30%;
+        height: 65px;
       }
     }
 
@@ -164,7 +168,7 @@
       }
 
       @include tablet {
-        top: 0;
+        top: 10px;
       }
 
       @include mobile {
