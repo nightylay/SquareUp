@@ -137,7 +137,7 @@
       display: flex;
       align-items: center;
       column-gap: 14px;
-      height: 125px;
+      height: 40%;
 
       &::before {
         @include fluid-text(150, 80);
@@ -148,7 +148,7 @@
       }
 
       @include mobile {
-        height: 70px;
+        height: 30%;
       }
     }
 

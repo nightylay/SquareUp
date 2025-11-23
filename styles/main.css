@@ -640,7 +640,7 @@ h6,
   display: flex;
   align-items: center;
   column-gap: 14px;
-  height: 125px;
+  height: 40%;
 }
 .section__card-header::before {
   font-size: clamp(80px, 9.3984962406vw, 150px);
@@ -650,7 +650,7 @@ h6,
 }
 @media (width <= 767.98px) {
   .section__card-header {
-    height: 70px;
+    height: 30%;
   }
 }
 .section__card-title {
