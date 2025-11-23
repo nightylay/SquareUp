@@ -16,6 +16,8 @@
 @use 'blocks/choose-card';
 @use 'blocks/client-card';
 @use 'blocks/work-card';
+@use 'blocks/opening-card';
+@use 'blocks/number-list';
 @use 'blocks/contact-us-form/fields';
 @use 'blocks/contact-us-form/field';
 @use 'blocks/contact-us-form/checkboxes';
@@ -27,6 +29,7 @@
 @use 'blocks/contact-us-form/contact-us';
 @use 'blocks/services';
 @use 'blocks/about';
+@use 'blocks/advantages';
 @use 'blocks/welcome';
 @use 'blocks/soc1als';
 @use 'blocks/footer';

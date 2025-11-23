@@ -1,10 +1,10 @@
 @use '../helpers' as *;
 
-.service-card {
+.opening-card {
   display: flex;
   flex-direction: column;
   padding: var(--padding-50);
-  min-height: 577px;
+  min-height: 553px;
   height: 100%;
   outline: 1px solid var(--color-grey-15);
 
@@ -18,55 +18,31 @@
     padding: 30px;
   }
 
-  &__header {
-    @include tablet-above {
-      display: contents;
-    }
-
-    @include tablet {
-      display: flex;
-      align-items: center;
-      column-gap: 14px;
-
-      &:not(:last-child) {
-        margin-bottom: 24px;
-      }
-    }
-  }
-
   &__image {
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     @include laptop {
       @include square(70px);
 
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
       }
     }
 
     @include mobile-s {
       @include square(58px);
     }
-
-    @include tablet {
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
-    }
   }
 
   &__title {
+    @include fluid-text(24, 20);
+
     margin-bottom: 20px;
 
     @include laptop {
       margin-bottom: 14px;
-    }
-
-    @include tablet {
-      margin-bottom: 0;
     }
   }
 

@@ -2,22 +2,6 @@
 
 .services {
   &-subcategory {
-    &__title {
-      @include fluid-text(28, 20);
-
-      padding: var(--padding-50);
-      outline: 1px solid var(--color-grey-15);
-      color: var(--color-grey-60);
-
-      @include laptop {
-        padding: 40px;
-      }
-
-      @include mobile {
-        text-align: center;
-      }
-    }
-
     &__card {
       display: flex;
       flex-direction: column;

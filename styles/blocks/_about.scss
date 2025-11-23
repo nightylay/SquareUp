@@ -50,13 +50,13 @@
       }
     }
   }
-  
+
   &__story {
     &-title {
-      padding: 100px 50px;
+      padding: 100px var(--padding-50);
 
       @include laptop {
-        padding: 80px 50px;
+        padding: 80px var(--padding-50);
       }
 
       @include mobile {
