@@ -133,6 +133,8 @@
       }
 
       &-icon {
+        @include flex-center(true);
+
         color: var(--color-green-50);
       }
     }

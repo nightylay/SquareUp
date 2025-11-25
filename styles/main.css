@@ -1305,6 +1305,74 @@ h6,
   font-weight: 700;
 }
 
+.contact-form {
+  max-width: 1060px;
+  margin-inline: auto;
+  outline: 1px solid var(--color-grey-15);
+}
+.contact-form__body {
+  width: 100%;
+  padding: 80px;
+  display: grid;
+  place-items: center;
+  gap: 40px;
+  grid-template-areas: "name email" "checkboxes checkboxes" "range range" "text-area text-area" "button button";
+}
+@media (width <= 1440.98px) {
+  .contact-form__body {
+    padding: 60px;
+  }
+}
+@media (width <= 767.98px) {
+  .contact-form__body {
+    padding: 24px;
+    gap: 30px;
+    grid-template-areas: "name name" "email email" "checkboxes checkboxes" "range range" "text-area text-area" "button button";
+  }
+}
+.contact-form__item {
+  width: 100%;
+}
+.contact-form__item-label {
+  font-size: clamp(16px, 1.3784461153vw, 22px);
+  color: var(--color-white);
+  font-weight: 500;
+}
+.contact-form__item--bg-grey {
+  background: rgba(36, 36, 36, 0.5);
+  border: 1px solid var(--color-grey-15);
+  border-radius: 8px;
+}
+.contact-form__field-name {
+  grid-area: name;
+}
+.contact-form__field-email {
+  grid-area: email;
+}
+.contact-form__work-types {
+  grid-area: checkboxes;
+}
+.contact-form__budget {
+  grid-area: range;
+}
+.contact-form__message {
+  grid-area: text-area;
+}
+.contact-form__button {
+  grid-area: button;
+  padding-inline: 44px;
+}
+@media (width <= 1440.98px) {
+  .contact-form__button {
+    padding-inline: 36px;
+  }
+}
+@media (width <= 480.98px) {
+  .contact-form__button {
+    width: 100%;
+  }
+}
+
 .fields {
   display: flex;
   column-gap: 40px;
@@ -1935,82 +2003,39 @@ h6,
   }
 }
 
-.contact-us__body {
-  border-top: 1px solid var(--color-grey-15);
-}
-.contact-us__wrapper {
-  max-width: 1060px;
-  margin-inline: auto;
-  border-left: 1px solid var(--color-grey-15);
-  border-right: 1px solid var(--color-grey-15);
-}
-@media (width <= 1200.98px) {
-  .contact-us__wrapper {
-    border-left: none;
-    border-right: none;
-  }
-}
-.contact-us__form-body {
-  width: 100%;
-  padding: 80px;
-  display: grid;
-  place-items: center;
-  gap: 40px;
-  grid-template-areas: "name email" "checkboxes checkboxes" "range range" "text-area text-area" "button button";
+.contact__contacts-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 24px;
+  gap: 30px;
 }
 @media (width <= 1440.98px) {
-  .contact-us__form-body {
-    padding: 60px;
+  .contact__contacts-wrapper {
+    padding-block: 40px;
+    gap: 20px;
   }
 }
 @media (width <= 767.98px) {
-  .contact-us__form-body {
-    padding: 24px;
-    gap: 30px;
-    grid-template-areas: "name name" "email email" "checkboxes checkboxes" "range range" "text-area text-area" "button button";
+  .contact__contacts-wrapper {
+    padding-block: 30px;
   }
 }
-.contact-us__item {
-  width: 100%;
+.contact__contacts-link {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  padding: 18px 25px;
 }
-.contact-us__item-label {
-  font-size: clamp(16px, 1.3784461153vw, 22px);
-  color: var(--color-white);
-  font-weight: 500;
+.contact__contacts-link-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-green-50);
 }
-.contact-us__item--bg-grey {
-  background: rgba(36, 36, 36, 0.5);
-  border: 1px solid var(--color-grey-15);
-  border-radius: 8px;
-}
-.contact-us__field-name {
-  grid-area: name;
-}
-.contact-us__field-email {
-  grid-area: email;
-}
-.contact-us__work-types {
-  grid-area: checkboxes;
-}
-.contact-us__budget {
-  grid-area: range;
-}
-.contact-us__message {
-  grid-area: text-area;
-}
-.contact-us__button {
-  grid-area: button;
-  padding-inline: 44px;
-}
-@media (width <= 1440.98px) {
-  .contact-us__button {
-    padding-inline: 36px;
-  }
-}
-@media (width <= 480.98px) {
-  .contact-us__button {
-    width: 100%;
-  }
+.contact__form {
+  border-top: 1px solid var(--color-grey-15);
+  border-bottom: 1px solid var(--color-grey-15);
 }
 
 .services-subcategory__card {
@@ -2495,6 +2520,9 @@ h6,
   }
 }
 .footer__contacts-link-icon, .footer__contacts-address-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-green-50);
 }
 .footer__copyright {

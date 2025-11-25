@@ -1,0 +1,87 @@
+@use '../../helpers' as *;
+
+.contact-form {
+  max-width: 1060px;
+  margin-inline: auto;
+  outline: 1px solid var(--color-grey-15);
+
+  &__body {
+    width: 100%;
+    padding: 80px;
+    display: grid;
+    place-items: center;
+    gap: 40px;
+    grid-template-areas:
+      'name email'
+      'checkboxes checkboxes'
+      'range range'
+      'text-area text-area'
+      'button button';
+
+    @include laptop {
+      padding: 60px;
+    }
+
+    @include mobile {
+      padding: 24px;
+      gap: 30px;
+      grid-template-areas:
+        'name name'
+        'email email'
+        'checkboxes checkboxes'
+        'range range'
+        'text-area text-area'
+        'button button';
+    }
+  }
+
+  &__item {
+    width: 100%;
+
+    &-label {
+      @include fluid-text(22, 16);
+
+      color: var(--color-white);
+      font-weight: 500;
+    }
+
+    &--bg-grey {
+      background: rgba(36, 36, 36, 0.5);
+      border: 1px solid var(--color-grey-15);
+      border-radius: 8px;
+    }
+  }
+
+  &__field-name {
+    grid-area: name;
+  }
+
+  &__field-email {
+    grid-area: email;
+  }
+
+  &__work-types {
+    grid-area: checkboxes;
+  }
+
+  &__budget {
+    grid-area: range;
+  }
+
+  &__message {
+    grid-area: text-area;
+  }
+
+  &__button {
+    grid-area: button;
+    padding-inline: 44px;
+
+    @include laptop {
+      padding-inline: 36px;
+    }
+
+    @include mobile-s {
+      width: 100%;
+    }
+  }
+}
