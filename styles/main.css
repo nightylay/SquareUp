@@ -2200,14 +2200,10 @@ h6,
 .welcome__top-title, .welcome__top-description {
   color: var(--color-grey-60);
 }
-@media (width <= 1440.98px) {
+@media (width <= 1023.98px) {
   .welcome__top-title, .welcome__top-description {
     text-align: center;
   }
-}
-.welcome__top-title {
-  font-size: clamp(20px, 1.8796992481vw, 30px);
-  font-weight: 500;
 }
 .welcome__top-title:not(:last-child) {
   margin-bottom: 20px;

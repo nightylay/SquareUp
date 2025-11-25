@@ -46,15 +46,12 @@
     &-description {
       color: var(--color-grey-60);
 
-      @include laptop {
+      @include tablet {
         text-align: center;
       }
     }
 
     &-title {
-      @include fluid-text(30, 20);
-
-      font-weight: 500;
       &:not(:last-child) {
         margin-bottom: 20px;
 
