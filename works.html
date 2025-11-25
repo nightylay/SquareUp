@@ -1,916 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <link rel="icon" href="assets/images/logo-2.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <script src="./scripts/main.js" type="module"></script>
-    <title>SquareUp</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header__inner container">
-        <a href="./index.html" class="header__logo logo">
-          <img
-            class="logo__image"
-            src="./assets/images/logo.svg"
-            alt=""
-            width="178"
-            height="60"
-          />
-        </a>
-        <div class="header__overlay" data-js-header-overlay>
-          <nav class="header__menu nav-menu">
-            <ul class="header__menu-list nav-menu__list">
-              <li class="header__menu-item nav-menu__item">
-                <a
-                  href="index.html"
-                  class="header__menu-link nav-menu__link is-active"
-                  data-js-page="index"
-                  >Home</a
-                >
-              </li>
-              <li class="header__menu-item nav-menu__item">
-                <a
-                  href="services.html"
-                  class="header__menu-link nav-menu__link"
-                  data-js-page="services"
-                  >Services</a
-                >
-              </li>
-              <li class="header__menu-item nav-menu__item">
-                <a
-                  href="works.html"
-                  class="header__menu-link nav-menu__link"
-                  data-js-page="works"
-                  >Work</a
-                >
-              </li>
-              <li class="header__menu-item nav-menu__item">
-                <a
-                  href="process.html"
-                  class="header__menu-link nav-menu__link"
-                  data-js-page="process"
-                  >Process</a
-                >
-              </li>
-              <li class="header__menu-item nav-menu__item">
-                <a
-                  href="about.html"
-                  class="header__menu-link nav-menu__link"
-                  data-js-page="about"
-                  >About</a
-                >
-              </li>
-              <li class="header__menu-item nav-menu__item">
-                <a
-                  href="careers.html"
-                  class="header__menu-link nav-menu__link"
-                  data-js-page="careers"
-                  >Careers</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <a href="#" class="header__contact-link button button--accent"
-            >Contact Us</a
-          >
-        </div>
-        <button
-          class="header__burger-button burger-button visible-mobile"
-          type="button"
-          aria-label="Open menu"
-          title="Open menu"
-          data-js-burger-button
-        >
-          <span class="burger-button__line"></span>
-          <span class="burger-button__line"></span>
-          <span class="burger-button__line"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="icon" href="assets/images/logo-2.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="./scripts/main.js" type="module"></script>
+  <title>SquareUp</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="./index.html" class="header__logo logo">
+        <img class="logo__image" src="./assets/images/logo.svg" alt="" width="178" height="60" />
+      </a>
+      <div class="header__overlay" data-js-header-overlay>
+        <nav class="header__menu nav-menu">
+          <ul class="header__menu-list nav-menu__list">
+            <li class="header__menu-item nav-menu__item">
+              <a href="index.html" class="header__menu-link nav-menu__link is-active" data-js-page="index">Home</a>
+            </li>
+            <li class="header__menu-item nav-menu__item">
+              <a href="services.html" class="header__menu-link nav-menu__link" data-js-page="services">Services</a>
+            </li>
+            <li class="header__menu-item nav-menu__item">
+              <a href="works.html" class="header__menu-link nav-menu__link" data-js-page="works">Work</a>
+            </li>
+            <li class="header__menu-item nav-menu__item">
+              <a href="process.html" class="header__menu-link nav-menu__link" data-js-page="process">Process</a>
+            </li>
+            <li class="header__menu-item nav-menu__item">
+              <a href="about.html" class="header__menu-link nav-menu__link" data-js-page="about">About</a>
+            </li>
+            <li class="header__menu-item nav-menu__item">
+              <a href="careers.html" class="header__menu-link nav-menu__link" data-js-page="careers">Careers</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__contact-link button button--accent">Contact Us</a>
       </div>
-    </header>
-    <main class="content">
-      <div class="container">
-        <div class="content-main">
-          <section class="section works" aria-labelledby="works-title">
-            <header class="section__header">
-              <div class="section__header-inner">
-                <h2
-                  class="section__header-title works__header-title"
-                  id="works-title"
-                >
-                  Our Works
-                </h2>
-                <div
-                  class="section__header-description works__header-description"
-                >
+      <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
+        title="Open menu" data-js-burger-button>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+        <span class="burger-button__line"></span>
+      </button>
+    </div>
+  </header>
+  <main class="content">
+    <div class="container">
+      <div class="content-main">
+        <section class="section works" aria-labelledby="works-title">
+          <header class="section__header">
+            <div class="section__header-inner">
+              <h2 class="section__header-title works__header-title" id="works-title">
+                Our Works
+              </h2>
+              <div class="section__header-description works__header-description">
+                <p>
+                  Discover a portfolio of visually stunning and strategically
+                  crafted digital projects that showcase our creativity and
+                  expertise.
+                </p>
+              </div>
+            </div>
+          </header>
+          <div class="section__body">
+            <header class="section__top">
+              <div class="section__top-body">
+                <h2 class="section__top-title">At SquareUp</h2>
+                <div class="section__top-description">
                   <p>
-                    Discover a portfolio of visually stunning and strategically
-                    crafted digital projects that showcase our creativity and
-                    expertise.
+                    We have had the privilege of working with a diverse range
+                    of clients and delivering exceptional digital products
+                    that drive success.
                   </p>
                 </div>
+                <span class="section__top-label bg--dark">
+                  Here are ten examples of our notable works:
+                </span>
               </div>
             </header>
-            <div class="section__body">
-              <header class="section__top">
-                <div class="section__top-body">
-                  <h2 class="section__top-title">At SquareUp</h2>
-                  <div class="section__top-description">
-                    <p>
-                      We have had the privilege of working with a diverse range
-                      of clients and delivering exceptional digital products
-                      that drive success.
-                    </p>
+            <ul class="works__list grid grid--2">
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      E-Commerce Platform for Fashion Hub
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-1.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">Chic Boutique</div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.chicboutique.com
+                        </div>
+                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        We developed a visually stunning and user-friendly
+                        e-commerce platform for Chic Boutique, a renowned
+                        fashion retailer. The platform featured seamless
+                        product browsing, secure payment integration, and
+                        personalized recommendations, resulting in increased
+                        online sales and customer satisfaction.
+                      </p>
+                    </div>
                   </div>
-                  <span class="section__top-label bg--dark">
-                    Here are ten examples of our notable works:
-                  </span>
-                </div>
-              </header>
-              <ul class="works__list grid grid--2">
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        E-Commerce Platform for Fashion Hub
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-1.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">Chic Boutique</div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.chicboutique.com
-                          </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Mobile App for Food Delivery Service
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-2.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">HungryBites</div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.hungrybites.com
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
                       </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          We developed a visually stunning and user-friendly
-                          e-commerce platform for Chic Boutique, a renowned
-                          fashion retailer. The platform featured seamless
-                          product browsing, secure payment integration, and
-                          personalized recommendations, resulting in increased
-                          online sales and customer satisfaction.
-                        </p>
-                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
                     </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Mobile App for Food Delivery Service
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-2.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">HungryBites</div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.hungrybites.com
-                          </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        HungryBites approached us to create a mobile app that
+                        streamlined their food delivery service. The app
+                        included features like real-time order tracking, easy
+                        menu customization, and secure payment options,
+                        resulting in improved customer convenience and
+                        operational efficiency.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Booking and Reservation System for Event Management
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-3.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">EventMasters</div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.eventmasters.com
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
                       </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          HungryBites approached us to create a mobile app that
-                          streamlined their food delivery service. The app
-                          included features like real-time order tracking, easy
-                          menu customization, and secure payment options,
-                          resulting in improved customer convenience and
-                          operational efficiency.
-                        </p>
-                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
                     </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Booking and Reservation System for Event Management
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-3.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">EventMasters</div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.eventmasters.com
-                          </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        EventMasters required a comprehensive booking and
+                        reservation system for their event management
+                        services. We designed a user-friendly platform that
+                        allowed seamless event registration, ticketing, and
+                        attendee management, resulting in streamlined
+                        processes and enhanced customer experiences.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Custom Software for Workflow Automation
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-4.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">
+                          ProTech Solutions
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          EventMasters required a comprehensive booking and
-                          reservation system for their event management
-                          services. We designed a user-friendly platform that
-                          allowed seamless event registration, ticketing, and
-                          attendee management, resulting in streamlined
-                          processes and enhanced customer experiences.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Custom Software for Workflow Automation
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-4.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">
-                            ProTech Solutions
-                          </div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.protechsolutions.com
-                          </div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.protechsolutions.com
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
                       </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          HungryBites approached us to create a mobile app that
-                          streamlined their food delivery service. The app
-                          included features like real-time order tracking, easy
-                          menu customization, and secure payment options,
-                          resulting in improved customer convenience and
-                          operational efficiency.
-                        </p>
-                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
                     </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Web Portal for Real Estate Listings
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-5.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">
-                            Dream Homes Realty
-                          </div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.dreamhomesrealty.com
-                          </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        HungryBites approached us to create a mobile app that
+                        streamlined their food delivery service. The app
+                        included features like real-time order tracking, easy
+                        menu customization, and secure payment options,
+                        resulting in improved customer convenience and
+                        operational efficiency.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Web Portal for Real Estate Listings
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-5.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">
+                          Dream Homes Realty
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          Dream Homes Realty wanted an intuitive web portal for
-                          showcasing their property listings. We created a
-                          visually appealing platform with advanced search
-                          filters, virtual tours, and a user-friendly interface,
-                          enabling potential buyers to find their dream homes
-                          easily.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Mobile App for Fitness Tracking
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-6.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">
-                            FitLife Tracker
-                          </div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.fitlifetracker.com
-                          </div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.dreamhomesrealty.com
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
                       </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          FitLife Tracker approached us to develop a mobile app
-                          that tracked fitness activities and provided
-                          personalized workout plans. The app included features
-                          such as activity tracking, progress monitoring, and
-                          social sharing, empowering users to lead healthier
-                          lifestyles.
-                        </p>
-                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
                     </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Custom Software for Supply Chain Management
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-7.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">
-                            Global Logistics Solutions
-                          </div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.globallogisticssolutions.com
-                          </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        Dream Homes Realty wanted an intuitive web portal for
+                        showcasing their property listings. We created a
+                        visually appealing platform with advanced search
+                        filters, virtual tours, and a user-friendly interface,
+                        enabling potential buyers to find their dream homes
+                        easily.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Mobile App for Fitness Tracking
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-6.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">
+                          FitLife Tracker
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          Global Logistics Solutions required a custom software
-                          solution to streamline their supply chain operations.
-                          We developed a scalable system that optimized
-                          inventory management, automated order processing, and
-                          enhanced logistics tracking, resulting in improved
-                          efficiency and reduced costs.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Educational Platform for Online Learning
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-8.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">EduConnect</div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.educonnect.com
-                          </div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.fitlifetracker.com
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
                       </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          EduConnect sought an educational platform to
-                          facilitate online learning. We developed an
-                          interactive platform with virtual classrooms,
-                          multimedia content, and student progress tracking,
-                          providing a seamless and engaging learning experience
-                          for students of all ages.
-                        </p>
-                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
                     </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Mobile App for Travel Planning
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-9.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">WanderWise</div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.wanderwise.com
-                          </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        FitLife Tracker approached us to develop a mobile app
+                        that tracked fitness activities and provided
+                        personalized workout plans. The app included features
+                        such as activity tracking, progress monitoring, and
+                        social sharing, empowering users to lead healthier
+                        lifestyles.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Custom Software for Supply Chain Management
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-7.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">
+                          Global Logistics Solutions
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          WanderWise wanted a mobile app that simplified travel
-                          planning and discovery. We developed an app with
-                          features like personalized itineraries, destination
-                          guides, and integrated booking options, making it
-                          easier for travelers to explore new destinations.
-                        </p>
-                      </div>
-                    </div>
-                  </article>
-                </li>
-                <li class="works__item">
-                  <article class="work-card">
-                    <header class="work-card__header">
-                      <h5 class="work-card__title">
-                        Web Application for Customer Relationship Management
-                      </h5>
-                    </header>
-                    <div class="work-card__body">
-                      <img
-                        class="work-card__image"
-                        src="./assets/images/works/work-10.jpg"
-                        alt="Chic Boutique"
-                        width="698"
-                        height="423"
-                        loading="lazy"
-                      />
-                      <div class="work-card__top">
-                        <div class="work-card__top-info">
-                          <div class="work-card__top-label">ConnectCRM</div>
-                          <div class="work-card__top-url bg--dark">
-                            htttps:/www.connectcrm.com
-                          </div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.globallogisticssolutions.com
                         </div>
-                        <a
-                          class="work-card__top-link link-button bg--dark"
-                          href="#"
-                          ><svg
-                            width="17"
-                            height="17"
-                            viewBox="0 0 17 17"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
-                              fill="#9EFF00"
-                            />
-                          </svg>
-                        </a>
                       </div>
-                      <div
-                        class="work-card__description section__description"
-                      >
-                        <p>
-                          ConnectCRM needed a web application to manage their
-                          customer relationships effectively. We developed a
-                          feature-rich CRM platform with lead management,
-                          communication tracking, and data analytics, enabling
-                          businesses to nurture customer relationships and drive
-                          growth.
-                        </p>
-                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
                     </div>
-                  </article>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section class="section__banner section__banner--bg">
-            <div class="section__banner-inner">
-              <img
-                class="section__banner-logo"
-                src="./assets/images/logo-2.svg"
-                alt=""
-                width="80"
-                height="80"
-                loading="lazy"
-              />
-              <div class="section__banner-body">
-                <h3 class="section__banner-title">
-                  Let us Bring your Ideas to Life in the Digital World.
-                </h3>
-                <div class="section__banner-description">
-                  <p>
-                    No matter which services you choose, we are committed to
-                    delivering exceptional results that exceed your
-                    expectations. Our multidisciplinary team works closely
-                    together to ensure seamless collaboration and a unified
-                    vision for your digital product.
-                  </p>
-                </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        Global Logistics Solutions required a custom software
+                        solution to streamline their supply chain operations.
+                        We developed a scalable system that optimized
+                        inventory management, automated order processing, and
+                        enhanced logistics tracking, resulting in improved
+                        efficiency and reduced costs.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Educational Platform for Online Learning
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-8.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">EduConnect</div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.educonnect.com
+                        </div>
+                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        EduConnect sought an educational platform to
+                        facilitate online learning. We developed an
+                        interactive platform with virtual classrooms,
+                        multimedia content, and student progress tracking,
+                        providing a seamless and engaging learning experience
+                        for students of all ages.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Mobile App for Travel Planning
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-9.jpg" alt="Chic Boutique" width="698"
+                      height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">WanderWise</div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.wanderwise.com
+                        </div>
+                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        WanderWise wanted a mobile app that simplified travel
+                        planning and discovery. We developed an app with
+                        features like personalized itineraries, destination
+                        guides, and integrated booking options, making it
+                        easier for travelers to explore new destinations.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="works__item">
+                <article class="work-card">
+                  <header class="work-card__header">
+                    <h5 class="work-card__title">
+                      Web Application for Customer Relationship Management
+                    </h5>
+                  </header>
+                  <div class="work-card__body">
+                    <img class="work-card__image" src="./assets/images/works/work-10.jpg" alt="Chic Boutique"
+                      width="698" height="423" loading="lazy" />
+                    <div class="work-card__top">
+                      <div class="work-card__top-info">
+                        <div class="work-card__top-label">ConnectCRM</div>
+                        <div class="work-card__top-url bg--dark">
+                          htttps:/www.connectcrm.com
+                        </div>
+                      </div>
+                      <a class="work-card__top-link link-button bg--dark" href="#"><svg width="17" height="17"
+                          viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.373439 16.6266C0.871357 17.1245 1.67864 17.1245 2.17656 16.6266L14.45 4.35312V14.025C14.45 14.7292 15.0208 15.3 15.725 15.3C16.4292 15.3 17 14.7292 17 14.025V1.275C17 0.570837 16.4292 0 15.725 0H2.975C2.27084 0 1.7 0.570837 1.7 1.275C1.7 1.97916 2.27084 2.55 2.975 2.55H12.6469L0.373439 14.8234C-0.12448 15.3214 -0.12448 16.1286 0.373439 16.6266Z"
+                            fill="#9EFF00" />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="work-card__description section__description">
+                      <p>
+                        ConnectCRM needed a web application to manage their
+                        customer relationships effectively. We developed a
+                        feature-rich CRM platform with lead management,
+                        communication tracking, and data analytics, enabling
+                        businesses to nurture customer relationships and drive
+                        growth.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section__banner section__banner--bg" aria-labelledby="banner-title">
+          <h2 class="visually-hidden" id="banner-title">Start project with SquareUp</h2>
+          <div class="section__banner-inner">
+            <img class="section__banner-logo" src="./assets/images/logo-2.svg" alt="" width="80" height="80"
+              loading="lazy" />
+            <div class="section__banner-body">
+              <h3 class="section__banner-title">
+                Let us Bring your Ideas to Life in the Digital World.
+              </h3>
+              <div class="section__banner-description">
+                <p>
+                  No matter which services you choose, we are committed to
+                  delivering exceptional results that exceed your
+                  expectations. Our multidisciplinary team works closely
+                  together to ensure seamless collaboration and a unified
+                  vision for your digital product.
+                </p>
               </div>
-              <a href="#" class="section__banner-link button button--accent"
-                >Start Project</a
-              >
             </div>
-          </section>
-        </div>
+            <a href="#" class="section__banner-link button button--accent">Start Project</a>
+          </div>
+        </section>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer class="footer">
-      <div class="footer__inner container">
-        <div class="footer__navigation">
-          <a href="#" class="footer__logo logo">
-            <img
-              class="footer__logo-image logo__image"
-              src="./assets/images/logo.svg"
-              alt=""
-              width="178"
-              height="60"
-            />
-          </a>
-          <nav class="footer__menu">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Home</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Services</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Work</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Process</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">About</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Careers</a>
-              </li>
-              <li class="footer__menu-item">
-                <a href="#" class="footer__menu-link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__soc1als soc1als">
-            <span class="soc1als__label">Stay Connected</span>
-            <ul class="soc1als__list">
-              <li class="soc1als__item">
-                <a href="#" class="soc1als__link">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4687H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92187 17.3438 4.92187V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4687H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
-                      fill="#9EFF00"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="soc1als__item">
-                <a href="#" class="soc1als__link">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z"
-                      fill="#9EFF00"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="soc1als__item">
-                <a href="#" class="soc1als__link">
-                  <svg
-                    width="24"
-                    height="20"
-                    viewBox="0 0 24 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.55016 19.5007C16.6045 19.5007 21.5583 11.9974 21.5583 5.49259C21.5583 5.28166 21.5536 5.06603 21.5442 4.85509C22.5079 4.15819 23.3395 3.29499 24 2.30603C23.1025 2.70533 22.1496 2.96611 21.1739 3.07947C22.2013 2.46364 22.9705 1.4962 23.3391 0.356499C22.3726 0.92929 21.3156 1.33334 20.2134 1.55134C19.4708 0.762293 18.489 0.239849 17.4197 0.0647834C16.3504 -0.110282 15.2532 0.0717828 14.2977 0.582829C13.3423 1.09387 12.5818 1.90544 12.1338 2.89204C11.6859 3.87865 11.5754 4.98535 11.8195 6.04103C9.86249 5.94282 7.94794 5.43444 6.19998 4.54883C4.45203 3.66323 2.90969 2.42017 1.67297 0.900249C1.0444 1.98398 0.852057 3.26638 1.13503 4.48682C1.418 5.70727 2.15506 6.77418 3.19641 7.47072C2.41463 7.4459 1.64998 7.23541 0.965625 6.85666V6.91759C0.964925 8.05488 1.3581 9.15732 2.07831 10.0375C2.79852 10.9177 3.80132 11.5213 4.91625 11.7457C4.19206 11.9439 3.43198 11.9727 2.69484 11.8301C3.00945 12.8082 3.62157 13.6636 4.44577 14.2771C5.26997 14.8905 6.26512 15.2313 7.29234 15.252C5.54842 16.6218 3.39417 17.3649 1.17656 17.3613C0.783287 17.3607 0.390399 17.3366 0 17.2892C2.25286 18.7345 4.87353 19.5021 7.55016 19.5007Z"
-                      fill="#9EFF00"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__extra">
-          <address class="footer__contacts">
-            <a href="mailto:hello@squareup.com" class="footer__contacts-link">
-              <span class="footer__contacts-link-icon">
-                <svg
-                  width="21"
-                  height="17"
-                  viewBox="0 0 21 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__navigation">
+        <a href="#" class="footer__logo logo">
+          <img class="footer__logo-image logo__image" src="./assets/images/logo.svg" alt="" width="178" height="60" />
+        </a>
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Home</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Services</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Work</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Process</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">About</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Careers</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__soc1als soc1als">
+          <span class="soc1als__label">Stay Connected</span>
+          <ul class="soc1als__list">
+            <li class="soc1als__item">
+              <a href="#" class="soc1als__link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M0 4.9191V13.5C0 15.1569 1.34315 16.5 3 16.5H18C19.6569 16.5 21 15.1569 21 13.5V4.9191L12.0723 10.4131C11.1081 11.0064 9.89193 11.0064 8.92771 10.4131L0 4.9191Z"
-                    fill="#9EFF00"
-                  />
-                  <path
-                    d="M21 3.15783V3C21 1.34315 19.6569 0 18 0H3C1.34315 0 0 1.34315 0 3V3.15783L9.71386 9.13558C10.196 9.43227 10.804 9.43227 11.2861 9.13558L21 3.15783Z"
-                    fill="#9EFF00"
-                  />
+                    d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 17.9895 4.3882 22.954 10.125 23.8542V15.4687H7.07812V12H10.125V9.35625C10.125 6.34875 11.9166 4.6875 14.6576 4.6875C15.9701 4.6875 17.3438 4.92187 17.3438 4.92187V7.875H15.8306C14.34 7.875 13.875 8.80008 13.875 9.75V12H17.2031L16.6711 15.4687H13.875V23.8542C19.6118 22.954 24 17.9895 24 12Z"
+                    fill="#9EFF00" />
                 </svg>
-              </span>
-              <span class="footer__contacts-link-label">
-                hello@squareup.com</span
-              >
-            </a>
-            <a href="tel:9191813232309" class="footer__contacts-link">
-              <span class="footer__contacts-link-icon">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a href="#" class="soc1als__link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1.5 4.5C1.5 2.84315 2.84315 1.5 4.5 1.5H5.87163C6.732 1.5 7.48197 2.08556 7.69064 2.92025L8.79644 7.34343C8.97941 8.0753 8.70594 8.84555 8.10242 9.29818L6.8088 10.2684C6.67447 10.3691 6.64527 10.5167 6.683 10.6197C7.81851 13.7195 10.2805 16.1815 13.3803 17.317C13.4833 17.3547 13.6309 17.3255 13.7316 17.1912L14.7018 15.8976C15.1545 15.2941 15.9247 15.0206 16.6566 15.2036L21.0798 16.3094C21.9144 16.518 22.5 17.268 22.5 18.1284V19.5C22.5 21.1569 21.1569 22.5 19.5 22.5H17.25C8.55151 22.5 1.5 15.4485 1.5 6.75V4.5Z"
-                    fill="#9EFF00"
-                  />
+                    d="M22.2234 0H1.77187C0.792187 0 0 0.773438 0 1.72969V22.2656C0 23.2219 0.792187 24 1.77187 24H22.2234C23.2031 24 24 23.2219 24 22.2703V1.72969C24 0.773438 23.2031 0 22.2234 0ZM7.12031 20.4516H3.55781V8.99531H7.12031V20.4516ZM5.33906 7.43438C4.19531 7.43438 3.27188 6.51094 3.27188 5.37187C3.27188 4.23281 4.19531 3.30937 5.33906 3.30937C6.47813 3.30937 7.40156 4.23281 7.40156 5.37187C7.40156 6.50625 6.47813 7.43438 5.33906 7.43438ZM20.4516 20.4516H16.8937V14.8828C16.8937 13.5562 16.8703 11.8453 15.0422 11.8453C13.1906 11.8453 12.9094 13.2937 12.9094 14.7891V20.4516H9.35625V8.99531H12.7687V10.5609H12.8156C13.2891 9.66094 14.4516 8.70938 16.1813 8.70938C19.7859 8.70938 20.4516 11.0813 20.4516 14.1656V20.4516Z"
+                    fill="#9EFF00" />
                 </svg>
-              </span>
-              <span class="footer__contacts-link-label">
-                +91 91813 23 2309</span
-              >
-            </a>
-            <div class="footer__contacts-address">
-              <span class="footer__contacts-link-icon">
-                <svg
-                  width="17"
-                  height="21"
-                  viewBox="0 0 17 21"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a href="#" class="soc1als__link">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.78975 20.101C7.81995 20.1185 7.84369 20.1321 7.8605 20.1415L7.88843 20.1571C8.1113 20.2794 8.38776 20.2785 8.61084 20.1575L8.6395 20.1415C8.65631 20.1321 8.68005 20.1185 8.71025 20.101C8.77066 20.066 8.85697 20.015 8.9655 19.9482C9.18246 19.8146 9.48875 19.6176 9.85461 19.3591C10.5851 18.8431 11.5597 18.0774 12.5365 17.0773C14.4807 15.0868 16.5 12.0962 16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.0962 2.01932 15.0868 3.96346 17.0773C4.94025 18.0774 5.91491 18.8431 6.64539 19.3591C7.01125 19.6176 7.31754 19.8146 7.5345 19.9482C7.64303 20.015 7.72934 20.066 7.78975 20.101ZM8.25 11.25C9.90685 11.25 11.25 9.90685 11.25 8.25C11.25 6.59315 9.90685 5.25 8.25 5.25C6.59315 5.25 5.25 6.59315 5.25 8.25C5.25 9.90685 6.59315 11.25 8.25 11.25Z"
-                    fill="#9EFF00"
-                  />
+                    d="M7.55016 19.5007C16.6045 19.5007 21.5583 11.9974 21.5583 5.49259C21.5583 5.28166 21.5536 5.06603 21.5442 4.85509C22.5079 4.15819 23.3395 3.29499 24 2.30603C23.1025 2.70533 22.1496 2.96611 21.1739 3.07947C22.2013 2.46364 22.9705 1.4962 23.3391 0.356499C22.3726 0.92929 21.3156 1.33334 20.2134 1.55134C19.4708 0.762293 18.489 0.239849 17.4197 0.0647834C16.3504 -0.110282 15.2532 0.0717828 14.2977 0.582829C13.3423 1.09387 12.5818 1.90544 12.1338 2.89204C11.6859 3.87865 11.5754 4.98535 11.8195 6.04103C9.86249 5.94282 7.94794 5.43444 6.19998 4.54883C4.45203 3.66323 2.90969 2.42017 1.67297 0.900249C1.0444 1.98398 0.852057 3.26638 1.13503 4.48682C1.418 5.70727 2.15506 6.77418 3.19641 7.47072C2.41463 7.4459 1.64998 7.23541 0.965625 6.85666V6.91759C0.964925 8.05488 1.3581 9.15732 2.07831 10.0375C2.79852 10.9177 3.80132 11.5213 4.91625 11.7457C4.19206 11.9439 3.43198 11.9727 2.69484 11.8301C3.00945 12.8082 3.62157 13.6636 4.44577 14.2771C5.26997 14.8905 6.26512 15.2313 7.29234 15.252C5.54842 16.6218 3.39417 17.3649 1.17656 17.3613C0.783287 17.3607 0.390399 17.3366 0 17.2892C2.25286 18.7345 4.87353 19.5021 7.55016 19.5007Z"
+                    fill="#9EFF00" />
                 </svg>
-              </span>
-              <span class="footer__contacts-link-label"
-                >Somewhere in the World</span
-              >
-            </div>
-          </address>
-          <div class="footer__copyright">
-            © 2023 SquareUp. All rights reserved.
-          </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="footer__extra">
+        <address class="footer__contacts">
+          <a href="mailto:hello@squareup.com" class="footer__contacts-link">
+            <span class="footer__contacts-link-icon">
+              <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 4.9191V13.5C0 15.1569 1.34315 16.5 3 16.5H18C19.6569 16.5 21 15.1569 21 13.5V4.9191L12.0723 10.4131C11.1081 11.0064 9.89193 11.0064 8.92771 10.4131L0 4.9191Z"
+                  fill="#9EFF00" />
+                <path
+                  d="M21 3.15783V3C21 1.34315 19.6569 0 18 0H3C1.34315 0 0 1.34315 0 3V3.15783L9.71386 9.13558C10.196 9.43227 10.804 9.43227 11.2861 9.13558L21 3.15783Z"
+                  fill="#9EFF00" />
+              </svg>
+            </span>
+            <span class="footer__contacts-link-label">
+              hello@squareup.com</span>
+          </a>
+          <a href="tel:9191813232309" class="footer__contacts-link">
+            <span class="footer__contacts-link-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.5 4.5C1.5 2.84315 2.84315 1.5 4.5 1.5H5.87163C6.732 1.5 7.48197 2.08556 7.69064 2.92025L8.79644 7.34343C8.97941 8.0753 8.70594 8.84555 8.10242 9.29818L6.8088 10.2684C6.67447 10.3691 6.64527 10.5167 6.683 10.6197C7.81851 13.7195 10.2805 16.1815 13.3803 17.317C13.4833 17.3547 13.6309 17.3255 13.7316 17.1912L14.7018 15.8976C15.1545 15.2941 15.9247 15.0206 16.6566 15.2036L21.0798 16.3094C21.9144 16.518 22.5 17.268 22.5 18.1284V19.5C22.5 21.1569 21.1569 22.5 19.5 22.5H17.25C8.55151 22.5 1.5 15.4485 1.5 6.75V4.5Z"
+                  fill="#9EFF00" />
+              </svg>
+            </span>
+            <span class="footer__contacts-link-label">
+              +91 91813 23 2309</span>
+          </a>
+          <div class="footer__contacts-address">
+            <span class="footer__contacts-link-icon">
+              <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.78975 20.101C7.81995 20.1185 7.84369 20.1321 7.8605 20.1415L7.88843 20.1571C8.1113 20.2794 8.38776 20.2785 8.61084 20.1575L8.6395 20.1415C8.65631 20.1321 8.68005 20.1185 8.71025 20.101C8.77066 20.066 8.85697 20.015 8.9655 19.9482C9.18246 19.8146 9.48875 19.6176 9.85461 19.3591C10.5851 18.8431 11.5597 18.0774 12.5365 17.0773C14.4807 15.0868 16.5 12.0962 16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.0962 2.01932 15.0868 3.96346 17.0773C4.94025 18.0774 5.91491 18.8431 6.64539 19.3591C7.01125 19.6176 7.31754 19.8146 7.5345 19.9482C7.64303 20.015 7.72934 20.066 7.78975 20.101ZM8.25 11.25C9.90685 11.25 11.25 9.90685 11.25 8.25C11.25 6.59315 9.90685 5.25 8.25 5.25C6.59315 5.25 5.25 6.59315 5.25 8.25C5.25 9.90685 6.59315 11.25 8.25 11.25Z"
+                  fill="#9EFF00" />
+              </svg>
+            </span>
+            <span class="footer__contacts-link-label">Somewhere in the World</span>
+          </div>
+        </address>
+        <div class="footer__copyright">
+          © 2023 SquareUp. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
