@@ -111,8 +111,8 @@
 
     &-link,
     &-address {
-      display: inline-flex;
-      align-items: center;
+      @include flex-center();
+
       column-gap: 10px;
       font-size: 18px;
       font-weight: 400;

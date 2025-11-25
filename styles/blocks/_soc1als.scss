@@ -1,7 +1,7 @@
 @use '../helpers' as *;
 
 .soc1als {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   column-gap: 20px;
   padding: 14px 14px 14px 24px;
@@ -21,6 +21,8 @@
 
   &__label {
     @include fluid-text(18, 16);
+
+    white-space: nowrap;
   }
 
   &__list {
