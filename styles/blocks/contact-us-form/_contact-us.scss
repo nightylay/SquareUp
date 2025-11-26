@@ -1,7 +1,9 @@
 @use '../../helpers' as *;
 
 .contact {
+  outline: 1px solid var(--color-grey-15);
   &__contacts {
+    outline: 1px solid var(--color-grey-15);
     &-wrapper {
       @include flex-center();
 
