@@ -4,8 +4,8 @@
   @include flex-center();
 
   position: relative;
-  background: url('../../assets/images/backgrounds/dotted-bg.webp') center /
-    cover no-repeat;
+  background: url('../assets/images/backgrounds/dotted-bg.webp') center / cover
+    no-repeat;
   min-height: calc(100vh - var(--header-height));
 
   &::before {

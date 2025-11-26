@@ -608,16 +608,16 @@ h6,
   }
 }
 .section__header {
-  background: url("../../assets/images/backgrounds/bg-3.webp") center/cover no-repeat;
+  background: url("../assets/images/backgrounds/bg-3.webp") center/cover no-repeat;
 }
 .section__header--services {
-  background: url("../../assets/images/backgrounds/bg-1.webp") center/cover no-repeat;
+  background: url("../assets/images/backgrounds/bg-1.webp") center/cover no-repeat;
 }
 .section__header--choose {
-  background: url("../../assets/images/backgrounds/bg-2.webp") center/cover no-repeat;
+  background: url("../assets/images/backgrounds/bg-2.webp") center/cover no-repeat;
 }
 .section__header--questions {
-  background: url("../../assets/images/backgrounds/bg-4.webp") center/cover no-repeat;
+  background: url("../assets/images/backgrounds/bg-4.webp") center/cover no-repeat;
 }
 .section__header-inner {
   display: flex;
@@ -708,7 +708,7 @@ h6,
   color: var(--color-grey-60);
 }
 .section__banner--bg {
-  background: url("../../assets/images/backgrounds/bg-3.webp") center/cover no-repeat;
+  background: url("../assets/images/backgrounds/bg-3.webp") center/cover no-repeat;
 }
 .section__banner-inner {
   display: flex;
@@ -1772,7 +1772,7 @@ h6,
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url("../../assets/images/backgrounds/dotted-bg.webp") center/cover no-repeat;
+  background: url("../assets/images/backgrounds/dotted-bg.webp") center/cover no-repeat;
   min-height: calc(100vh - var(--header-height));
 }
 .hero::before {
