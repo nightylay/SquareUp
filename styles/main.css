@@ -1550,7 +1550,7 @@ h6,
   left: 30%;
   width: 0px;
   height: 0px;
-  background-image: url("../../assets/icons/checked.svg");
+  background-image: url("../assets/icons/checked.svg");
   background-repeat: no-repeat;
 }
 .checkbox__input:checked::after {
