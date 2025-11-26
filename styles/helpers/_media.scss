@@ -3,6 +3,7 @@ $laptop-s: 1200.98px;
 $tablet: 1023.98px;
 $mobile: 767.98px;
 $mobile-s: 480.98px;
+$mobile-extra-s: 390.98px;
 
 @mixin laptop-above {
   @media (width > $laptop) {
@@ -12,6 +13,12 @@ $mobile-s: 480.98px;
 
 @mixin laptop {
   @media (width <= $laptop) {
+    @content;
+  }
+}
+
+@mixin laptop-s-above {
+  @media (width > $laptop-s) {
     @content;
   }
 }
@@ -54,6 +61,18 @@ $mobile-s: 480.98px;
 
 @mixin mobile-s {
   @media (width <= $mobile-s) {
+    @content;
+  }
+}
+
+@mixin mobile-extra-s {
+  @media (width > $mobile-extra-s) {
+    @content;
+  }
+}
+
+@mixin mobile-extra-s {
+  @media (width <= $mobile-extra-s) {
     @content;
   }
 }
