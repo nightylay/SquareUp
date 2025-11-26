@@ -1,15 +1,21 @@
 const headerLinks = document.querySelectorAll('[data-js-page]')
 
 function setBackgroundOnActiveLink() {
-  const currentUrl = window.location.href
-  const formattedUrl = currentUrl.split('/').at(-1).split('.').at(0)
+  const path = window.location.pathname;
+  let currentPage = 'index';
+
+  if (!path.endsWith('/') && path !== '/') {
+    const page = path.split('/').pop();
+    currentPage = page.replace('.html', '');
+  }
+
   headerLinks.forEach((link) => {
-    let valueDataLink = link.dataset.jsPage
-    link.classList.remove('is-active')
-    if (valueDataLink === formattedUrl) {
-      link.classList.add('is-active')
+    link.classList.remove('is-active');
+    if (link.dataset.jsPage === currentPage) {
+      link.classList.add('is-active');
     }
-  })
+  });
 }
 
-export { setBackgroundOnActiveLink }  
+document.addEventListener('DOMContentLoaded', setBackgroundOnActiveLink);
+export { setBackgroundOnActiveLink }
