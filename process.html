@@ -1,366 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="icon" href="assets/images/logo-2.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="./scripts/main.js" type="module"></script>
+    <title>SquareUp</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <link rel="icon" href="assets/images/logo-2.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="styles/main.css" />
-  <script src="./scripts/main.js" type="module"></script>
-  <title>SquareUp</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__inner container">
-      <a href="./index.html" class="header__logo logo">
-        <img class="logo__image" src="./assets/images/logo.svg" alt="" width="178" height="60" />
-      </a>
-      <div class="header__overlay" data-js-header-overlay>
-        <nav class="header__menu nav-menu">
-          <ul class="header__menu-list nav-menu__list">
-            <li class="header__menu-item nav-menu__item">
-              <a href="index.html" class="header__menu-link nav-menu__link" data-js-page="index">Home</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="services.html" class="header__menu-link nav-menu__link" data-js-page="services">Services</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="works.html" class="header__menu-link nav-menu__link" data-js-page="works">Work</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="process.html" class="header__menu-link nav-menu__link" data-js-page="process">Process</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="about.html" class="header__menu-link nav-menu__link" data-js-page="about">About</a>
-            </li>
-            <li class="header__menu-item nav-menu__item">
-              <a href="careers.html" class="header__menu-link nav-menu__link" data-js-page="careers">Careers</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="contact.html" class="header__contact-link button button--accent">Contact Us</a>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="./index.html" class="header__logo logo">
+          <img
+            class="logo__image"
+            src="./assets/images/logo.svg"
+            alt=""
+            width="178"
+            height="60"
+          />
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu nav-menu">
+            <ul class="header__menu-list nav-menu__list">
+              <li class="header__menu-item nav-menu__item">
+                <a
+                  href="index.html"
+                  class="header__menu-link nav-menu__link"
+                  data-js-page="index"
+                  >Home</a
+                >
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a
+                  href="services.html"
+                  class="header__menu-link nav-menu__link"
+                  data-js-page="services"
+                  >Services</a
+                >
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a
+                  href="works.html"
+                  class="header__menu-link nav-menu__link"
+                  data-js-page="works"
+                  >Work</a
+                >
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a
+                  href="process.html"
+                  class="header__menu-link nav-menu__link"
+                  data-js-page="process"
+                  >Process</a
+                >
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a
+                  href="about.html"
+                  class="header__menu-link nav-menu__link"
+                  data-js-page="about"
+                  >About</a
+                >
+              </li>
+              <li class="header__menu-item nav-menu__item">
+                <a
+                  href="careers.html"
+                  class="header__menu-link nav-menu__link"
+                  data-js-page="careers"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="contact.html"
+            class="header__contact-link button button--accent"
+            >Contact Us</a
+          >
+        </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
       </div>
-      <button class="header__burger-button burger-button visible-mobile" type="button" aria-label="Open menu"
-        title="Open menu" data-js-burger-button>
-        <span class="burger-button__line"></span>
-        <span class="burger-button__line"></span>
-        <span class="burger-button__line"></span>
-      </button>
-    </div>
-  </header>
-  <main class="content">
-    <div class="container">
-      <div class="content-main">
-        <section class="section process" aria-labelledby="process-title">
-          <header class="section__header">
-            <div class="section__header-inner">
-              <h2 class="section__header-title process__header-title" id="process-title">
-                Process of Starting the Project
-              </h2>
-              <div class="section__header-description process__header-description">
-                <p>
-                  At SquareUp, we value transparency, collaboration, and
-                  delivering exceptional results.
-                </p>
-              </div>
-            </div>
-          </header>
-          <div class="section__body">
-            <header class="section__top">
-              <div class="section__top-body">
-                <h2 class="section__top-title">At SquareUp</h2>
-                <div class="section__top-description">
+    </header>
+    <main class="content">
+      <div class="container">
+        <div class="content-main">
+          <section class="section process" aria-labelledby="process-title">
+            <header class="section__header">
+              <div class="section__header-inner">
+                <h2
+                  class="section__header-title process__header-title"
+                  id="process-title"
+                >
+                  Process of Starting the Project
+                </h2>
+                <div
+                  class="section__header-description process__header-description"
+                >
                   <p>
-                    We follow a structured and collaborative process to ensure
-                    the successful delivery of exceptional digital products.
-                    Our process combines industry best practices, creative
-                    thinking, and a client-centric approach.
+                    At SquareUp, we value transparency, collaboration, and
+                    delivering exceptional results.
                   </p>
                 </div>
-                <span class="section__top-label bg--dark">
-                  Here's an overview of our typical process:
-                </span>
               </div>
             </header>
+            <div class="section__body">
+              <header class="section__top">
+                <div class="section__top-body">
+                  <h2 class="section__top-title">At SquareUp</h2>
+                  <div class="section__top-description">
+                    <p>
+                      We follow a structured and collaborative process to ensure
+                      the successful delivery of exceptional digital products.
+                      Our process combines industry best practices, creative
+                      thinking, and a client-centric approach.
+                    </p>
+                  </div>
+                  <span class="section__top-label bg--dark">
+                    Here's an overview of our typical process:
+                  </span>
+                </div>
+              </header>
 
-            <ol class="number-list grid grid--2">
-              <li class="number-list__item">
-                <article class="number-list__card">
-                  <header class="number-list__card-header">
-                    <h3 class="number-list__card-title number-list__card-title--grey">
-                      Discovery
-                    </h3>
-                  </header>
-                  <div class="number-list__card-description">
-                    <p>
-                      We begin by thoroughly understanding your business
-                      goals, target audience, and project requirements. We
-                      conduct in-depth research to gather insights and define
-                      project objectives, allowing us to develop a tailored
-                      strategy.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="number-list__item">
-                <article class="number-list__card">
-                  <header class="number-list__card-header">
-                    <h3 class="number-list__card-title number-list__card-title--grey">
-                      Planning and Strategy
-                    </h3>
-                  </header>
-                  <div class="number-list__card-description">
-                    <p>
-                      Based on the gathered information, we create a
-                      comprehensive project plan and strategy. This includes
-                      defining project milestones, timelines, deliverables,
-                      and resource allocation. We collaborate closely with you
-                      to align our strategy with your vision.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="number-list__item">
-                <article class="number-list__card">
-                  <header class="number-list__card-header">
-                    <h3 class="number-list__card-title number-list__card-title--grey">
-                      Design
-                    </h3>
-                  </header>
-                  <div class="number-list__card-description">
-                    <p>
-                      Our expert designers translate the project requirements
-                      into captivating visual designs. We create wireframes,
-                      mockups, and interactive prototypes to showcase the user
-                      interface, user experience, and overall design
-                      aesthetics. We iterate on the designs based on your
-                      feedback until we achieve the perfect look and feel.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="number-list__item">
-                <article class="number-list__card">
-                  <header class="number-list__card-header">
-                    <h3 class="number-list__card-title number-list__card-title--grey">
-                      Development
-                    </h3>
-                  </header>
-                  <div class="number-list__card-description">
-                    <p>
-                      Once the designs are approved, our skilled development
-                      team brings them to life. We use cutting-edge
-                      technologies and coding best practices to build robust
-                      and scalable digital products. Throughout the
-                      development phase, we maintain open lines of
-                      communication to keep you updated on progress and
-                      address any questions or concerns.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="number-list__item">
-                <article class="number-list__card">
-                  <header class="number-list__card-header">
-                    <h3 class="number-list__card-title number-list__card-title--grey">
-                      Testing and Quality Assurance
-                    </h3>
-                  </header>
-                  <div class="number-list__card-description">
-                    <p>
-                      We conduct rigorous testing to ensure that your digital
-                      product functions flawlessly across different devices,
-                      browsers, and operating systems. Our quality assurance
-                      team meticulously checks for bugs, usability issues, and
-                      performance bottlenecks. We strive for a seamless user
-                      experience and a high level of reliability.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="number-list__item">
-                <article class="number-list__card">
-                  <header class="number-list__card-header">
-                    <h3 class="number-list__card-title number-list__card-title--grey">
-                      Deployment and Launch
-                    </h3>
-                  </header>
-                  <div class="number-list__card-description">
-                    <p>
-                      When your digital product is thoroughly tested and meets
-                      your satisfaction, we prepare for deployment. We handle
-                      all the technical aspects of launching your product,
-                      ensuring a smooth transition from development to the
-                      live environment. We assist with setting up hosting,
-                      configuring servers, and managing any required
-                      integrations.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="number-list__item">
-                <article class="number-list__card">
-                  <header class="number-list__card-header">
-                    <h3 class="number-list__card-title number-list__card-title--grey">
-                      Post-Launch Support
-                    </h3>
-                  </header>
-                  <div class="number-list__card-description">
-                    <p>
-                      Our commitment to your success doesn't end with the
-                      launch. We provide ongoing support and maintenance
-                      services to ensure your digital product continues to
-                      perform optimally. We offer different support packages
-                      based on your needs, including bug fixes, feature
-                      enhancements, security updates, and technical support.
-                    </p>
-                  </div>
-                </article>
-              </li>
-              <li class="number-list__item">
-                <article class="number-list__card">
-                  <header class="number-list__card-header">
-                    <h3 class="number-list__card-title number-list__card-title--grey">
-                      Continuous Improvement
-                    </h3>
-                  </header>
-                  <div class="number-list__card-description">
-                    <p>
-                      We believe in continuous improvement and strive to
-                      optimize your digital product even after launch. We
-                      monitor user feedback, analytics, and market trends to
-                      identify opportunities for enhancement and growth. We
-                      proactively suggest improvements and updates to keep
-                      your digital product ahead of the curve.
-                    </p>
-                  </div>
-                </article>
-              </li>
-            </ol>
-          </div>
-        </section>
-        <section class="section__banner section__banner--bg" aria-labelledby="banner-title">
-          <h2 class="visually-hidden" id="banner-title">Start project with SquareUp</h2>
-          <div class="section__banner-inner">
-            <img class="section__banner-logo" src="./assets/images/logo-2.svg" alt="" width="80" height="80"
-              loading="lazy" />
-            <div class="section__banner-body">
-              <h3 class="section__banner-title">
-                Let us Bring your Ideas to Life in the Digital World.
-              </h3>
-              <div class="section__banner-description">
-                <p>
-                  No matter which services you choose, we are committed to
-                  delivering exceptional results that exceed your
-                  expectations. Our multidisciplinary team works closely
-                  together to ensure seamless collaboration and a unified
-                  vision for your digital product.
-                </p>
-              </div>
+              <ol class="number-list grid grid--2">
+                <li class="number-list__item">
+                  <article class="number-list__card">
+                    <header class="number-list__card-header">
+                      <h3
+                        class="number-list__card-title number-list__card-title--grey"
+                      >
+                        Discovery
+                      </h3>
+                    </header>
+                    <div class="number-list__card-description">
+                      <p>
+                        We begin by thoroughly understanding your business
+                        goals, target audience, and project requirements. We
+                        conduct in-depth research to gather insights and define
+                        project objectives, allowing us to develop a tailored
+                        strategy.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="number-list__item">
+                  <article class="number-list__card">
+                    <header class="number-list__card-header">
+                      <h3
+                        class="number-list__card-title number-list__card-title--grey"
+                      >
+                        Planning and Strategy
+                      </h3>
+                    </header>
+                    <div class="number-list__card-description">
+                      <p>
+                        Based on the gathered information, we create a
+                        comprehensive project plan and strategy. This includes
+                        defining project milestones, timelines, deliverables,
+                        and resource allocation. We collaborate closely with you
+                        to align our strategy with your vision.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="number-list__item">
+                  <article class="number-list__card">
+                    <header class="number-list__card-header">
+                      <h3
+                        class="number-list__card-title number-list__card-title--grey"
+                      >
+                        Design
+                      </h3>
+                    </header>
+                    <div class="number-list__card-description">
+                      <p>
+                        Our expert designers translate the project requirements
+                        into captivating visual designs. We create wireframes,
+                        mockups, and interactive prototypes to showcase the user
+                        interface, user experience, and overall design
+                        aesthetics. We iterate on the designs based on your
+                        feedback until we achieve the perfect look and feel.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="number-list__item">
+                  <article class="number-list__card">
+                    <header class="number-list__card-header">
+                      <h3
+                        class="number-list__card-title number-list__card-title--grey"
+                      >
+                        Development
+                      </h3>
+                    </header>
+                    <div class="number-list__card-description">
+                      <p>
+                        Once the designs are approved, our skilled development
+                        team brings them to life. We use cutting-edge
+                        technologies and coding best practices to build robust
+                        and scalable digital products. Throughout the
+                        development phase, we maintain open lines of
+                        communication to keep you updated on progress and
+                        address any questions or concerns.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="number-list__item">
+                  <article class="number-list__card">
+                    <header class="number-list__card-header">
+                      <h3
+                        class="number-list__card-title number-list__card-title--grey"
+                      >
+                        Testing and Quality Assurance
+                      </h3>
+                    </header>
+                    <div class="number-list__card-description">
+                      <p>
+                        We conduct rigorous testing to ensure that your digital
+                        product functions flawlessly across different devices,
+                        browsers, and operating systems. Our quality assurance
+                        team meticulously checks for bugs, usability issues, and
+                        performance bottlenecks. We strive for a seamless user
+                        experience and a high level of reliability.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="number-list__item">
+                  <article class="number-list__card">
+                    <header class="number-list__card-header">
+                      <h3
+                        class="number-list__card-title number-list__card-title--grey"
+                      >
+                        Deployment and Launch
+                      </h3>
+                    </header>
+                    <div class="number-list__card-description">
+                      <p>
+                        When your digital product is thoroughly tested and meets
+                        your satisfaction, we prepare for deployment. We handle
+                        all the technical aspects of launching your product,
+                        ensuring a smooth transition from development to the
+                        live environment. We assist with setting up hosting,
+                        configuring servers, and managing any required
+                        integrations.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="number-list__item">
+                  <article class="number-list__card">
+                    <header class="number-list__card-header">
+                      <h3
+                        class="number-list__card-title number-list__card-title--grey"
+                      >
+                        Post-Launch Support
+                      </h3>
+                    </header>
+                    <div class="number-list__card-description">
+                      <p>
+                        Our commitment to your success doesn't end with the
+                        launch. We provide ongoing support and maintenance
+                        services to ensure your digital product continues to
+                        perform optimally. We offer different support packages
+                        based on your needs, including bug fixes, feature
+                        enhancements, security updates, and technical support.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="number-list__item">
+                  <article class="number-list__card">
+                    <header class="number-list__card-header">
+                      <h3
+                        class="number-list__card-title number-list__card-title--grey"
+                      >
+                        Continuous Improvement
+                      </h3>
+                    </header>
+                    <div class="number-list__card-description">
+                      <p>
+                        We believe in continuous improvement and strive to
+                        optimize your digital product even after launch. We
+                        monitor user feedback, analytics, and market trends to
+                        identify opportunities for enhancement and growth. We
+                        proactively suggest improvements and updates to keep
+                        your digital product ahead of the curve.
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              </ol>
             </div>
-            <a href="contact.html" class="section__banner-link button button--accent">Start Project</a>
-          </div>
-        </section>
-        <section class="section contact" aria-labelledby="contact-title">
-          <h2 class="visually-hidden" id="contact-title">contact-form form</h2>
-          <div class="section__body">
-            <div class="contact__wrapper">
-              <form action="#" class="contact-form">
-                <div class="contact-form__body">
-                  <div class="contact-form__item contact-form__item--bg-grey contact-form__field-name field">
-                    <label class="field__label contact-form__item-label" for="name">Full Name</label>
-                    <input class="field__input" name="name" id="name" type="text" placeholder="Type here" required />
-                  </div>
-                  <div class="contact-form__item contact-form__item--bg-grey contact-form__field-email field">
-                    <label class="field__label contact-form__item-label" for="name">Email</label>
-                    <input class="field__input" name="email" id="email" type="email" placeholder="Type here" required />
-                  </div>
+          </section>
+          <section
+            class="section__banner section__banner--bg"
+            aria-labelledby="banner-title"
+          >
+            <h2 class="visually-hidden" id="banner-title">
+              Start project with SquareUp
+            </h2>
+            <div class="section__banner-inner">
+              <img
+                class="section__banner-logo"
+                src="./assets/images/logo-2.svg"
+                alt=""
+                width="80"
+                height="80"
+                loading="lazy"
+              />
+              <div class="section__banner-body">
+                <h3 class="section__banner-title">
+                  Let us Bring your Ideas to Life in the Digital World.
+                </h3>
+                <div class="section__banner-description">
+                  <p>
+                    No matter which services you choose, we are committed to
+                    delivering exceptional results that exceed your
+                    expectations. Our multidisciplinary team works closely
+                    together to ensure seamless collaboration and a unified
+                    vision for your digital product.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="contact.html"
+                class="section__banner-link button button--accent"
+                >Start Project</a
+              >
+            </div>
+          </section>
+          <section class="section contact" aria-labelledby="contact-title">
+            <h2 class="visually-hidden" id="contact-title">Contact Us</h2>
+            <div class="section__body">
+              <div class="contact__wrapper">
+                <form action="#" class="contact-form">
+                  <div class="contact-form__body">
+                    <div
+                      class="contact-form__item contact-form__item--bg-grey contact-form__field-name field"
+                    >
+                      <label
+                        class="field__label contact-form__item-label"
+                        for="name"
+                        >Full Name</label
+                      >
+                      <input
+                        class="field__input"
+                        name="name"
+                        id="name"
+                        type="text"
+                        placeholder="Type here"
+                        required
+                      />
+                    </div>
+                    <div
+                      class="contact-form__item contact-form__item--bg-grey contact-form__field-email field"
+                    >
+                      <label
+                        class="field__label contact-form__item-label"
+                        for="name"
+                        >Email</label
+                      >
+                      <input
+                        class="field__input"
+                        name="email"
+                        id="email"
+                        type="email"
+                        placeholder="Type here"
+                        required
+                      />
+                    </div>
 
-                  <fieldset class="contact-form__item contact-form__item--bg-grey contact-form__work-types checkboxes">
-                    <legend class="visually-hidden">
-                      Why are you contact-forming us?
-                    </legend>
+                    <fieldset
+                      class="contact-form__item contact-form__item--bg-grey contact-form__work-types checkboxes"
+                    >
+                      <legend class="visually-hidden">
+                        Why are you contact-forming us?
+                      </legend>
 
-                    <h6 class="contact-form__item-label checkboxes__label">
-                      Why are you contact-forming us?
-                    </h6>
+                      <h6 class="contact-form__item-label checkboxes__label">
+                        Why are you contact-forming us?
+                      </h6>
 
-                    <ul class="checkboxes__list">
-                      <li class="checkboxes__item">
-                        <div class="contact-form__checkbox checkbox">
-                          <input class="checkbox__input" name="web-design" id="web-design" value="web-design"
-                            type="checkbox" />
-                          <label class="ckeckbox__label" for="web-design">Web Design</label>
+                      <ul class="checkboxes__list">
+                        <li class="checkboxes__item">
+                          <div class="contact-form__checkbox checkbox">
+                            <input
+                              class="checkbox__input"
+                              name="web-design"
+                              id="web-design"
+                              value="web-design"
+                              type="checkbox"
+                            />
+                            <label class="ckeckbox__label" for="web-design"
+                              >Web Design</label
+                            >
+                          </div>
+                        </li>
+                        <li class="checkboxes__item">
+                          <div class="contact-form__checkbox checkbox">
+                            <input
+                              class="checkbox__input"
+                              name="mobile-app"
+                              id="mobile-app"
+                              value="mobile-app"
+                              type="checkbox"
+                            />
+                            <label class="ckeckbox__label" for="mobile-app"
+                              >Mobile App Design</label
+                            >
+                          </div>
+                        </li>
+                        <li class="checkboxes__item">
+                          <div class="contact-form__checkbox checkbox">
+                            <input
+                              class="checkbox__input"
+                              name="collaboration"
+                              id="collaboration"
+                              value="collaboration"
+                              type="checkbox"
+                            />
+                            <label class="ckeckbox__label" for="collaboration"
+                              >Collaboration</label
+                            >
+                          </div>
+                        </li>
+                        <li class="checkboxes__item">
+                          <div class="contact-form__checkbox checkbox">
+                            <input
+                              class="checkbox__input"
+                              name="others"
+                              id="others"
+                              value="others"
+                              type="checkbox"
+                            />
+                            <label class="ckeckbox__label" for="others"
+                              >Others</label
+                            >
+                          </div>
+                        </li>
+                      </ul>
+                    </fieldset>
+
+                    <div
+                      class="contact-form__item contact-form__item--bg-grey contact-form__budget range"
+                    >
+                      <label
+                        class="range__label contact-form__item-label"
+                        for="budget"
+                        >Your Budget</label
+                      >
+                      <p class="range__description">
+                        Slide to indicate your budget range
+                      </p>
+
+                      <div
+                        class="range__container"
+                        style="--value-1: 1000; --value-2: 5000"
+                      >
+                        <div class="range__track"></div>
+                        <div class="range__progress"></div>
+                        <div class="range__thumbs">
+                          <input
+                            class="range__input"
+                            id="tailmetr1"
+                            type="range"
+                            min="500"
+                            max="12000"
+                            value="1000"
+                            step="100"
+                            aria-orientation="horizontal"
+                          />
+                          <output
+                            class="range__output"
+                            id="output1"
+                            for="tailmetr1"
+                            style="--value: var(--value-1)"
+                          >
+                            1 000 $
+                          </output>
+                          <input
+                            class="range__input"
+                            id="tailmetr2"
+                            type="range"
+                            min="500"
+                            max="12000"
+                            value="5000"
+                            step="100"
+                            aria-orientation="horizontal"
+                          />
+                          <output
+                            class="range__output"
+                            id="output2"
+                            for="tailmetr2"
+                            style="--value: var(--value-2)"
+                          >
+                            5 000 $
+                          </output>
                         </div>
-                      </li>
-                      <li class="checkboxes__item">
-                        <div class="contact-form__checkbox checkbox">
-                          <input class="checkbox__input" name="mobile-app" id="mobile-app" value="mobile-app"
-                            type="checkbox" />
-                          <label class="ckeckbox__label" for="mobile-app">Mobile App Design</label>
-                        </div>
-                      </li>
-                      <li class="checkboxes__item">
-                        <div class="contact-form__checkbox checkbox">
-                          <input class="checkbox__input" name="collaboration" id="collaboration" value="collaboration"
-                            type="checkbox" />
-                          <label class="ckeckbox__label" for="collaboration">Collaboration</label>
-                        </div>
-                      </li>
-                      <li class="checkboxes__item">
-                        <div class="contact-form__checkbox checkbox">
-                          <input class="checkbox__input" name="others" id="others" value="others" type="checkbox" />
-                          <label class="ckeckbox__label" for="others">Others</label>
-                        </div>
-                      </li>
-                    </ul>
-                  </fieldset>
-
-                  <div class="contact-form__item contact-form__item--bg-grey contact-form__budget range">
-                    <label class="range__label contact-form__item-label" for="budget">Your Budget</label>
-                    <p class="range__description">
-                      Slide to indicate your budget range
-                    </p>
-
-                    <div class="range__container" style="--value-1: 1000; --value-2: 5000">
-                      <div class="range__track"></div>
-                      <div class="range__progress"></div>
-                      <div class="range__thumbs">
-                        <input class="range__input" id="tailmetr1" type="range" min="500" max="12000" value="1000"
-                          step="100" aria-orientation="horizontal" />
-                        <output class="range__output" id="output1" for="tailmetr1" style="--value: var(--value-1)">
-                          1 000 $
-                        </output>
-                        <input class="range__input" id="tailmetr2" type="range" min="500" max="12000" value="5000"
-                          step="100" aria-orientation="horizontal" />
-                        <output class="range__output" id="output2" for="tailmetr2" style="--value: var(--value-2)">
-                          5 000 $
-                        </output>
                       </div>
                     </div>
-                  </div>
 
-                  <div class="contact-form__item contact-form__item--bg-grey contact-form__message field">
-                    <label class="field__label contact-form__item-label" for="message">Your Message</label>
-                    <textarea class="field__input field__input--textarea" name="message" id="message"
-                      placeholder="Type here"
-                      onInput="this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px'" rows="1"
-                      required></textarea>
-                  </div>
+                    <div
+                      class="contact-form__item contact-form__item--bg-grey contact-form__message field"
+                    >
+                      <label
+                        class="field__label contact-form__item-label"
+                        for="message"
+                        >Your Message</label
+                      >
+                      <textarea
+                        class="field__input field__input--textarea"
+                        name="message"
+                        id="message"
+                        placeholder="Type here"
+                        onInput="this.style.height = 'auto'; this.style.height = this.scrollHeight + 'px'"
+                        rows="1"
+                        required
+                      ></textarea>
+                    </div>
 
-                  <button class="contact-form__button button button--accent" type="submit">
-                    Submit
-                  </button>
-                </div>
-              </form>
+                    <button
+                      class="contact-form__button button button--accent"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
-  </main>
+    </main>
 
     <footer class="footer">
       <div class="footer__inner container">
@@ -527,6 +715,5 @@
         </div>
       </div>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -66,6 +66,10 @@
   &__contact-link {
     padding: 16px 24px;
 
+    @include laptop {
+      padding: 12px 18px;
+    }
+
     @include mobile {
       padding: 16px 36px;
       font-size: 22px;
