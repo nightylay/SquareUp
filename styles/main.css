@@ -2010,9 +2010,6 @@ h6,
   }
 }
 .questions__card {
-  display: flex;
-  align-items: center;
-  column-gap: 30px;
   min-height: 140px;
   outline: 1px solid var(--color-grey-15);
   padding: 34px 50px;
@@ -2025,17 +2022,24 @@ h6,
 @media (width <= 767.98px) {
   .questions__card {
     padding: 30px 24px;
+  }
+}
+.questions__card-body {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 30px;
+}
+@media (width <= 767.98px) {
+  .questions__card-body {
     column-gap: 20px;
   }
 }
-.questions__card:has(.questions__accordion[open]) {
-  align-items: start;
-}
-.questions__card:has(.questions__accordion[open]) .questions__counter {
-  padding-top: 15px;
-}
 .questions__card:has(.questions__accordion[open]) .questions__counter::before {
   color: var(--color-green-70);
+}
+.questions__counter {
+  --offsetCounter: 20px;
+  margin-top: var(--offsetCounter);
 }
 .questions__counter::before {
   font-size: clamp(20px, 1.7543859649vw, 28px);
@@ -2043,7 +2047,7 @@ h6,
   height: 80px;
   content: counter(custom-counter, decimal-leading-zero);
   background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
-  padding: 20px;
+  padding: var(--offsetCounter);
   border-radius: var(--border-radius-12);
 }
 @media (width <= 1440.98px) {
@@ -2061,6 +2065,14 @@ h6,
 .questions__accordion {
   width: 100%;
 }
+.questions__accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-in-out;
+}
+.questions__accordion-content-body {
+  overflow: hidden;
+}
 .questions__accordion[open] .questions__accordion-title {
   color: var(--color-green-70);
 }
@@ -2071,19 +2083,24 @@ h6,
   rotate: 45deg;
   transition-duration: 0.3s;
 }
+.questions__accordion[open] + .questions__accordion-content {
+  grid-template-rows: 1fr;
+}
 .questions__accordion-header {
   display: flex;
   align-items: center;
   column-gap: 32px;
   cursor: pointer;
+  list-style: none;
+  min-height: 80px;
+}
+.questions__accordion-header::-webkit-details-marker {
+  display: none;
 }
 @media (width <= 1440.98px) {
   .questions__accordion-header {
     column-gap: 20px;
   }
-}
-.questions__accordion-body {
-  padding-top: 20px;
 }
 .questions__accordion-indicator {
   display: flex;
@@ -2091,6 +2108,9 @@ h6,
   align-items: center;
   margin-left: auto;
   flex-shrink: 0;
+}
+.questions__accordion-indicator-image {
+  transition: rotate 0.3s ease-in-out;
 }
 @media (width <= 1440.98px) {
   .questions__accordion-indicator-image {

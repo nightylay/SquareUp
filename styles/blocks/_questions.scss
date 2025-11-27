@@ -55,12 +55,8 @@
   }
 
   &__card {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
     min-height: 140px;
     outline: 1px solid var(--color-grey-15);
-
     padding: 34px 50px;
 
     @include laptop {
@@ -69,18 +65,19 @@
 
     @include mobile {
       padding: 30px 24px;
-      column-gap: 20px;
+    }
+
+    &-body {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 30px;
+
+      @include mobile {
+        column-gap: 20px;
+      }
     }
 
     &:has(.questions__accordion[open]) {
-      & {
-        align-items: start;
-      }
-
-      .questions__counter {
-        padding-top: 15px;
-      }
-
       .questions__counter::before {
         color: var(--color-green-70);
       }
@@ -88,13 +85,16 @@
   }
 
   &__counter {
+    --offsetCounter: 20px;
+    margin-top: var(--offsetCounter);
+
     &::before {
       @include fluid-text(28, 20);
       @include square(80px);
 
       content: counter(custom-counter, decimal-leading-zero);
       background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
-      padding: 20px;
+      padding: var(--offsetCounter);
       border-radius: var(--border-radius-12);
 
       @include laptop {
@@ -109,6 +109,16 @@
 
   &__accordion {
     width: 100%;
+
+    &-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease-in-out;
+
+      &-body {
+        overflow: hidden;
+      }
+    }
 
     &[open] {
       .questions__accordion {
@@ -125,6 +135,10 @@
           }
         }
       }
+
+      & + .questions__accordion-content {
+        grid-template-rows: 1fr;
+      }
     }
 
     &-header {
@@ -132,14 +146,16 @@
       align-items: center;
       column-gap: 32px;
       cursor: pointer;
+      list-style: none;
+      min-height: 80px;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
 
       @include laptop {
         column-gap: 20px;
       }
-    }
-
-    &-body {
-      padding-top: 20px;
     }
 
     &-indicator {
@@ -149,6 +165,8 @@
       flex-shrink: 0;
 
       &-image {
+        transition: rotate 0.3s ease-in-out;
+
         @include laptop {
           @include square(15.6px);
         }
