@@ -77,9 +77,9 @@
         align-items: start;
       }
 
-      // .questions__counter {
-      //   padding-top: 15px;
-      // }
+      .questions__counter {
+        padding-top: 15px;
+      }
 
       .questions__counter::before {
         color: var(--color-green-70);
