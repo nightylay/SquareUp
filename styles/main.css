@@ -2287,7 +2287,8 @@ h6,
   align-items: center;
   gap: clamp(30px, 5.2vw, 100px);
   padding: clamp(40px, 5.2vw, 100px) 150px;
-  border: 1px solid var(--color-grey-15);
+  border-top: 1px solid var(--color-grey-15);
+  border-bottom: 1px solid var(--color-grey-15);
 }
 @media (width <= 1440.98px) {
   .about__info {
