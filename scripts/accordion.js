@@ -1,5 +1,10 @@
 function toggleAccordion() {
   const accordionContainer = document.querySelector('[data-js-accordion-container]');
+
+  if (!accordionContainer) {
+    return;
+  }
+
   const detailsElements = accordionContainer.querySelectorAll('details');
 
   detailsElements.forEach(detail => {
