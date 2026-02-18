@@ -4,19 +4,24 @@
   "description": "landing page squareup",
   "main": "index.js",
   "scripts": {
-    "sass-watch": "sass --watch ."
+    "sass-watch": "sass --watch .",
+    "server": "npx live-server .",
+    "start": "npm run dev",
+    "dev": "concurrently \"npm run sass-watch\" \"npm run server\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nightylay/SquareUp.git"
   },
-  "author": "",
+  "author": "nightylay",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nightylay/SquareUp/issues"
   },
   "homepage": "https://github.com/nightylay/SquareUp#readme",
   "devDependencies": {
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
     "sass": "^1.93.3"
   }
 }
