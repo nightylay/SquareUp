@@ -6,7 +6,7 @@ SquareUp is a multi-page website for an IT company specializing in comprehensive
 
 - HTML5
 - SCSS
-- JavScript
+- JavaScript
 
 ## Getting Started
 
