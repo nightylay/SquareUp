@@ -1,14 +1,14 @@
-:computer:# SquareUp Website
+# SquareUp Website
 
 SquareUp is a multi-page website for an IT company specializing in comprehensive digital solutions.
 
-:hammer_and_wrench: ## Stack
+## Stack
 
 - HTML5
 - SCSS
 - JavaScript
 
-:rocket: ##Getting Started
+## Getting Started
 
 1. Clone the repository
 
